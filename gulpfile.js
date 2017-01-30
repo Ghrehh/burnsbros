@@ -9,9 +9,9 @@ gulp.task('nunjucks', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('source/style/*.scss')
+  return gulp.src('source/styles/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build/styles'));
 });
 
 gulp.task('copy_scripts', function () {
