@@ -1,2 +1,12 @@
+h1, h2, h3, h4, h5, h6, p, li, a {
+  font-family: "adelle-sans"; }
+
 body {
-  color: blue; }
+  color: brown; }
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #444;
+  padding-top: 100px;
+  font-weight: 800; }
