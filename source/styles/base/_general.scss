@@ -1,0 +1,46 @@
+h1,h2,h3,h4,h5,h6,p,li,a {
+  font-family: "adelle-sans";
+}
+
+section p {
+  color: $charcoal;
+  font-size: 19px;
+  line-height: 29px;
+  margin: 0 0 55px;
+}
+
+//the colored background at the top of each page, this gets extended and color added
+#page-title-section {
+  padding: 63px 0 75px;
+}
+
+//the white about/what we do/projects heading that appears on each page
+//currentlys looks theres on one of these, so it's an id
+#page-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 9px;
+  text-align: center;
+
+}
+
+//the dark text large header that goes undernearth the page title
+#page-description {
+
+  color: $charcoal;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  text-align:center;
+
+}
+
+
+.section-header {
+  color: $charcoal;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 0 45px;
+  text-align: center;
+}

@@ -1,6 +1,37 @@
 {% extends "templates/template.html" %}
 
 {% block content %}
-  <h1 >Hello! We're the Burns Bros.</h1>
+
+  {% include "templates/partials/_nav.html" %}
+  <main id="about">
+    <header class="section about-title-section">
+      <h1 id="page-title">ABOUT</h1>
+      <p id="page-description">
+        Hi! We're Burns Bros. & Co.
+        <br>
+        We're a UX design studio.
+      </p>
+    </header>
+
+    <section id="section-1">
+      <h2 class="section-header">Who Are We?</h2>
+
+      <p>
+        Hello there, we're Burns Bros. & Co. — A newly formed
+        (mostly digital) design studio based out of Belfast and Sheffield.
+        <br><br>
+        Our Focus is on designing and building meaningful products for
+        the common good.
+      </p>
+
+      <p>
+        Together, we've over two decades worth of experience in web development
+        and building digital products.
+        <br><br>
+        If you'd like to work with us, we'd love to hear from you!
+      </p>
+    </section>
+  </main>
+
 
 {% endblock %}

@@ -1,12 +1,111 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 h1, h2, h3, h4, h5, h6, p, li, a {
   font-family: "adelle-sans"; }
 
-body {
-  color: brown; }
+section p {
+  color: #2D2D2D;
+  font-size: 19px;
+  line-height: 29px;
+  margin: 0 0 55px; }
 
-h1 {
+#page-title-section, .about-title-section {
+  padding: 63px 0 75px; }
+
+#page-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 9px;
+  text-align: center; }
+
+#page-description {
+  color: #2D2D2D;
   font-size: 50px;
-  text-align: center;
-  color: #444;
-  padding-top: 100px;
-  font-weight: 800; }
+  font-weight: 700;
+  line-height: 65px;
+  text-align: center; }
+
+.section-header {
+  color: #2D2D2D;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 0 45px;
+  text-align: center; }
+
+#top-nav {
+  align-items: center;
+  display: flex;
+  padding: 0px 60px; }
+  #top-nav .logo-link {
+    display: inline-block;
+    padding: 23px; }
+  #top-nav ul {
+    display: inline-block;
+    text-align: right;
+    width: 100%; }
+  #top-nav li {
+    display: inline-block; }
+  #top-nav a {
+    color: #2D2D2D;
+    font-size: 18px;
+    margin-right: 17px;
+    text-decoration: none; }
+  #top-nav a:hover {
+    color: #229ccc; }
+
+#about #section-1 {
+  padding: 74px 0px; }
+  #about #section-1 p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 570px; }
+
+.about-title-section {
+  background-color: #17b16f; }
