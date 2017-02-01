@@ -48,13 +48,7 @@ table {
 h1, h2, h3, h4, h5, h6, p, li, a {
   font-family: "adelle-sans"; }
 
-section p {
-  color: #2D2D2D;
-  font-size: 19px;
-  line-height: 29px;
-  margin: 0 0 55px; }
-
-#page-title-section, .about-title-section {
+#page-title-section {
   padding: 63px 0 75px; }
 
 #page-title {
@@ -75,8 +69,15 @@ section p {
   color: #2D2D2D;
   font-size: 35px;
   font-weight: 700;
-  margin: 0 0 45px;
   text-align: center; }
+
+.section-body {
+  color: #2D2D2D;
+  display: block;
+  font-size: 19px;
+  line-height: 27px;
+  margin: 0 auto 60px;
+  max-width: 570px; }
 
 #top-nav {
   align-items: center;
@@ -99,13 +100,39 @@ section p {
   #top-nav a:hover {
     color: #229ccc; }
 
+#about .about-title-section {
+  background-color: #17b16f; }
+
 #about #section-1 {
-  padding: 74px 0px; }
-  #about #section-1 p {
+  padding: 71px 0 125px; }
+  #about #section-1 h2 {
+    margin: 0 0 45px; }
+
+#about #section-2 {
+  background-color: #f28b35;
+  padding: 59px 0px; }
+  #about #section-2 h2 {
+    margin: 0 0 32px; }
+  #about #section-2 > p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 570px; }
+    max-width: 570px;
+    margin-bottom: 45px; }
 
-.about-title-section {
-  background-color: #17b16f; }
+#about .about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 900px; }
+  #about .about-buttons .about-button {
+    border: 2px solid white;
+    box-sizing: border-box;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    width: 265px;
+    padding: 26px 30px;
+    margin-bottom: 39px; }
