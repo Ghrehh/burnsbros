@@ -105,15 +105,15 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 
 #about #section-1 {
   padding: 71px 0 125px; }
-  #about #section-1 h2 {
+  #about #section-1 .section-header {
     margin: 0 0 45px; }
 
 #about #section-2 {
   background-color: #f28b35;
   padding: 59px 0px; }
-  #about #section-2 h2 {
+  #about #section-2 .section-header {
     margin: 0 0 32px; }
-  #about #section-2 > p {
+  #about #section-2 > .section-body {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -136,3 +136,6 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     width: 265px;
     padding: 26px 30px;
     margin-bottom: 39px; }
+
+#about #section-3 {
+  padding: 59px 0px; }

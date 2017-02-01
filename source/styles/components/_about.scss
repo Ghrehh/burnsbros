@@ -1,3 +1,7 @@
+///////////////////
+//ABOUT///////////
+/////////////////
+
 #about {
 
   .about-title-section {
@@ -8,11 +12,11 @@
   #section-1 {
     padding: 71px 0 125px;
 
-    h2 {
+    .section-header {
       margin: 0 0 45px;
     }
 
-    p {
+    .section-body  {
 
     }
   }
@@ -21,11 +25,11 @@
     background-color: $orange;
     padding: 59px 0px;
 
-    h2 {
+    .section-header {
       margin: 0 0 32px;
     }
 
-    >p {
+    >.section-body {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -54,6 +58,10 @@
       margin-bottom: 39px;
 
     }
+  }
+
+  #section-3 {
+    padding: 59px 0px;
   }
 
 
