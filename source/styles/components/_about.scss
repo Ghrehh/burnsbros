@@ -23,7 +23,7 @@
 
   #section-2 {
     background-color: $orange;
-    padding: 59px 0px;
+    padding: 59px 0 33px;
 
     .section-header {
       margin: 0 0 32px;
@@ -36,32 +36,127 @@
       max-width: 570px;
       margin-bottom: 45px;
     }
-  }
 
-  .about-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-    max-width: 900px;
+    .about-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+      max-width: 880px;
 
 
-    .about-button {
-      border: 2px solid white;
-      box-sizing: border-box;
-      color: white;
-      font-size: 24px;
-      font-weight: 700;
-      text-align:center;
-      width: 265px;
-      padding: 26px 30px;
-      margin-bottom: 39px;
-
+      .about-button {
+        border: 2px solid white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 37px;
+        padding: 27px 14px;
+        text-align:center;
+        width: 251px;
+      }
     }
   }
 
   #section-3 {
-    padding: 59px 0px;
+    padding: 87px 0px;
+
+    .section-header {
+      margin: 0 0 48px;
+    }
+
+    #half-logo-top {
+      left: 10px;
+      position: relative;
+      top: 7px;
+
+    }
+
+
+    #profile-pictures {
+      max-width: 880px;
+      display: flex;
+      margin: auto;
+      justify-content: space-around;
+
+      .profile-picture-container {
+        width: 392px;
+
+        .profile-picture{
+          display:inline-flex;
+          width: inherit;
+          height: 392px;
+          align-items: flex-end;
+          border-radius: 3px;
+          overflow:hidden;
+
+          .text-container {
+            display: flex;
+            padding: 18px 33px 19px;
+            width: 100%;
+            align-items: flex-end;
+
+            .text-left {
+              width: 50%;
+              font-size: 25px;
+              font-weight: 700;
+              color: white;
+            }
+
+            .text-right {
+              width: 50%;
+              text-align: right;
+              color: white;
+              font-size: 19px;
+              position: relative;
+              bottom: 2px;
+            }
+          }
+        }
+
+        #brian-picture {
+          background-image: url(../assets/brian.jpg);
+        }
+
+        #gerry-picture {
+          background-image: url(../assets/gerry.jpg);
+        }
+
+        #brian-color {
+          background-color: $blue;
+        }
+
+        #gerry-color {
+          background-color: $dark-mint-green;
+        }
+
+        .description {
+          padding: 33px 0px 0px;
+          .serif {
+            font-family: "adelle";
+            font-weight: 700;
+          }
+
+          p {
+            @extend .body-writing;
+            margin-bottom: 25px;
+          }
+
+          a {
+            @extend .body-writing;
+            color: $link-blue;
+            text-decoration: none;
+            display: block;
+          }
+        }
+
+
+
+      }
+    }
+
   }
 
 

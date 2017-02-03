@@ -6,6 +6,11 @@ h1,h2,h3,h4,h5,h6,p,li,a {
   font-family: "adelle-sans";
 }
 
+.body-writing {
+  color: $charcoal;
+  font-size: 19px;
+  line-height: 27px;
+}
 
 //the colored background at the top of each page, this gets extended and color added
 #page-title-section {
@@ -43,10 +48,8 @@ h1,h2,h3,h4,h5,h6,p,li,a {
 }
 
 .section-body {
-  color: $charcoal;
+  @extend .body-writing;
   display: block;
-  font-size: 19px;
-  line-height: 27px;
   margin: 0 auto 60px;
   max-width: 570px
 }
