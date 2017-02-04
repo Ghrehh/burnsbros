@@ -280,15 +280,19 @@ footer {
           #about #section-3 #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
             color: white;
             font-size: 25px;
-            font-weight: 700;
-            width: 50%; }
+            font-weight: 700; }
+          #about #section-3 #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
+            bottom: 2px;
+            color: white;
+            margin-left: auto;
+            position: relative;
+            right: 6px; }
           #about #section-3 #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
             bottom: 2px;
             color: white;
             font-size: 19px;
             position: relative;
-            text-align: right;
-            width: 50%; }
+            text-align: right; }
       #about #section-3 #profile-pictures .profile-picture-container #brian-picture {
         background-image: url(../assets/brian.jpg); }
       #about #section-3 #profile-pictures .profile-picture-container #gerry-picture {
