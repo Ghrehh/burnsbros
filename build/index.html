@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>BurnsBros</title>
 
+  <link href="styles/font-awesome.min.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
 
   <script src="scripts/jquery.min.js"></script>
@@ -25,11 +26,10 @@
   </a>
 
   <ul>
-  <li> <a href="#">About</a> </li>
-  <li> <a href="#">Projects</a> </li>
-  <li> <a href="#">Get In Touch</a> </li>
-</ul>
-
+    <li> <a href="#">About</a> </li>
+    <li> <a href="#">Projects</a> </li>
+    <li> <a href="#">Get In Touch</a> </li>
+  </ul>
 
 </nav>
 
@@ -216,16 +216,54 @@
   <div id="cards">
 
     <div id="our-process-card" class="card">
+      <div class="card-inner">
+        <h3>Our Process</h3>
+        <p>
+          Building measuring & learning...<br>
+          Again, again & again.
+        </p>
+
+        <a class="orange-button" href="#">LEARN MORE</a>
+      </div>
+
+      <div id="stay-connected-container">
+        <h3>Stay Connected</h3>
+        <i class="fa fa-twitter twitter-icon" aria-hidden="true"></i>
+        <i class="fa fa-instagram instagram-icon" aria-hidden="true"></i>
+
+      </div>
 
     </div>
 
     <div id="newsletter-card" class="card">
-
+      <div class="card-inner">
+        <h3>Periodical Newsletter</h3>
+        <p>
+          Subscribe to recieve short emails outlining what we're up to,
+          our articles & interesting internet discoveries.
+        </p>
+        <form id="email-submission">
+          <input placeholder="your@email.com" class="email-field" type="text" name="email">
+          <input class="orange-button-form" type="submit" value="SUBSCRIBE">
+        </form>
+        <p class="small">We promise to treat your inbox like it's our own!</p>
+      </div>
     </div>
 
   </div>
 
   <div id="work-with-us">
+
+    <div class="description">
+      <h3>Want to work with us?</h3>
+      <p>Let's create something great together!</p>
+    </div>
+
+    <div class="buttons">
+      <a href="#" class="orange-button">GO TO PROJECT PLANNER</a>
+      <a href="#" class="white-button">GET IN TOUCH!</a>
+    </div>
+
   </div>
 
 </footer>

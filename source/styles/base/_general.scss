@@ -2,7 +2,7 @@
 //GENERAL/////////
 /////////////////
 
-h1,h2,h3,h4,h5,h6,p,li,a {
+h1,h2,h3,h4,h5,h6,p,li,a,input,form, {
   font-family: "adelle-sans";
 }
 
@@ -10,6 +10,48 @@ h1,h2,h3,h4,h5,h6,p,li,a {
   color: $charcoal;
   font-size: 19px;
   line-height: 27px;
+}
+
+.small-header {
+  @extend .body-writing;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.small {
+  @extend .body-writing;
+  font-size: 13px;
+}
+
+.button-template {
+  text-decoration: none;
+  padding: 7px 16px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  line-height: 27px;
+}
+
+.orange-button {
+  @extend .button-template;
+  background-color: $orange;
+  color: $charcoal;
+}
+
+.orange-button:hover {
+  background-color: $dark-orange;
+}
+
+.white-button {
+  @extend .button-template;
+  background-color: white;
+  color: $charcoal;
+}
+
+.white-button:hover {
+  background-color: $light-grey;
 }
 
 //the colored background at the top of each page, this gets extended and color added
