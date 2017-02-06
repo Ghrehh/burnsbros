@@ -470,6 +470,10 @@ footer {
     margin-bottom: 31px;
     padding: 0px 40px;
     font-size: 18px; }
+  #contact #section-1 .error {
+    color: #fd4561; }
+  #contact #section-1 .success {
+    color: #00b070; }
   #contact #section-1 #submission-form {
     display: flex;
     box-sizing: border-box;
@@ -492,7 +496,8 @@ footer {
         font-size: 18px;
         padding: 4px 10px 7px;
         margin-bottom: 20px;
-        border-radius: 5px; }
+        border-radius: 5px;
+        font-weight: 300; }
       #contact #section-1 #submission-form .form-field input::-webkit-input-placeholder, #contact #section-1 #submission-form .form-field textarea::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: #A4A4A4; }
@@ -516,4 +521,5 @@ footer {
     #contact #section-1 #submission-form .orange-button, #contact #section-1 #submission-form footer #cards .card .orange-button-form, footer #cards .card #contact #section-1 #submission-form .orange-button-form {
       padding: 5px 16px 6px; }
     #contact #section-1 #submission-form #required-fields {
-      color: #C5C3C3; }
+      color: #C5C3C3;
+      font-weight: 300; }
