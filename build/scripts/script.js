@@ -4,13 +4,6 @@ $(document).ready(function(){
 
     if ($("#email").val() && $("#info").val()) {
 
-      $("#submission-form").hide();
-      $("#submission-form input").val("");
-      $("#submission-form textarea").val("");
-
-      $(".message").addClass("success");
-      $(".message").text("Your message has been submitted successfully.");
-
       $.ajax({
 
             url: "https://docs.google.com/forms/d/e/1FAIpQLSeTDVuph6orVNtXd-hWp0L7d47JBg0pCuZr-qYcrBkzF5N1Uw/formResponse",
@@ -28,6 +21,13 @@ $(document).ready(function(){
             }
 
       });
+
+      $("#submission-form").hide();
+      $("#submission-form input").val("");
+      $("#submission-form textarea").val("");
+
+      $(".message").addClass("success");
+      $(".message").text("Your message has been submitted successfully.");
 
     }
     else {
