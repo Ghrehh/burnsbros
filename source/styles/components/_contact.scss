@@ -1,0 +1,106 @@
+#contact {
+
+  .contact-title-section {
+    background-color: $pink;
+    margin-bottom: 100px;
+  }
+
+  #section-1 {
+
+    padding: 25px 32px 28px;
+    border: 1px solid $light-grey;
+    max-width: 610px;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 80px;
+
+
+
+    .section-body {
+      flex: 0 0 100%;
+      max-width: none;
+      text-align: center;
+      line-height: 27.4px;
+      margin-bottom: 31px;
+      padding: 0px 40px;
+      font-size: 18px;
+
+    }
+
+    #submission-form {
+      display: flex;
+      box-sizing:border-box;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .form-field {
+        flex: 0 0 45%;
+
+        label {
+          @extend .body-writing;
+          display: block;
+          box-sizing: border-box;
+          margin-bottom: 11px;
+          font-size: 18px;
+        }
+
+        input, textarea {
+          @extend .body-writing;
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+
+          border: 1px solid $light-grey;
+          padding: 5px 10px 6px;
+          font-size: 18px;
+          padding: 4px 10px 7px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+
+        }
+
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: $grey;
+        }
+        input::-moz-placeholder, textarea::-moz-placeholder { /* Firefox 19+ */
+          color: $grey;
+        }
+        input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE 10+ */
+          color: $grey;
+        }
+        input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+          color: $grey;
+        }
+
+
+        textarea {
+          height: 110px;
+          margin-bottom: 32px;
+          max-width: 100%;
+
+        }
+      }
+
+      .large {
+        flex: 0 0 100%;
+
+        label {
+          margin-top: 5px;
+        }
+      }
+
+      .orange-button {
+        padding: 5px 16px 6px;
+      }
+
+      #required-fields {
+        color: $light-grey;
+      }
+    }
+  }
+
+
+
+}

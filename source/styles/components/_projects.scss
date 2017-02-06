@@ -1,0 +1,93 @@
+#projects {
+
+  .projects-title-section {
+    background-color: $orange;
+
+  }
+
+  #section-1 {
+    display: flex;
+    max-width: 865px;
+    margin: auto;
+    padding: 50px 20px 60px;
+    box-sizing:border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .portfolio-image {
+      text-align:center;
+      margin-bottom: 50px;
+
+      img {
+        width: 100%;
+        margin-bottom: 26px;
+      }
+
+      p {
+        @extend .body-writing;
+        width: 100%;
+        display: inline-block;
+
+
+        .serif {
+          font-family: "adelle";
+          font-weight: 700;
+        }
+      }
+
+    }
+
+    .large {
+      flex: 0 0 100%;
+
+      p {
+        width: 67%;
+      }
+    }
+
+    .medium, .small {
+      flex: 0 0 48%;
+
+
+    }
+
+
+  }
+
+  #section-2 {
+    margin-bottom: 69px;
+
+
+    .section-header {
+      margin-bottom: 28px;
+    }
+
+    .section-body {
+      max-width: 619px;
+      line-height: 27.8px;
+      margin-bottom: 43px;
+
+    }
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+
+    .companies {
+      width: 822px;
+      display: flex;
+      margin: auto;
+      box-sizing:border-box;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+}

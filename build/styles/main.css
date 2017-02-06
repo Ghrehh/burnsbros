@@ -45,10 +45,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1, h2, h3, h4, h5, h6, p, li, a, input, form {
+h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   font-family: "adelle-sans"; }
 
-.body-writing, .small-header, footer #cards .card h3, footer #work-with-us .description, .small, .section-body, footer #cards .card, footer #bottom-nav #bottom-nav-inner ul li a, #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #collaborators p, #about #section-3 #job-opportunities {
+.body-writing, .small-header, footer #cards .card h3, footer #work-with-us .description, .small, .section-body, footer #cards .card, footer #bottom-nav #bottom-nav-inner ul li a, #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #collaborators p, #about #section-3 #job-opportunities, #projects #section-1 .portfolio-image p, #contact #section-1 #submission-form .form-field label, #contact #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field textarea {
   color: #333333;
   font-size: 19px;
   line-height: 27px; }
@@ -397,3 +397,123 @@ footer {
     margin-right: auto;
     max-width: 570px;
     margin-bottom: 45px; }
+
+#projects .projects-title-section {
+  background-color: #fc9e33; }
+
+#projects #section-1 {
+  display: flex;
+  max-width: 865px;
+  margin: auto;
+  padding: 50px 20px 60px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  #projects #section-1 .portfolio-image {
+    text-align: center;
+    margin-bottom: 50px; }
+    #projects #section-1 .portfolio-image img {
+      width: 100%;
+      margin-bottom: 26px; }
+    #projects #section-1 .portfolio-image p {
+      width: 100%;
+      display: inline-block; }
+      #projects #section-1 .portfolio-image p .serif {
+        font-family: "adelle";
+        font-weight: 700; }
+  #projects #section-1 .large {
+    flex: 0 0 100%; }
+    #projects #section-1 .large p {
+      width: 67%; }
+  #projects #section-1 .medium, #projects #section-1 .small {
+    flex: 0 0 48%; }
+
+#projects #section-2 {
+  margin-bottom: 69px; }
+  #projects #section-2 .section-header {
+    margin-bottom: 28px; }
+  #projects #section-2 .section-body {
+    max-width: 619px;
+    line-height: 27.8px;
+    margin-bottom: 43px; }
+  #projects #section-2 a {
+    color: #009cd7;
+    text-decoration: none; }
+  #projects #section-2 .companies {
+    width: 822px;
+    display: flex;
+    margin: auto;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    #projects #section-2 .companies img {
+      margin-bottom: 40px; }
+
+#contact .contact-title-section {
+  background-color: #fd4561;
+  margin-bottom: 100px; }
+
+#contact #section-1 {
+  padding: 25px 32px 28px;
+  border: 1px solid #C5C3C3;
+  max-width: 610px;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 80px; }
+  #contact #section-1 .section-body {
+    flex: 0 0 100%;
+    max-width: none;
+    text-align: center;
+    line-height: 27.4px;
+    margin-bottom: 31px;
+    padding: 0px 40px;
+    font-size: 18px; }
+  #contact #section-1 #submission-form {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    #contact #section-1 #submission-form .form-field {
+      flex: 0 0 45%; }
+      #contact #section-1 #submission-form .form-field label {
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 11px;
+        font-size: 18px; }
+      #contact #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #C5C3C3;
+        padding: 5px 10px 6px;
+        font-size: 18px;
+        padding: 4px 10px 7px;
+        margin-bottom: 20px;
+        border-radius: 5px; }
+      #contact #section-1 #submission-form .form-field input::-webkit-input-placeholder, #contact #section-1 #submission-form .form-field textarea::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #A4A4A4; }
+      #contact #section-1 #submission-form .form-field input::-moz-placeholder, #contact #section-1 #submission-form .form-field textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #A4A4A4; }
+      #contact #section-1 #submission-form .form-field input:-ms-input-placeholder, #contact #section-1 #submission-form .form-field textarea:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #A4A4A4; }
+      #contact #section-1 #submission-form .form-field input:-moz-placeholder, #contact #section-1 #submission-form .form-field textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #A4A4A4; }
+      #contact #section-1 #submission-form .form-field textarea {
+        height: 110px;
+        margin-bottom: 32px;
+        max-width: 100%; }
+    #contact #section-1 #submission-form .large {
+      flex: 0 0 100%; }
+      #contact #section-1 #submission-form .large label {
+        margin-top: 5px; }
+    #contact #section-1 #submission-form .orange-button, #contact #section-1 #submission-form footer #cards .card .orange-button-form, footer #cards .card #contact #section-1 #submission-form .orange-button-form {
+      padding: 5px 16px 6px; }
+    #contact #section-1 #submission-form #required-fields {
+      color: #C5C3C3; }

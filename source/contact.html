@@ -1,0 +1,60 @@
+{% extends "templates/template.html" %}
+
+{% block content %}
+  {% include "templates/partials/_nav.html" %}
+
+  <main id="contact">
+    <header id="page-title-section" class="contact-title-section">
+      <h1 id="page-title">GET IN TOUCH!</h1>
+      <p id="page-description">
+        We're always looking for new clients...
+        <br>
+        Let's create something great together!
+      </p>
+    </header>
+    <section id="section-1">
+
+      <p class="section-body">
+        Do you have a new idea that you'd like to talk about?
+        Or, maybe you'd just like to know a little more about us and what we do?
+        Either way, we'd love to hear from you!
+      </p>
+
+      <form id="submission-form">
+
+        <div class="form-field">
+          <label for="name">Your Name</label>
+          <input placeholder="Your Name" id="name" type="text" name="name">
+        </div>
+
+        <div class="form-field">
+          <label for="organisation">Your Organisation</label>
+          <input placeholder="Organisation Name" id="organisation" type="text" name="organisation">
+        </div>
+
+        <div class="form-field">
+          <label for="email">Your Email Address*</label>
+          <input placeholder="your@email.com" id="email" type="text" name="email">
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Your Phone Number</label>
+          <input placeholder="1234567890" id="phone" type="text" name="phone">
+        </div>
+
+        <div class="form-field large">
+          <label for="info">Tell Us About Your Project*</label>
+          <textarea placeholder="Type a little bit about the project you'd like to work on." id="info" type="text" name="info"></textarea>
+        </div>
+
+
+        <input class="orange-button" type="submit" value="SEND">
+        <p id="required-fields">*Required Fields</p>
+
+      </form>
+    </section>
+  </main>
+
+  {% include "templates/partials/_footer.html" %}
+
+{% endblock %}
