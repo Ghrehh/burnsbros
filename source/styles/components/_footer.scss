@@ -1,19 +1,18 @@
 footer {
+  margin: 0 0 15px;
+  overflow: hidden;
   padding: 50px 0px 0px;
   position: relative;
-  overflow: hidden;
-  margin-bottom: 15px;
-
 
   #background {
     background-color: rgb(233, 233, 233);
     height: 100%;
-    width: 100%;
     position: absolute;
-    z-index: -2;
-    transform: skewY(-7deg);
     padding-top: 100px;
     top: 176px;
+    transform: skewY(-7deg);
+    width: 100%;
+    z-index: -2;
   }
 
   #cards {
@@ -69,6 +68,14 @@ footer {
           text-align: center;
           padding: 9px 0px 15px;
         }
+
+        .error {
+          color: #801212;
+        }
+
+        .success {
+          color: white;
+        }
       }
 
       #stay-connected-container {
@@ -83,8 +90,18 @@ footer {
           padding: 7px 0px 7px 31px;
         }
 
+        a {
+          text-decoration: none;
+        }
+
         i {
           font-size: 24px;
+          color: $charcoal;
+        }
+
+        i:hover {
+          color: $blue;
+          cursor: pointer;
         }
 
         .twitter-icon {
@@ -166,6 +183,8 @@ footer {
       max-width: 949px;
 
       ul {
+        width: 300px;
+        text-align:center;
 
         li {
           display: inline-block;
@@ -190,6 +209,11 @@ footer {
         li:last-child::after {
           content: "";
         }
+      }
+
+      >a {
+        text-decoration: none;
+        display: flex;
       }
     }
   }
