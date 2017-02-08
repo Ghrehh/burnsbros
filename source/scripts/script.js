@@ -24,7 +24,6 @@ function register($form) {
     });
 }
 
-
 $(document).ready(function(){
 
   $('#submission-form').submit(function(e) {
