@@ -76,4 +76,33 @@ $(document).ready(function(){
       });
   }
 
+  var header_h1 = $("header h1")
+  var header_p = $("header p")
+
+  var dur = 700;
+
+  header_h1.css({"position": "relative", "bottom": "200px", "opacity": "0"})
+  header_h1.animate({bottom: "0px", opacity: "1"}, dur + 200)
+
+  header_p.css({"position": "relative", "bottom": "200px", "opacity": "0"})
+  header_p.animate({bottom: "0px", opacity: "1"}, dur)
+
+
+  var card1 = $("#our-process-card");
+  var card2 = $("#newsletter-card");
+
+  card1.css({"position": "relative", "right": "200px"})
+  card2.css({"position": "relative", "left": "200px"})
+
+  card1.animate({right: "-20px", opacity: "1"}, 500, function(){
+    card1.animate({right: "10px"}, 500, function(){
+      card1.animate({right: "0px"}, 700)
+    })
+  })
+  card2.animate({left: "-20px", opacity: "1"}, 500, function(){
+    card2.animate({left: "10px"}, 500, function(){
+      card2.animate({left: "0px"}, 700);
+    })
+  })
+
 });
