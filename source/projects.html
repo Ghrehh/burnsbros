@@ -1,7 +1,9 @@
+<!-- active navbar link -->
+{% set active_link = "projects" %}
+
 {% extends "templates/template.html" %}
 
 {% block content %}
-  {% include "templates/partials/_nav.html" %}
 
   <main id="projects">
     <header id="page-title-section" class="projects-title-section">
@@ -66,7 +68,5 @@
 
     </section>
   </main>
-
-  {% include "templates/partials/_footer.html" %}
 
 {% endblock %}

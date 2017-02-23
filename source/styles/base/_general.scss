@@ -2,6 +2,15 @@
 //GENERAL/////////
 /////////////////
 
+@mixin transition($property, $duration) {
+
+  -webkit-transition: $property $duration ease;
+  -moz-transition: $property $duration ease;
+  -o-transition: $property $duration ease;
+  transition: $property $duration ease;
+
+}
+
 h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   font-family: "adelle-sans";
 }
@@ -35,23 +44,29 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 }
 
 .orange-button {
+  @include transition(background-color, 200ms);
+  @include transition(color, 400ms);
   @extend .button-template;
   background-color: $orange;
   color: $charcoal;
 }
 
 .orange-button:hover {
-  background-color: $dark-orange;
+  color: $orange;
+  background-color: $charcoal;
 }
 
 .white-button {
+  @include transition(background-color, 200ms);
+  @include transition(color, 400ms);
   @extend .button-template;
   background-color: white;
   color: $charcoal;
 }
 
 .white-button:hover {
-  background-color: $light-grey;
+  color: $blue;
+  background-color: $charcoal;
 }
 
 //the colored background at the top of each page, this gets extended and color added

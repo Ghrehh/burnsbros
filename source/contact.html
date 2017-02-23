@@ -1,7 +1,10 @@
+<!-- active navbar link -->
+{% set active_link = "contact" %}
+
 {% extends "templates/template.html" %}
 
 {% block content %}
-  {% include "templates/partials/_nav.html" %}
+
 
   <main id="contact">
     <header id="page-title-section" class="contact-title-section">
@@ -56,6 +59,6 @@
     </section>
   </main>
 
-  {% include "templates/partials/_footer.html" %}
+
 
 {% endblock %}

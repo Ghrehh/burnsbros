@@ -71,18 +71,36 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   line-height: 27px; }
 
 .orange-button, footer #cards .card .orange-button-form {
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  -webkit-transition: color 400ms ease;
+  -moz-transition: color 400ms ease;
+  -o-transition: color 400ms ease;
+  transition: color 400ms ease;
   background-color: #fc9e33;
   color: #333333; }
 
 .orange-button:hover, footer #cards .card .orange-button-form:hover {
-  background-color: #ff8e0e; }
+  color: #fc9e33;
+  background-color: #333333; }
 
 .white-button {
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  -webkit-transition: color 400ms ease;
+  -moz-transition: color 400ms ease;
+  -o-transition: color 400ms ease;
+  transition: color 400ms ease;
   background-color: white;
   color: #333333; }
 
 .white-button:hover {
-  background-color: #C5C3C3; }
+  color: #009cd7;
+  background-color: #333333; }
 
 #page-title-section {
   padding: 63px 0 75px; }
@@ -115,7 +133,9 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
 #top-nav {
   align-items: center;
   display: flex;
-  padding: 0px 60px; }
+  padding: 0px 60px;
+  margin: auto;
+  max-width: 910px; }
   #top-nav .logo-link {
     display: inline-block;
     padding: 23px; }
@@ -131,6 +151,8 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
     margin-right: 17px;
     text-decoration: none; }
   #top-nav a:hover {
+    color: #229ccc; }
+  #top-nav .active {
     color: #229ccc; }
 
 footer {
@@ -271,7 +293,7 @@ footer {
   font-size: 12px; }
 
 #about .about-title-section {
-  background-color: #00b070; }
+  background-color: #009cd7; }
 
 #about #section-1 {
   padding: 71px 0 125px; }

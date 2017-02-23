@@ -7,6 +7,8 @@
   align-items: center;
   display: flex;
   padding: 0px 60px;
+  margin: auto;
+  max-width: 910px;
 
   .logo-link {
     display: inline-block;
@@ -32,6 +34,10 @@
   }
 
   a:hover {
+    color: $link-blue;
+  }
+
+  .active {
     color: $link-blue;
   }
 
