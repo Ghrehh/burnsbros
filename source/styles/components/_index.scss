@@ -1,0 +1,106 @@
+#index {
+  #page-title-section{
+    background-color: $dark-mint-green;
+    margin-bottom: 20px;
+
+    #page-title {
+      margin-bottom: 20px;
+    }
+
+    #page-description {
+      font-size: 49px;
+      line-height: 61px;
+      margin-bottom: 35px;
+    }
+
+    .body-writing {
+      text-align: center;
+      font-size: 25px;
+      line-height: 36px;
+      margin-bottom: 63px;
+    }
+
+    .button-container {
+      text-align: center;
+
+      .orange-button {
+        animation: button-fall 0.2s forwards;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 15px 32px 18px 30px;
+        margin-right: 15px;
+
+        .arrow {
+          font-size: 23px;
+          position: relative;
+          vertical-align: bottom;
+          left: 4px;
+          bottom: 1px;
+          display: inline-block;
+        }
+      }
+
+      .orange-button:hover {
+        animation: button-rise 0.2s forwards;
+        .arrow {
+          animation: move-arrow 0.2s forwards;
+        }
+      }
+
+      .white-button {
+        animation: button-fall 0.2s forwards;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 14px 32px 17px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        box-sizing:border-box;
+      }
+
+      .white-button:hover {
+        animation: button-rise 0.2s forwards;
+        background-color: white;
+        color: $dark-mint-green;
+      }
+    }
+
+  }
+
+}
+
+@keyframes move-arrow {
+  0% {
+    color: $charcoal;
+    transform: translate(0px, 0px);
+
+  }
+  100% {
+    color: white;
+    transform: translate(5px, 0px);
+  }
+}
+
+@keyframes button-fall {
+  0% {
+    transform: translate(0px, -3px);
+    @include animation-shadow(0.34);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    @include animation-shadow(0);
+  }
+}
+
+@keyframes button-rise {
+  0% {
+    transform: translate(0px, 0px);
+    @include animation-shadow(0);
+  }
+
+  100% {
+    transform: translate(0px, -3px);
+    @include animation-shadow(0.34);
+  }
+}

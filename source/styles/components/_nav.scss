@@ -26,6 +26,7 @@
   }
 
   a {
+    @include transition(color, 100ms);
     color: $charcoal;
     font-size: 18px;
     margin-right: 17px;

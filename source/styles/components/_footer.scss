@@ -211,9 +211,14 @@ footer {
         }
       }
 
-      >a {
+      a {
+        @include transition(color, 100ms);
         text-decoration: none;
         display: flex;
+      }
+
+      a:hover {
+        color: $blue;
       }
     }
   }

@@ -11,6 +11,13 @@
 
 }
 
+@mixin animation-shadow($opacity) {
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,$opacity);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,$opacity);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,$opacity);
+
+}
+
 h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   font-family: "adelle-sans";
 }
@@ -33,6 +40,8 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 }
 
 .button-template {
+  @include transition(background-color, 100ms);
+  @include transition(color, 200ms);
   text-decoration: none;
   padding: 7px 16px;
   display: inline-block;
@@ -44,8 +53,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 }
 
 .orange-button {
-  @include transition(background-color, 200ms);
-  @include transition(color, 400ms);
+
   @extend .button-template;
   background-color: $orange;
   color: $charcoal;
@@ -57,8 +65,6 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 }
 
 .white-button {
-  @include transition(background-color, 200ms);
-  @include transition(color, 400ms);
   @extend .button-template;
   background-color: white;
   color: $charcoal;

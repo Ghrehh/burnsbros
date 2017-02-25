@@ -61,6 +61,14 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   font-size: 13px; }
 
 .button-template, .orange-button, footer #cards .card .orange-button-form, .white-button {
+  -webkit-transition: background-color 100ms ease;
+  -moz-transition: background-color 100ms ease;
+  -o-transition: background-color 100ms ease;
+  transition: background-color 100ms ease;
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
   text-decoration: none;
   padding: 7px 16px;
   display: inline-block;
@@ -71,14 +79,6 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   line-height: 27px; }
 
 .orange-button, footer #cards .card .orange-button-form {
-  -webkit-transition: background-color 200ms ease;
-  -moz-transition: background-color 200ms ease;
-  -o-transition: background-color 200ms ease;
-  transition: background-color 200ms ease;
-  -webkit-transition: color 400ms ease;
-  -moz-transition: color 400ms ease;
-  -o-transition: color 400ms ease;
-  transition: color 400ms ease;
   background-color: #fc9e33;
   color: #333333; }
 
@@ -87,14 +87,6 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   background-color: #333333; }
 
 .white-button {
-  -webkit-transition: background-color 200ms ease;
-  -moz-transition: background-color 200ms ease;
-  -o-transition: background-color 200ms ease;
-  transition: background-color 200ms ease;
-  -webkit-transition: color 400ms ease;
-  -moz-transition: color 400ms ease;
-  -o-transition: color 400ms ease;
-  transition: color 400ms ease;
   background-color: white;
   color: #333333; }
 
@@ -146,6 +138,10 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   #top-nav li {
     display: inline-block; }
   #top-nav a {
+    -webkit-transition: color 100ms ease;
+    -moz-transition: color 100ms ease;
+    -o-transition: color 100ms ease;
+    transition: color 100ms ease;
     color: #333333;
     font-size: 18px;
     margin-right: 17px;
@@ -283,14 +279,99 @@ footer {
           margin-right: 2px; }
         footer #bottom-nav #bottom-nav-inner ul li:last-child::after {
           content: ""; }
-      footer #bottom-nav #bottom-nav-inner > a {
+      footer #bottom-nav #bottom-nav-inner a {
+        -webkit-transition: color 100ms ease;
+        -moz-transition: color 100ms ease;
+        -o-transition: color 100ms ease;
+        transition: color 100ms ease;
         text-decoration: none;
         display: flex; }
+      footer #bottom-nav #bottom-nav-inner a:hover {
+        color: #009cd7; }
 
 #copyright .small {
   text-align: center;
   margin-bottom: 16px;
   font-size: 12px; }
+
+#index #page-title-section {
+  background-color: #00b070;
+  margin-bottom: 20px; }
+  #index #page-title-section #page-title {
+    margin-bottom: 20px; }
+  #index #page-title-section #page-description {
+    font-size: 49px;
+    line-height: 61px;
+    margin-bottom: 35px; }
+  #index #page-title-section .body-writing, #index #page-title-section .small-header, #index #page-title-section footer #cards .card h3, footer #cards .card #index #page-title-section h3, #index #page-title-section footer #work-with-us .description, footer #work-with-us #index #page-title-section .description, #index #page-title-section .small, #index #page-title-section .section-body, #index #page-title-section footer #cards .card, footer #cards #index #page-title-section .card, #index #page-title-section footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #index #page-title-section a, #index #page-title-section #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description #index #page-title-section p, #index #page-title-section #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #profile-pictures .profile-picture-container .description #index #page-title-section a, #index #page-title-section #about #section-3 #collaborators p, #about #section-3 #collaborators #index #page-title-section p, #index #page-title-section #about #section-3 #job-opportunities, #about #section-3 #index #page-title-section #job-opportunities, #index #page-title-section #projects #section-1 .portfolio-image p, #projects #section-1 .portfolio-image #index #page-title-section p, #index #page-title-section #contact #section-1 #submission-form .form-field label, #contact #section-1 #submission-form .form-field #index #page-title-section label, #index #page-title-section #contact #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field #index #page-title-section input, #index #page-title-section #contact #section-1 #submission-form .form-field textarea, #contact #section-1 #submission-form .form-field #index #page-title-section textarea {
+    text-align: center;
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 63px; }
+  #index #page-title-section .button-container {
+    text-align: center; }
+    #index #page-title-section .button-container .orange-button, #index #page-title-section .button-container footer #cards .card .orange-button-form, footer #cards .card #index #page-title-section .button-container .orange-button-form {
+      animation: button-fall 0.2s forwards;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 15px 32px 18px 30px;
+      margin-right: 15px; }
+      #index #page-title-section .button-container .orange-button .arrow, #index #page-title-section .button-container footer #cards .card .orange-button-form .arrow, footer #cards .card #index #page-title-section .button-container .orange-button-form .arrow {
+        font-size: 23px;
+        position: relative;
+        vertical-align: bottom;
+        left: 4px;
+        bottom: 1px;
+        display: inline-block; }
+    #index #page-title-section .button-container .orange-button:hover, #index #page-title-section .button-container footer #cards .card .orange-button-form:hover, footer #cards .card #index #page-title-section .button-container .orange-button-form:hover {
+      animation: button-rise 0.2s forwards; }
+      #index #page-title-section .button-container .orange-button:hover .arrow, #index #page-title-section .button-container footer #cards .card .orange-button-form:hover .arrow, footer #cards .card #index #page-title-section .button-container .orange-button-form:hover .arrow {
+        animation: move-arrow 0.2s forwards; }
+    #index #page-title-section .button-container .white-button {
+      animation: button-fall 0.2s forwards;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 14px 32px 17px;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      box-sizing: border-box; }
+    #index #page-title-section .button-container .white-button:hover {
+      animation: button-rise 0.2s forwards;
+      background-color: white;
+      color: #00b070; }
+
+@keyframes move-arrow {
+  0% {
+    color: #333333;
+    transform: translate(0px, 0px); }
+  100% {
+    color: white;
+    transform: translate(5px, 0px); } }
+
+@keyframes button-fall {
+  0% {
+    transform: translate(0px, -3px);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34); }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-box-shadow: 0px 3px 5px 0px transparent;
+    -moz-box-shadow: 0px 3px 5px 0px transparent;
+    box-shadow: 0px 3px 5px 0px transparent; } }
+
+@keyframes button-rise {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-box-shadow: 0px 3px 5px 0px transparent;
+    -moz-box-shadow: 0px 3px 5px 0px transparent;
+    box-shadow: 0px 3px 5px 0px transparent; }
+  100% {
+    transform: translate(0px, -3px);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34); } }
 
 #about .about-title-section {
   background-color: #009cd7; }
