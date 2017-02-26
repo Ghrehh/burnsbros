@@ -1,0 +1,53 @@
+@keyframes logo-fall {
+  0% {
+
+    transform: translate(0px,-2px);
+
+  }
+  100% {
+
+    transform: translate(0px,0px);
+  }
+}
+
+@keyframes logo-rise {
+  0% {
+
+    transform: translate(0px,0px);
+
+  }
+  100% {
+
+
+    transform: translate(0px,-2px);
+  }
+}
+
+@keyframes color-pulse {
+  0% {
+    fill: $charcoal;
+  }
+
+  20% {
+    fill: $orange;
+  }
+
+
+  40% {
+    fill: $dark-mint-green;
+  }
+
+
+  60% {
+    fill: $blue;
+  }
+
+
+  80% {
+    fill: $pink;
+  }
+
+  100% {
+    fill: $charcoal;
+  }
+}

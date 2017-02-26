@@ -175,6 +175,28 @@ footer {
 
     background-color: $nearly-black;
 
+    #footer-logo-link {
+      display: flex;
+      align-items: center;
+
+      svg {
+        overflow: visible;
+      }
+
+      #move {
+        animation: logo-fall 0.2s forwards;
+      }
+    }
+
+    #footer-logo-link:hover {
+
+      #logo {
+        animation: color-pulse 5s infinite;
+      }
+      #move {
+        animation: logo-rise 0.2s forwards;
+      }
+    }
 
     #bottom-nav-inner {
       justify-content: space-around;

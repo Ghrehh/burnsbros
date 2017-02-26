@@ -45,6 +45,32 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@keyframes logo-fall {
+  0% {
+    transform: translate(0px, -2px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+@keyframes logo-rise {
+  0% {
+    transform: translate(0px, 0px); }
+  100% {
+    transform: translate(0px, -2px); } }
+
+@keyframes color-pulse {
+  0% {
+    fill: #333333; }
+  20% {
+    fill: #fc9e33; }
+  40% {
+    fill: #00b070; }
+  60% {
+    fill: #009cd7; }
+  80% {
+    fill: #fd4561; }
+  100% {
+    fill: #333333; } }
+
 h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   font-family: "adelle-sans"; }
 
@@ -130,7 +156,15 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   max-width: 910px; }
   #top-nav .logo-link {
     display: inline-block;
-    padding: 23px; }
+    margin: 23px; }
+    #top-nav .logo-link svg {
+      overflow: visible; }
+  #top-nav #nav-bar-logo-container {
+    animation: logo-fall 0.2s forwards; }
+  #top-nav .logo-link:hover #nav-bar-logo-container {
+    animation: logo-rise 0.2s forwards; }
+    #top-nav .logo-link:hover #nav-bar-logo-container #nav-bar-logo {
+      animation: color-pulse 5s infinite; }
   #top-nav ul {
     display: inline-block;
     text-align: right;
@@ -256,6 +290,17 @@ footer {
       padding: 8px 16px; }
   footer #bottom-nav {
     background-color: #2A2929; }
+    footer #bottom-nav #footer-logo-link {
+      display: flex;
+      align-items: center; }
+      footer #bottom-nav #footer-logo-link svg {
+        overflow: visible; }
+      footer #bottom-nav #footer-logo-link #move {
+        animation: logo-fall 0.2s forwards; }
+    footer #bottom-nav #footer-logo-link:hover #logo {
+      animation: color-pulse 5s infinite; }
+    footer #bottom-nav #footer-logo-link:hover #move {
+      animation: logo-rise 0.2s forwards; }
     footer #bottom-nav #bottom-nav-inner {
       justify-content: space-around;
       display: flex;
