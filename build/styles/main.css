@@ -396,6 +396,7 @@ footer {
   #index #page-title-section .button-container {
     text-align: center; }
     #index #page-title-section .button-container .orange-button, #index #page-title-section .button-container footer #cards .card .orange-button-form, footer #cards .card #index #page-title-section .button-container .orange-button-form {
+      animation: button-fall 0.2s forwards;
       font-size: 18px;
       font-weight: 700;
       padding: 15px 32px 18px 30px;
@@ -407,7 +408,12 @@ footer {
         left: 4px;
         bottom: 1px;
         display: inline-block; }
+    #index #page-title-section .button-container .orange-button:hover, #index #page-title-section .button-container footer #cards .card .orange-button-form:hover, footer #cards .card #index #page-title-section .button-container .orange-button-form:hover {
+      animation: button-rise 0.2s forwards; }
+      #index #page-title-section .button-container .orange-button:hover .arrow, #index #page-title-section .button-container footer #cards .card .orange-button-form:hover .arrow, footer #cards .card #index #page-title-section .button-container .orange-button-form:hover .arrow {
+        animation: move-arrow 0.2s forwards; }
     #index #page-title-section .button-container .white-button {
+      animation: button-fall 0.2s forwards;
       font-size: 18px;
       font-weight: 700;
       padding: 14px 32px 17px;
@@ -416,6 +422,7 @@ footer {
       border: 1px solid white;
       box-sizing: border-box; }
     #index #page-title-section .button-container .white-button:hover {
+      animation: button-rise 0.2s forwards;
       background-color: white;
       color: #00b070; }
 

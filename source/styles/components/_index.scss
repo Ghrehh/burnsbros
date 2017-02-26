@@ -47,7 +47,7 @@
       text-align: center;
 
       .orange-button {
-
+        animation: button-fall 0.2s forwards;
         font-size: 18px;
         font-weight: 700;
         padding: 15px 32px 18px 30px;
@@ -64,14 +64,14 @@
       }
 
       .orange-button:hover {
-
+        animation: button-rise 0.2s forwards;
         .arrow {
-
+          animation: move-arrow 0.2s forwards;
         }
       }
 
       .white-button {
-
+        animation: button-fall 0.2s forwards;
         font-size: 18px;
         font-weight: 700;
         padding: 14px 32px 17px;
@@ -82,7 +82,7 @@
       }
 
       .white-button:hover {
-    
+        animation: button-rise 0.2s forwards;
         background-color: white;
         color: $dark-mint-green;
       }
