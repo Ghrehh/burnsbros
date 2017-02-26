@@ -294,11 +294,10 @@ footer {
         padding: 5px 11px 6px;
         -webkit-appearance: none;
         border: none; }
-      footer #cards .card .orange-button-from-fix {
+      footer #cards .card .orange-button-form-fix {
         position: relative;
         right: 2px;
-        padding: 5px 11px 7px;
-        background-color: red; }
+        padding: 5px 11px 7px; }
   footer #work-with-us {
     display: flex;
     max-width: 843px;
