@@ -81,6 +81,7 @@ $(document).ready(function(){
 
   if (IS_PAD || IS_IPHONE) {
     $(".orange-button-form").addClass("orange-button-form-fix")
+    $("body").css({"background-color": "blue"})
   }
 
 });
