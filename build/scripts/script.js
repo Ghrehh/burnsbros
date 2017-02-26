@@ -24,6 +24,9 @@ function register($form) {
     });
 }
 
+var IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+var IS_IPHONE = navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null)
+
 $(document).ready(function(){
 
   $('#submission-form').submit(function(e) {
@@ -74,6 +77,10 @@ $(document).ready(function(){
           if ( event ) event.preventDefault();
           register($form);
       });
+  }
+
+  if (IS_PAD || IS_IPHONE) {
+    $(".orange-button-form").addClass("orange-button-form-fix")
   }
 
 });
