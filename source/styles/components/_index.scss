@@ -3,9 +3,32 @@
     background-color: $dark-mint-green;
     margin-bottom: 20px;
 
-    #page-title {
-      margin-bottom: 20px;
+    .title-container {
+      text-align:center;
+
+      #page-title {
+        margin-bottom: 20px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .image-container {
+        height:0px;
+        width: 0px;
+        display: inline-block;
+
+        img {
+          animation: wave 2s forwards;
+          height: 31px;
+          width: auto;
+          position: relative;
+          bottom: 5px;
+        }
+      }
+
     }
+
+
 
     #page-description {
       font-size: 49px;
@@ -24,7 +47,7 @@
       text-align: center;
 
       .orange-button {
-        animation: button-fall 0.2s forwards;
+
         font-size: 18px;
         font-weight: 700;
         padding: 15px 32px 18px 30px;
@@ -41,14 +64,14 @@
       }
 
       .orange-button:hover {
-        animation: button-rise 0.2s forwards;
+
         .arrow {
-          animation: move-arrow 0.2s forwards;
+
         }
       }
 
       .white-button {
-        animation: button-fall 0.2s forwards;
+
         font-size: 18px;
         font-weight: 700;
         padding: 14px 32px 17px;
@@ -59,7 +82,7 @@
       }
 
       .white-button:hover {
-        animation: button-rise 0.2s forwards;
+    
         background-color: white;
         color: $dark-mint-green;
       }
@@ -98,5 +121,31 @@
 
   100% {
     transform: translate(0px, -3px);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(25deg);
+  }
+
+  40% {
+    transform: rotate(-25deg);
+  }
+
+  60% {
+    transform: rotate(25deg);
+  }
+
+  80% {
+    transform: rotate(-25deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }

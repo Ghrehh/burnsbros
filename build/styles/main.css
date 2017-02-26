@@ -368,8 +368,22 @@ footer {
 #index #page-title-section {
   background-color: #00b070;
   margin-bottom: 20px; }
-  #index #page-title-section #page-title {
-    margin-bottom: 20px; }
+  #index #page-title-section .title-container {
+    text-align: center; }
+    #index #page-title-section .title-container #page-title {
+      margin-bottom: 20px;
+      display: inline-block;
+      vertical-align: top; }
+    #index #page-title-section .title-container .image-container {
+      height: 0px;
+      width: 0px;
+      display: inline-block; }
+      #index #page-title-section .title-container .image-container img {
+        animation: wave 2s forwards;
+        height: 31px;
+        width: auto;
+        position: relative;
+        bottom: 5px; }
   #index #page-title-section #page-description {
     font-size: 49px;
     line-height: 61px;
@@ -382,7 +396,6 @@ footer {
   #index #page-title-section .button-container {
     text-align: center; }
     #index #page-title-section .button-container .orange-button, #index #page-title-section .button-container footer #cards .card .orange-button-form, footer #cards .card #index #page-title-section .button-container .orange-button-form {
-      animation: button-fall 0.2s forwards;
       font-size: 18px;
       font-weight: 700;
       padding: 15px 32px 18px 30px;
@@ -394,12 +407,7 @@ footer {
         left: 4px;
         bottom: 1px;
         display: inline-block; }
-    #index #page-title-section .button-container .orange-button:hover, #index #page-title-section .button-container footer #cards .card .orange-button-form:hover, footer #cards .card #index #page-title-section .button-container .orange-button-form:hover {
-      animation: button-rise 0.2s forwards; }
-      #index #page-title-section .button-container .orange-button:hover .arrow, #index #page-title-section .button-container footer #cards .card .orange-button-form:hover .arrow, footer #cards .card #index #page-title-section .button-container .orange-button-form:hover .arrow {
-        animation: move-arrow 0.2s forwards; }
     #index #page-title-section .button-container .white-button {
-      animation: button-fall 0.2s forwards;
       font-size: 18px;
       font-weight: 700;
       padding: 14px 32px 17px;
@@ -408,7 +416,6 @@ footer {
       border: 1px solid white;
       box-sizing: border-box; }
     #index #page-title-section .button-container .white-button:hover {
-      animation: button-rise 0.2s forwards;
       background-color: white;
       color: #00b070; }
 
@@ -431,6 +438,20 @@ footer {
     transform: translate(0px, 0px); }
   100% {
     transform: translate(0px, -3px); } }
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(25deg); }
+  40% {
+    transform: rotate(-25deg); }
+  60% {
+    transform: rotate(25deg); }
+  80% {
+    transform: rotate(-25deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 #about .about-title-section {
   background-color: #009cd7; }
