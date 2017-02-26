@@ -292,7 +292,8 @@ footer {
       footer #cards .card .orange-button-form {
         border-radius: 0px 4px 4px 0px;
         padding: 5px 11px 6px;
-        -webkit-appearance: none; }
+        -webkit-appearance: none;
+        border: none; }
   footer #work-with-us {
     display: flex;
     max-width: 843px;
