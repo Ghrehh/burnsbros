@@ -24,10 +24,12 @@ function register($form) {
     });
 }
 
-var IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
-var IS_IPHONE = navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null)
 
 $(document).ready(function(){
+
+  var IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+  var IS_IPHONE = navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null)
+
 
   $('#submission-form').submit(function(e) {
 
