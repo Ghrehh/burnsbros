@@ -27,8 +27,8 @@ function register($form) {
 
 $(document).ready(function(){
 
-  var IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
-  var IS_IPHONE = navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null)
+  var IS_IPAD = (navigator.userAgent.match(/iPad/i) != null);
+  var IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null)
 
 
   $('#submission-form').submit(function(e) {
@@ -81,7 +81,7 @@ $(document).ready(function(){
       });
   }
 
-  if (IS_PAD || IS_IPHONE) {
+  if (IS_IPAD || IS_IPHONE) {
     $(".orange-button-form").addClass("orange-button-form-fix")
     $("body").css({"background-color": "blue"})
   }
