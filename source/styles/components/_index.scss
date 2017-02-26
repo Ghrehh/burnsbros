@@ -84,23 +84,19 @@
 @keyframes button-fall {
   0% {
     transform: translate(0px, -3px);
-    @include animation-shadow(0.34);
   }
 
   100% {
     transform: translate(0px, 0px);
-    @include animation-shadow(0);
   }
 }
 
 @keyframes button-rise {
   0% {
     transform: translate(0px, 0px);
-    @include animation-shadow(0);
   }
 
   100% {
     transform: translate(0px, -3px);
-    @include animation-shadow(0.34);
   }
 }

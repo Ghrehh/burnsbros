@@ -57,6 +57,16 @@ table {
   100% {
     transform: translate(0px, -2px); } }
 
+@keyframes logo-bounce {
+  0% {
+    transform: translate(0px, 0px); }
+  30% {
+    transform: translate(0px, -3px); }
+  40% {
+    transform: translate(0px, -3px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
 @keyframes color-pulse {
   0% {
     fill: #333333; }
@@ -70,6 +80,20 @@ table {
     fill: #fd4561; }
   100% {
     fill: #333333; } }
+
+@keyframes color-pulse-white {
+  0% {
+    fill: white; }
+  20% {
+    fill: #fc9e33; }
+  40% {
+    fill: #00b070; }
+  60% {
+    fill: #009cd7; }
+  80% {
+    fill: #fd4561; }
+  100% {
+    fill: white; } }
 
 h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   font-family: "adelle-sans"; }
@@ -159,10 +183,8 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
     margin: 23px; }
     #top-nav .logo-link svg {
       overflow: visible; }
-  #top-nav #nav-bar-logo-container {
-    animation: logo-fall 0.2s forwards; }
   #top-nav .logo-link:hover #nav-bar-logo-container {
-    animation: logo-rise 0.2s forwards; }
+    animation: logo-bounce 0.3s forwards; }
     #top-nav .logo-link:hover #nav-bar-logo-container #nav-bar-logo {
       animation: color-pulse 5s infinite; }
   #top-nav ul {
@@ -295,12 +317,10 @@ footer {
       align-items: center; }
       footer #bottom-nav #footer-logo-link svg {
         overflow: visible; }
-      footer #bottom-nav #footer-logo-link #move {
-        animation: logo-fall 0.2s forwards; }
     footer #bottom-nav #footer-logo-link:hover #logo {
-      animation: color-pulse 5s infinite; }
+      animation: color-pulse-white 5s infinite; }
     footer #bottom-nav #footer-logo-link:hover #move {
-      animation: logo-rise 0.2s forwards; }
+      animation: logo-bounce 0.3s forwards; }
     footer #bottom-nav #bottom-nav-inner {
       justify-content: space-around;
       display: flex;
@@ -396,27 +416,15 @@ footer {
 
 @keyframes button-fall {
   0% {
-    transform: translate(0px, -3px);
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34); }
+    transform: translate(0px, -3px); }
   100% {
-    transform: translate(0px, 0px);
-    -webkit-box-shadow: 0px 3px 5px 0px transparent;
-    -moz-box-shadow: 0px 3px 5px 0px transparent;
-    box-shadow: 0px 3px 5px 0px transparent; } }
+    transform: translate(0px, 0px); } }
 
 @keyframes button-rise {
   0% {
-    transform: translate(0px, 0px);
-    -webkit-box-shadow: 0px 3px 5px 0px transparent;
-    -moz-box-shadow: 0px 3px 5px 0px transparent;
-    box-shadow: 0px 3px 5px 0px transparent; }
+    transform: translate(0px, 0px); }
   100% {
-    transform: translate(0px, -3px);
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.34); } }
+    transform: translate(0px, -3px); } }
 
 #about .about-title-section {
   background-color: #009cd7; }

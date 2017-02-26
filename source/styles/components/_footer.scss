@@ -183,18 +183,15 @@ footer {
         overflow: visible;
       }
 
-      #move {
-        animation: logo-fall 0.2s forwards;
-      }
     }
 
     #footer-logo-link:hover {
 
       #logo {
-        animation: color-pulse 5s infinite;
+        animation: color-pulse-white 5s infinite;
       }
       #move {
-        animation: logo-rise 0.2s forwards;
+        animation: logo-bounce 0.3s forwards;
       }
     }
 

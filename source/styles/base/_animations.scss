@@ -23,6 +23,29 @@
   }
 }
 
+@keyframes logo-bounce {
+  0% {
+
+    transform: translate(0px,0px);
+
+  }
+  30% {
+
+
+    transform: translate(0px,-3px);
+  }
+
+  40% {
+
+
+    transform: translate(0px,-3px);
+  }
+
+  100% {
+    transform: translate(0px,0px);
+  }
+}
+
 @keyframes color-pulse {
   0% {
     fill: $charcoal;
@@ -49,5 +72,34 @@
 
   100% {
     fill: $charcoal;
+  }
+}
+
+@keyframes color-pulse-white {
+  0% {
+    fill: white;
+  }
+
+  20% {
+    fill: $orange;
+  }
+
+
+  40% {
+    fill: $dark-mint-green;
+  }
+
+
+  60% {
+    fill: $blue;
+  }
+
+
+  80% {
+    fill: $pink;
+  }
+
+  100% {
+    fill: white;
   }
 }

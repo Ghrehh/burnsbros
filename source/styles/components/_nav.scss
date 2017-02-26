@@ -20,13 +20,13 @@
   }
 
   #nav-bar-logo-container {
-    animation: logo-fall 0.2s forwards;
+
   }
 
   .logo-link:hover {
 
     #nav-bar-logo-container {
-      animation: logo-rise 0.2s forwards;
+      animation: logo-bounce 0.3s forwards;
       #nav-bar-logo {
 
         animation: color-pulse 5s infinite;
