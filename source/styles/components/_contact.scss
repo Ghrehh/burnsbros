@@ -1,5 +1,15 @@
 #contact {
 
+  .arrow-container {
+    width: 200px;
+    margin: auto;
+  }
+
+  .arrow {
+    margin: auto;
+    display: inline-block;
+  }
+
   .contact-title-section {
     background-color: $pink;
     margin-bottom: 100px;

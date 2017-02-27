@@ -175,7 +175,6 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
 #top-nav {
   align-items: center;
   display: flex;
-  padding: 0px 60px;
   margin: auto;
   max-width: 910px; }
   #top-nav .logo-link {
@@ -656,6 +655,14 @@ footer {
     align-items: center; }
     #projects #section-2 .companies img {
       margin-bottom: 40px; }
+
+#contact .arrow-container {
+  width: 200px;
+  margin: auto; }
+
+#contact .arrow {
+  margin: auto;
+  display: inline-block; }
 
 #contact .contact-title-section {
   background-color: #fd4561;
