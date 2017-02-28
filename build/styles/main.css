@@ -747,6 +747,8 @@ footer {
         animation-delay: 0.0s; }
     #contact #project-planner .text-container .orange-button-container .orange-button, #contact #project-planner .text-container .orange-button-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-container .orange-button-form {
       position: relative;
+      width: 279px;
+      box-sizing: border-box;
       z-index: 100;
       font-size: 18px;
       padding: 15px 30px 18px; }

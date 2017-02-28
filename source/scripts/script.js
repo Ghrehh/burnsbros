@@ -155,7 +155,7 @@ $(document).ready(function(){
 
   if ($(".svg-arrow").length > 0){
 
-    moveArrows(mPos, arrowAngles);
+    //moveArrows(mPos, arrowAngles);
 
   }
 
