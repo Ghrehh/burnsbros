@@ -1,5 +1,10 @@
 #contact {
 
+  .contact-title-section {
+    background-color: $pink;
+    margin-bottom: 100px;
+  }
+
   #project-planner {
     background-color: $orange;
     color: white;
@@ -34,48 +39,109 @@
         margin-bottom: 211px;
       }
 
-      .orange-button {
-        font-size: 18px;
-        padding: 15px 30px 18px;
+      .orange-button-container {
+
+        .background-container {
+          width: 0px;
+          height: 0px;
+          position: relative;
+          bottom: 2px;
+          right: 2px;
+
+          .background-top {
+            height: 2px;
+            width: 0px;
+            background-color: white;
+            border-radius: 7px 7px 0px 0px;
+            animation-delay: 0.8s;
+
+          }
+          .background-sides {
+            height: 0px;
+            width: 283px;
+            background-color: white;
+            animation-delay: 0.4s;
+
+          }
+          .background-bottom {
+            height: 2px;
+            width: 0px;
+            background-color: white;
+            border-radius: 0px 0px 7px 7px;
+            animation-delay: 0.0s;
+
+          }
+        }
+
+        .orange-button {
+          position:relative;
+          z-index:100;
+          font-size: 18px;
+          padding: 15px 30px 18px;
+
+        }
+      }
+
+      .orange-button-container:hover {
+
+        .background-top {
+          animation: button-surround-top 0.4s forwards;
+        }
+
+        .background-sides {
+          animation: button-surround-sides 0.4s forwards;
+          animation-delay: 0.4s;
+        }
+
+        .background-bottom {
+          animation: button-surround-bottom 0.4s forwards;
+          animation-delay: 0.8s;
+        }
       }
     }
-  }
 
-  .arrow-container {
+    .arrow-container {
 
-    flex: 0 0 25%;
-    padding: 10px;
-    box-sizing:border-box;
-    text-align:center;
+      flex: 0 0 25%;
+      padding: 10px;
+      box-sizing:border-box;
+      text-align:center;
 
-  }
+      .svg-arrow {
+        margin: 8px 10px;
+      }
 
-  .svg-arrow {
-    margin: 8px 10px;
-  }
+      .white-arrow {
 
-  .white-arrow {
+        .color {
+          fill: white;
+        }
 
-    .color {
-      fill: white;
+      }
+
+      .black-arrow {
+
+        .color {
+          fill: black;
+        }
+
+      }
+
+      .white-arrow-animation {
+        animation: arrow-pulse-white 2s infinite;
+      }
+
+      .black-arrow-animation {
+        animation: arrow-pulse-black 3s infinite;
+      }
+
+
     }
 
   }
 
-  .black-arrow {
 
-    .color {
-      fill: black;
-    }
-
-  }
-
-  .contact-title-section {
-    background-color: $pink;
-    margin-bottom: 100px;
-  }
-
-  #section-1 {
+  #contact-form {
 
     padding: 25px 32px 28px;
     border: 1px solid $light-grey;

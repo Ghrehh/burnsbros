@@ -36,7 +36,7 @@ function moveArrows(mPos, arrowAngles){
       var arrY = arrow.offset().top - arrow.height();
       var arrX = arrow.offset().left - (arrow.width() / 2);
 
-      var adj = (mPos.y - 30) - arrY;
+      var adj = (mPos.y - 55) - arrY;
       var opp = (mPos.x - 30) - arrX;
 
 
@@ -55,6 +55,7 @@ function moveArrows(mPos, arrowAngles){
     }
   }
   else {
+
     for (var i = 0; i < arrows.length; i++){
       var arrow = arrows.eq(i);
       var angle  = arrowAngles[i];
