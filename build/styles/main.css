@@ -98,12 +98,14 @@ table {
 h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   font-family: "adelle-sans"; }
 
-.body-writing, .small-header, footer #cards .card h3, footer #work-with-us .description, .small, .section-body, footer #cards .card, footer #bottom-nav #bottom-nav-inner ul li a, #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #collaborators p, #about #section-3 #job-opportunities, #projects #section-1 .portfolio-image p, #contact #section-1 #submission-form .form-field label, #contact #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field textarea {
+.body-writing, .small, .section-body, footer #cards .card, footer #bottom-nav #bottom-nav-inner ul li a, #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #collaborators p, #about #section-3 #job-opportunities, #projects #section-1 .portfolio-image p, #contact #section-1 #submission-form .form-field label, #contact #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field textarea {
   color: #333333;
   font-size: 19px;
   line-height: 27px; }
 
 .small-header, footer #cards .card h3, footer #work-with-us .description {
+  color: #333333;
+  line-height: 27px;
   font-weight: 700;
   font-size: 25px; }
 
@@ -387,7 +389,7 @@ footer {
     font-size: 49px;
     line-height: 61px;
     margin-bottom: 35px; }
-  #index #page-title-section .body-writing, #index #page-title-section .small-header, #index #page-title-section footer #cards .card h3, footer #cards .card #index #page-title-section h3, #index #page-title-section footer #work-with-us .description, footer #work-with-us #index #page-title-section .description, #index #page-title-section .small, #index #page-title-section .section-body, #index #page-title-section footer #cards .card, footer #cards #index #page-title-section .card, #index #page-title-section footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #index #page-title-section a, #index #page-title-section #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description #index #page-title-section p, #index #page-title-section #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #profile-pictures .profile-picture-container .description #index #page-title-section a, #index #page-title-section #about #section-3 #collaborators p, #about #section-3 #collaborators #index #page-title-section p, #index #page-title-section #about #section-3 #job-opportunities, #about #section-3 #index #page-title-section #job-opportunities, #index #page-title-section #projects #section-1 .portfolio-image p, #projects #section-1 .portfolio-image #index #page-title-section p, #index #page-title-section #contact #section-1 #submission-form .form-field label, #contact #section-1 #submission-form .form-field #index #page-title-section label, #index #page-title-section #contact #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field #index #page-title-section input, #index #page-title-section #contact #section-1 #submission-form .form-field textarea, #contact #section-1 #submission-form .form-field #index #page-title-section textarea {
+  #index #page-title-section .body-writing, #index #page-title-section .small, #index #page-title-section .section-body, #index #page-title-section footer #cards .card, footer #cards #index #page-title-section .card, #index #page-title-section footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #index #page-title-section a, #index #page-title-section #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description #index #page-title-section p, #index #page-title-section #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #profile-pictures .profile-picture-container .description #index #page-title-section a, #index #page-title-section #about #section-3 #collaborators p, #about #section-3 #collaborators #index #page-title-section p, #index #page-title-section #about #section-3 #job-opportunities, #about #section-3 #index #page-title-section #job-opportunities, #index #page-title-section #projects #section-1 .portfolio-image p, #projects #section-1 .portfolio-image #index #page-title-section p, #index #page-title-section #contact #section-1 #submission-form .form-field label, #contact #section-1 #submission-form .form-field #index #page-title-section label, #index #page-title-section #contact #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field #index #page-title-section input, #index #page-title-section #contact #section-1 #submission-form .form-field textarea, #contact #section-1 #submission-form .form-field #index #page-title-section textarea {
     text-align: center;
     font-size: 25px;
     line-height: 36px;
@@ -656,13 +658,48 @@ footer {
     #projects #section-2 .companies img {
       margin-bottom: 40px; }
 
-#contact .arrow-container {
-  width: 200px;
-  margin: auto; }
-
-#contact .arrow {
+#contact #project-planner {
+  background-color: #fc9e33;
+  color: white;
+  width: 824px;
   margin: auto;
-  display: inline-block; }
+  display: flex;
+  margin-bottom: 100px; }
+  #contact #project-planner .text-container {
+    background-color: #333333;
+    padding: 31px 45px; }
+    #contact #project-planner .text-container .section-header {
+      color: white;
+      text-align: left;
+      margin-bottom: 39px;
+      line-height: 48px; }
+    #contact #project-planner .text-container .small-header, #contact #project-planner .text-container footer #cards .card h3, footer #cards .card #contact #project-planner .text-container h3, #contact #project-planner .text-container footer #work-with-us .description, footer #work-with-us #contact #project-planner .text-container .description {
+      font-size: 24px;
+      color: white;
+      font-weight: 400;
+      margin-bottom: 30px; }
+    #contact #project-planner .text-container .body-writing, #contact #project-planner .text-container .small, #contact #project-planner .text-container .section-body, #contact #project-planner .text-container footer #cards .card, footer #cards #contact #project-planner .text-container .card, #contact #project-planner .text-container footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #contact #project-planner .text-container a, #contact #project-planner .text-container #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description #contact #project-planner .text-container p, #contact #project-planner .text-container #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #profile-pictures .profile-picture-container .description #contact #project-planner .text-container a, #contact #project-planner .text-container #about #section-3 #collaborators p, #about #section-3 #collaborators #contact #project-planner .text-container p, #contact #project-planner .text-container #about #section-3 #job-opportunities, #about #section-3 #contact #project-planner .text-container #job-opportunities, #contact #project-planner .text-container #projects #section-1 .portfolio-image p, #projects #section-1 .portfolio-image #contact #project-planner .text-container p, #contact #project-planner .text-container #section-1 #submission-form .form-field label, #contact #section-1 #submission-form .form-field #project-planner .text-container label, #contact #project-planner .text-container #section-1 #submission-form .form-field input, #contact #section-1 #submission-form .form-field #project-planner .text-container input, #contact #project-planner .text-container #section-1 #submission-form .form-field textarea, #contact #section-1 #submission-form .form-field #project-planner .text-container textarea {
+      line-height: 28px;
+      color: white;
+      margin-bottom: 211px; }
+    #contact #project-planner .text-container .orange-button, #contact #project-planner .text-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-form {
+      font-size: 18px;
+      padding: 15px 30px 18px; }
+
+#contact .arrow-container {
+  flex: 0 0 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center; }
+
+#contact .svg-arrow {
+  margin: 8px 10px; }
+
+#contact .white-arrow .color {
+  fill: white; }
+
+#contact .black-arrow .color {
+  fill: black; }
 
 #contact .contact-title-section {
   background-color: #fd4561;

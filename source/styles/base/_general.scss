@@ -15,7 +15,8 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 }
 
 .small-header {
-  @extend .body-writing;
+  color: $charcoal;
+  line-height: 27px;
   font-weight: 700;
   font-size: 25px;
 }

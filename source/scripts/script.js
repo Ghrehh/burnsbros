@@ -24,46 +24,71 @@ function register($form) {
     });
 }
 
-function moveArrows(mPos){
-  var arrows = $(".arrow")
+function moveArrows(mPos, arrowAngles){
+  var arrows = $(".svg-arrow")
+  var isHovered = $('#project-planner').is(":hover");
 
-  for (var i = 0; i < arrows.length; i++){
-    var arrow = arrows.eq(i);
+  if (isHovered) {
 
-    var arrY = arrow.offset().top - arrow.height();
-    var arrX = arrow.offset().left - (arrow.width() / 2);
+    for (var i = 0; i < arrows.length; i++){
+      var arrow = arrows.eq(i);
 
-    var adj = (mPos.y - 30) - arrY;
-    var opp = (mPos.x - 30) - arrX;
+      var arrY = arrow.offset().top - arrow.height();
+      var arrX = arrow.offset().left - (arrow.width() / 2);
+
+      var adj = (mPos.y - 30) - arrY;
+      var opp = (mPos.x - 30) - arrX;
 
 
 
 
 
-    var angle = Math.atan(opp / adj) * 180/Math.PI;
-      angle = angle - angle - angle;
-    if (adj < 0) {
-      angle = angle + 180;
+      var angle = Math.atan(opp / adj) * 180/Math.PI;
+        angle = angle - angle - angle;
+      if (adj < 0) {
+        angle = angle + 180;
+      }
+
+      arrowAngles[i] = angle;
+      $(arrow).css({"transform": "rotate(" + angle + "deg)"});
+
     }
+  }
+  else {
+    for (var i = 0; i < arrows.length; i++){
+      var arrow = arrows.eq(i);
+      var angle  = arrowAngles[i];
 
 
-    $(arrow).css({"transform": "rotate(" + angle + "deg)"});
+      if (angle > 0) {
+        angle = angle - 3;
+        if (angle < 0) {angle = 0}
+        arrowAngles[i] = angle;
+        $(arrow).css({"transform": "rotate(" + angle + "deg)"});
 
+      }
+      else if (angle < 0) {
+        angle = angle + 3;
+        if (angle > 0) {angle = 0}
+        arrowAngles[i] = angle;
+        $(arrow).css({"transform": "rotate(" + angle + "deg)"});
+      }
+    }
   }
 
   setTimeout(function(){
-    moveArrows(mPos);
-  }, 1000 / 60);
+    moveArrows(mPos, arrowAngles);
+  }, 1000 / 120);
 
 
 }
 
 $(document).ready(function(){
 
-  var mPos = { x: -1,
-                y: -1 }
+  var mPos = { x: -1,y: -1 }
+  var arrowAngles = [];
 
-   $(document).mousemove(function(event) {
+  $(document).mousemove(function(event) {
        mPos.x = event.pageX;
        mPos.y = event.pageY;
    });
@@ -127,11 +152,10 @@ $(document).ready(function(){
     $(".orange-button-form").addClass("orange-button-form-fix")
   }
 
-  if ($(".arrow")){
+  if ($(".svg-arrow").length > 0){
 
-    setTimeout(function(){
-      moveArrows(mPos);
-    }, 200);
+    moveArrows(mPos, arrowAngles);
+
   }
 
 });
