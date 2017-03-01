@@ -145,6 +145,7 @@ $(document).ready(function(){
     }
     else {
       $(".error-alert").show();
+      $(".error-message").hide();
 
       if (validEmail === false) {
         $(".email-field").addClass("form-error");
