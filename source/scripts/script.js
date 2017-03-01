@@ -146,6 +146,8 @@ $(document).ready(function(){
     else {
       $(".error-alert").show();
       $(".error-message").hide();
+      $(".email-field").removeClass("form-error");
+      $(".info-field").removeClass("form-error");
 
       if (validEmail === false) {
         $(".email-field").addClass("form-error");
