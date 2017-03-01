@@ -777,12 +777,39 @@ footer {
       animation: arrow-pulse-black 3s infinite; }
 
 #contact #contact-form {
-  padding: 37px 32px 28px;
   border: 1px solid #C5C3C3;
-  max-width: 610px;
+  max-width: 674px;
   margin: auto;
   border-radius: 5px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  position: relative; }
+  #contact #contact-form .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 176, 112, 0.91);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    display: none; }
+    #contact #contact-form .overlay .overlay-inner {
+      margin: auto; }
+    #contact #contact-form .overlay .party-popper-container {
+      margin-bottom: 25px; }
+    #contact #contact-form .overlay .section-header {
+      color: white;
+      line-height: 47px; }
+    #contact #contact-form .overlay .body-writing, #contact #contact-form .overlay .small, #contact #contact-form .overlay .section-body, #contact #contact-form .overlay footer #cards .card, footer #cards #contact #contact-form .overlay .card, #contact #contact-form .overlay footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #contact #contact-form .overlay a, #contact #contact-form .overlay #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description #contact #contact-form .overlay p, #contact #contact-form .overlay #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #profile-pictures .profile-picture-container .description #contact #contact-form .overlay a, #contact #contact-form .overlay #about #section-3 #collaborators p, #about #section-3 #collaborators #contact #contact-form .overlay p, #contact #contact-form .overlay #about #section-3 #job-opportunities, #about #section-3 #contact #contact-form .overlay #job-opportunities, #contact #contact-form .overlay #projects #section-1 .portfolio-image p, #projects #section-1 .portfolio-image #contact #contact-form .overlay p, #contact #contact-form .overlay #submission-form .form-field label, #contact #contact-form #submission-form .form-field .overlay label, #contact #contact-form .overlay #submission-form .form-field input, #contact #contact-form #submission-form .form-field .overlay input, #contact #contact-form .overlay #submission-form .form-field textarea, #contact #contact-form #submission-form .form-field .overlay textarea {
+      color: white;
+      max-width: 540px;
+      margin-bottom: 30px; }
+    #contact #contact-form .overlay .send-another {
+      color: rgba(236, 236, 236, 0.81);
+      font-style: italic;
+      font-size: 18px; }
+  #contact #contact-form #contact-form-inner {
+    padding: 37px 32px 28px;
+    box-sizing: border-box; }
   #contact #contact-form .image-container {
     text-align: center; }
   #contact #contact-form .wave-container {
@@ -808,11 +835,13 @@ footer {
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    align-items: baseline; }
     #contact #contact-form #submission-form .form-field {
       flex: 0 0 45%;
       border-color: #C5C3C3;
-      color: #333333; }
+      color: #333333;
+      margin-bottom: 20px; }
       #contact #contact-form #submission-form .form-field label {
         display: block;
         box-sizing: border-box;
@@ -829,10 +858,14 @@ footer {
         padding: 5px 10px 6px;
         font-size: 18px;
         padding: 4px 10px 7px;
-        margin-bottom: 20px;
         border-radius: 5px;
         font-weight: 400;
         color: inherit; }
+      #contact #contact-form #submission-form .form-field .error-message {
+        display: none;
+        color: #fd4561;
+        font-size: 13px;
+        margin-top: 3px; }
       #contact #contact-form #submission-form .form-field input::-webkit-input-placeholder, #contact #contact-form #submission-form .form-field textarea::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: #A4A4A4; }
@@ -847,13 +880,13 @@ footer {
         color: #A4A4A4; }
       #contact #contact-form #submission-form .form-field textarea {
         height: 110px;
-        margin-bottom: 32px;
         max-width: 100%; }
     #contact #contact-form #submission-form .form-error {
       color: #fd4561;
       border-color: #fd4561; }
     #contact #contact-form #submission-form .large {
-      flex: 0 0 100%; }
+      flex: 0 0 100%;
+      margin-bottom: 32px; }
       #contact #contact-form #submission-form .large label {
         margin-top: 5px; }
     #contact #contact-form #submission-form .orange-button, #contact #contact-form #submission-form footer #cards .card .orange-button-form, footer #cards .card #contact #contact-form #submission-form .orange-button-form {

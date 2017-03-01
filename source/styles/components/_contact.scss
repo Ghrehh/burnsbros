@@ -145,12 +145,58 @@
 
   #contact-form {
 
-    padding: 37px 32px 28px;
+
     border: 1px solid $light-grey;
-    max-width: 610px;
+    max-width: 674px;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 80px;
+    position:relative;
+
+    .overlay {
+      position:absolute;
+      height:100%;
+      width:100%;
+      background-color: rgba(0, 176, 112, 0.91);
+      text-align:center;
+      display:flex;
+      align-items: center;
+      display: none;
+
+      .overlay-inner {
+        margin: auto;
+      }
+
+
+      .party-popper-container {
+        margin-bottom: 25px;
+      }
+
+      .section-header {
+        color: white;
+        line-height: 47px;
+      }
+
+      .body-writing {
+        color: white;
+        max-width: 540px;
+        margin-bottom: 30px;
+      }
+
+      .send-another {
+        color: rgba(236, 236, 236, 0.81);
+        font-style: italic;
+        font-size: 18px;
+
+      }
+    }
+
+    #contact-form-inner {
+      padding: 37px 32px 28px;
+      box-sizing:border-box;
+    }
+
+
 
     .image-container {
       text-align:center;
@@ -193,6 +239,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      align-items: baseline;
 
 
 
@@ -200,6 +247,7 @@
         flex: 0 0 45%;
         border-color: $light-grey;
         color: $charcoal;
+        margin-bottom: 20px;
 
         label {
           @extend .body-writing;
@@ -222,11 +270,18 @@
           padding: 5px 10px 6px;
           font-size: 18px;
           padding: 4px 10px 7px;
-          margin-bottom: 20px;
+
           border-radius: 5px;
           font-weight: 400;
           color: inherit;
 
+        }
+
+        .error-message {
+          display: none;
+          color: $pink;
+          font-size:13px;
+          margin-top: 3px;
         }
 
         input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -245,7 +300,7 @@
 
         textarea {
           height: 110px;
-          margin-bottom: 32px;
+
           max-width: 100%;
 
         }
@@ -258,6 +313,7 @@
 
       .large {
         flex: 0 0 100%;
+        margin-bottom: 32px;
 
         label {
           margin-top: 5px;

@@ -1,3 +1,6 @@
+var mPos = { x: -1,y: -1 }
+var arrowAngles = [];
+
 //taken from http://stackoverflow.com/questions/8425701/ajax-mailchimp-signup-form-integration
 function register($form) {
   var mc_message = $(".mailchimp-message");
@@ -84,25 +87,43 @@ function moveArrows(mPos, arrowAngles){
 
 }
 
+function checkForAppleDevices(){
+  var IS_IPAD = (navigator.userAgent.match(/iPad/i) != null);
+  var IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+  var IS_SAFARI = (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1);
+
+  if (IS_IPAD || IS_IPHONE || IS_SAFARI) {
+    $(".orange-button-form").addClass("orange-button-form-fix")
+  }
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
 $(document).ready(function(){
 
-  var mPos = { x: -1,y: -1 }
-  var arrowAngles = [];
+  checkForAppleDevices();
 
+  //tracks mouse movement;
   $(document).mousemove(function(event) {
        mPos.x = event.pageX;
        mPos.y = event.pageY;
    });
 
-  var IS_IPAD = (navigator.userAgent.match(/iPad/i) != null);
-  var IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
-  var IS_SAFARI = (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1);
-
-
+  //contact form
   $('#submission-form').submit(function(e) {
+    var email = $("#email").val();
+    var info = $("#info").val();
 
-    if ($("#email").val() && $("#info").val()) {
+    var validEmail = validateEmail(email);
 
+    if (validEmail && info) {
+      $(".error-alert").hide();
+      $(".error-message").hide();
+      $(".form-field").removeClass("form-error")
+      $(".overlay").css({"display": "flex"})
       $.ajax({
 
             url: "https://docs.google.com/forms/d/e/1FAIpQLSeTDVuph6orVNtXd-hWp0L7d47JBg0pCuZr-qYcrBkzF5N1Uw/formResponse",
@@ -121,17 +142,20 @@ $(document).ready(function(){
 
       });
 
-      $("#submission-form").hide();
-      $("#submission-form input").val("");
-      $("#submission-form textarea").val("");
-
-      $(".message").addClass("success");
-      $(".message").text("Your message has been submitted successfully.");
-
     }
     else {
-      $(".message").addClass("error");
-      $(".message").text("Something went wrong! Did you fill out all the required fields?");
+      $(".error-alert").show();
+
+      if (validEmail === false) {
+        $(".email-field").addClass("form-error");
+        $(".email-field .error-message").show();
+      }
+
+      if (info == false) {
+        $(".info-field").addClass("form-error");
+        $(".info-field .error-message").show();
+      }
+
     }
 
 
@@ -140,23 +164,29 @@ $(document).ready(function(){
 
   });
 
-  var $form = $('#email-submission');
+  //send another button that appears after a message is submitted on the contact screen
+  $(".send-another").click(function(){
+    $(".overlay").hide()
+    $(".form-field input, .form-field textarea").val("")
 
+  })
+
+  //newsletter signup
+  var $form = $('#email-submission');
   if ( $form.length > 0 ) {
-      $('form input[type="submit"]').bind('click', function ( event ) {
+      $('#email-submission input[type="submit"]').bind('click', function ( event ) {
           if ( event ) event.preventDefault();
           register($form);
       });
   }
 
-  if (IS_IPAD || IS_IPHONE || IS_SAFARI) {
-    $(".orange-button-form").addClass("orange-button-form-fix")
-  }
-
+  //animates svg arrows on contact page
   if ($(".svg-arrow").length > 0){
 
-    //moveArrows(mPos, arrowAngles);
+    moveArrows(mPos, arrowAngles);
 
   }
+
+
 
 });
