@@ -777,18 +777,26 @@ footer {
       animation: arrow-pulse-black 3s infinite; }
 
 #contact #contact-form {
-  padding: 25px 32px 28px;
+  padding: 37px 32px 28px;
   border: 1px solid #C5C3C3;
   max-width: 610px;
   margin: auto;
   border-radius: 5px;
   margin-bottom: 80px; }
+  #contact #contact-form .image-container {
+    text-align: center; }
+  #contact #contact-form .wave-container {
+    margin-bottom: 3px; }
+  #contact #contact-form .bubble-container {
+    margin-bottom: 28px; }
+  #contact #contact-form .section-header {
+    margin-bottom: 28px; }
   #contact #contact-form .section-body {
     flex: 0 0 100%;
     max-width: none;
     text-align: center;
     line-height: 27.4px;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     padding: 0px 40px;
     font-size: 18px; }
   #contact #contact-form .error {
@@ -802,23 +810,29 @@ footer {
     justify-content: space-between;
     align-items: center; }
     #contact #contact-form #submission-form .form-field {
-      flex: 0 0 45%; }
+      flex: 0 0 45%;
+      border-color: #C5C3C3;
+      color: #333333; }
       #contact #contact-form #submission-form .form-field label {
         display: block;
         box-sizing: border-box;
         margin-bottom: 11px;
-        font-size: 18px; }
+        font-size: 18px;
+        font-weight: 700;
+        color: inherit; }
       #contact #contact-form #submission-form .form-field input, #contact #contact-form #submission-form .form-field textarea {
         display: block;
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #C5C3C3;
+        border-color: inherit;
         padding: 5px 10px 6px;
         font-size: 18px;
         padding: 4px 10px 7px;
         margin-bottom: 20px;
         border-radius: 5px;
-        font-weight: 300; }
+        font-weight: 400;
+        color: inherit; }
       #contact #contact-form #submission-form .form-field input::-webkit-input-placeholder, #contact #contact-form #submission-form .form-field textarea::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: #A4A4A4; }
@@ -835,6 +849,9 @@ footer {
         height: 110px;
         margin-bottom: 32px;
         max-width: 100%; }
+    #contact #contact-form #submission-form .form-error {
+      color: #fd4561;
+      border-color: #fd4561; }
     #contact #contact-form #submission-form .large {
       flex: 0 0 100%; }
       #contact #contact-form #submission-form .large label {
@@ -845,3 +862,11 @@ footer {
       color: #C5C3C3;
       font-weight: 300;
       font-size: 18px; }
+  #contact #contact-form .error-alert {
+    display: none;
+    background-color: #fd4561;
+    border-radius: 4px;
+    padding: 6px 12px 12px;
+    margin-top: 32px; }
+    #contact #contact-form .error-alert .body-writing, #contact #contact-form .error-alert .small, #contact #contact-form .error-alert .section-body, #contact #contact-form .error-alert footer #cards .card, footer #cards #contact #contact-form .error-alert .card, #contact #contact-form .error-alert footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #contact #contact-form .error-alert a, #contact #contact-form .error-alert #about #section-3 #profile-pictures .profile-picture-container .description p, #about #section-3 #profile-pictures .profile-picture-container .description #contact #contact-form .error-alert p, #contact #contact-form .error-alert #about #section-3 #profile-pictures .profile-picture-container .description a, #about #section-3 #profile-pictures .profile-picture-container .description #contact #contact-form .error-alert a, #contact #contact-form .error-alert #about #section-3 #collaborators p, #about #section-3 #collaborators #contact #contact-form .error-alert p, #contact #contact-form .error-alert #about #section-3 #job-opportunities, #about #section-3 #contact #contact-form .error-alert #job-opportunities, #contact #contact-form .error-alert #projects #section-1 .portfolio-image p, #projects #section-1 .portfolio-image #contact #contact-form .error-alert p, #contact #contact-form .error-alert #submission-form .form-field label, #contact #contact-form #submission-form .form-field .error-alert label, #contact #contact-form .error-alert #submission-form .form-field input, #contact #contact-form #submission-form .form-field .error-alert input, #contact #contact-form .error-alert #submission-form .form-field textarea, #contact #contact-form #submission-form .form-field .error-alert textarea {
+      color: white; }

@@ -145,21 +145,35 @@
 
   #contact-form {
 
-    padding: 25px 32px 28px;
+    padding: 37px 32px 28px;
     border: 1px solid $light-grey;
     max-width: 610px;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 80px;
 
+    .image-container {
+      text-align:center;
+    }
 
+    .wave-container {
+      margin-bottom: 3px;
+    }
+
+    .bubble-container {
+      margin-bottom: 28px;
+    }
+
+    .section-header {
+      margin-bottom: 28px;
+    }
 
     .section-body {
       flex: 0 0 100%;
       max-width: none;
       text-align: center;
       line-height: 27.4px;
-      margin-bottom: 31px;
+      margin-bottom: 33px;
       padding: 0px 40px;
       font-size: 18px;
 
@@ -181,8 +195,11 @@
       align-items: center;
 
 
+
       .form-field {
         flex: 0 0 45%;
+        border-color: $light-grey;
+        color: $charcoal;
 
         label {
           @extend .body-writing;
@@ -190,6 +207,8 @@
           box-sizing: border-box;
           margin-bottom: 11px;
           font-size: 18px;
+          font-weight: 700;
+          color: inherit;
         }
 
         input, textarea {
@@ -199,12 +218,14 @@
           box-sizing: border-box;
 
           border: 1px solid $light-grey;
+          border-color: inherit;
           padding: 5px 10px 6px;
           font-size: 18px;
           padding: 4px 10px 7px;
           margin-bottom: 20px;
           border-radius: 5px;
-          font-weight: 300;
+          font-weight: 400;
+          color: inherit;
 
         }
 
@@ -230,6 +251,11 @@
         }
       }
 
+      .form-error {
+        color: $pink;
+        border-color: $pink;
+      }
+
       .large {
         flex: 0 0 100%;
 
@@ -246,6 +272,18 @@
         color: $light-grey;
         font-weight: 300;
         font-size: 18px;
+      }
+    }
+
+    .error-alert {
+      display: none;
+      background-color: $pink;
+      border-radius: 4px;
+      padding: 6px 12px 12px;
+      margin-top: 32px;
+
+      .body-writing {
+        color: white;
       }
     }
   }
