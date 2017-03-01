@@ -183,14 +183,10 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   font-size: 13px; }
 
 .button-template, .orange-button, footer #cards .card .orange-button-form, .white-button {
-  -webkit-transition: background-color 100ms ease;
-  -moz-transition: background-color 100ms ease;
-  -o-transition: background-color 100ms ease;
-  transition: background-color 100ms ease;
-  -webkit-transition: color 200ms ease;
-  -moz-transition: color 200ms ease;
-  -o-transition: color 200ms ease;
-  transition: color 200ms ease;
+  -webkit-transition: color 100ms ease, background-color 100ms ease;
+  -moz-transition: color 100ms ease, background-color 100ms ease;
+  -o-transition: color 100ms ease, background-color 100ms ease;
+  transition: color 100ms ease, background-color 100ms ease;
   text-decoration: none;
   padding: 7px 16px;
   display: inline-block;
@@ -217,7 +213,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   background-color: #333333; }
 
 #page-title-section {
-  padding: 63px 0 75px; }
+  padding: 62px 0 76px; }
 
 #page-title {
   color: white;
@@ -228,10 +224,24 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
 
 #page-description {
   color: #333333;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 64px;
   text-align: center; }
+  #page-description .page-description-small {
+    font-weight: 500; }
+
+#page-info {
+  margin-bottom: 54px; }
+  #page-info .small-header, #page-info footer #cards .card h3, footer #cards .card #page-info h3, #page-info footer #work-with-us .description, footer #work-with-us #page-info .description {
+    font-size: 24px;
+    color: #333333;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36px; }
+    #page-info .small-header .embolden, #page-info footer #cards .card h3 .embolden, footer #cards .card #page-info h3 .embolden, #page-info footer #work-with-us .description .embolden, footer #work-with-us #page-info .description .embolden {
+      font-weight: 700;
+      font-family: "adelle"; }
 
 .section-header {
   color: #333333;
@@ -642,13 +652,14 @@ footer {
     margin-bottom: 45px; }
 
 #projects .projects-title-section {
-  background-color: #fc9e33; }
+  background-color: #fc9e33;
+  margin-bottom: 33px; }
 
 #projects #section-1 {
   display: flex;
   max-width: 865px;
   margin: auto;
-  padding: 50px 20px 60px;
+  padding: 0px 20px 60px;
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -696,7 +707,7 @@ footer {
 
 #contact .contact-title-section {
   background-color: #fd4561;
-  margin-bottom: 100px; }
+  margin-bottom: 34px; }
 
 #contact #project-planner {
   background-color: #fc9e33;
@@ -722,44 +733,14 @@ footer {
       line-height: 28px;
       color: white;
       margin-bottom: 211px; }
-    #contact #project-planner .text-container .orange-button-container .background-container {
-      width: 0px;
-      height: 0px;
-      position: relative;
-      bottom: 2px;
-      right: 2px; }
-      #contact #project-planner .text-container .orange-button-container .background-container .background-top {
-        height: 2px;
-        width: 0px;
-        background-color: white;
-        border-radius: 7px 7px 0px 0px;
-        animation-delay: 0.8s; }
-      #contact #project-planner .text-container .orange-button-container .background-container .background-sides {
-        height: 0px;
-        width: 283px;
-        background-color: white;
-        animation-delay: 0.4s; }
-      #contact #project-planner .text-container .orange-button-container .background-container .background-bottom {
-        height: 2px;
-        width: 0px;
-        background-color: white;
-        border-radius: 0px 0px 7px 7px;
-        animation-delay: 0.0s; }
-    #contact #project-planner .text-container .orange-button-container .orange-button, #contact #project-planner .text-container .orange-button-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-container .orange-button-form {
-      position: relative;
+    #contact #project-planner .text-container .orange-button, #contact #project-planner .text-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-form {
       width: 279px;
       box-sizing: border-box;
-      z-index: 100;
       font-size: 18px;
       padding: 15px 30px 18px; }
-    #contact #project-planner .text-container .orange-button-container:hover .background-top {
-      animation: button-surround-top 0.4s forwards; }
-    #contact #project-planner .text-container .orange-button-container:hover .background-sides {
-      animation: button-surround-sides 0.4s forwards;
-      animation-delay: 0.4s; }
-    #contact #project-planner .text-container .orange-button-container:hover .background-bottom {
-      animation: button-surround-bottom 0.4s forwards;
-      animation-delay: 0.8s; }
+    #contact #project-planner .text-container .orange-button:hover, #contact #project-planner .text-container footer #cards .card .orange-button-form:hover, footer #cards .card #contact #project-planner .text-container .orange-button-form:hover {
+      background-color: white;
+      color: #333333; }
   #contact #project-planner .arrow-container {
     flex: 0 0 25%;
     padding: 10px;

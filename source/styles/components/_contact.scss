@@ -2,8 +2,9 @@
 
   .contact-title-section {
     background-color: $pink;
-    margin-bottom: 100px;
+    margin-bottom: 34px;
   }
+
 
   #project-planner {
     background-color: $orange;
@@ -39,67 +40,19 @@
         margin-bottom: 211px;
       }
 
-      .orange-button-container {
+      .orange-button {
+        width: 279px;
+        box-sizing:border-box;
+        font-size: 18px;
+        padding: 15px 30px 18px;
 
-        .background-container {
-          width: 0px;
-          height: 0px;
-          position: relative;
-          bottom: 2px;
-          right: 2px;
-
-          .background-top {
-            height: 2px;
-            width: 0px;
-            background-color: white;
-            border-radius: 7px 7px 0px 0px;
-            animation-delay: 0.8s;
-
-          }
-          .background-sides {
-            height: 0px;
-            width: 283px;
-            background-color: white;
-            animation-delay: 0.4s;
-
-          }
-          .background-bottom {
-            height: 2px;
-            width: 0px;
-            background-color: white;
-            border-radius: 0px 0px 7px 7px;
-            animation-delay: 0.0s;
-
-          }
-        }
-
-        .orange-button {
-          position:relative;
-          width: 279px;
-          box-sizing:border-box;
-          z-index:100;
-          font-size: 18px;
-          padding: 15px 30px 18px;
-
-        }
       }
 
-      .orange-button-container:hover {
-
-        .background-top {
-          animation: button-surround-top 0.4s forwards;
-        }
-
-        .background-sides {
-          animation: button-surround-sides 0.4s forwards;
-          animation-delay: 0.4s;
-        }
-
-        .background-bottom {
-          animation: button-surround-bottom 0.4s forwards;
-          animation-delay: 0.8s;
-        }
+      .orange-button:hover {
+        background-color: white;
+        color: $charcoal;
       }
+
     }
 
     .arrow-container {

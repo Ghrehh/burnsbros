@@ -27,8 +27,12 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 }
 
 .button-template {
-  @include transition(background-color, 100ms);
-  @include transition(color, 200ms);
+
+  -webkit-transition: color 100ms ease, background-color 100ms ease;
+  -moz-transition: color 100ms ease, background-color 100ms ease;
+  -o-transition: color 100ms ease, background-color 100ms ease;
+  transition: color 100ms ease, background-color 100ms ease;
+
   text-decoration: none;
   padding: 7px 16px;
   display: inline-block;
@@ -64,7 +68,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 
 //the colored background at the top of each page, this gets extended and color added
 #page-title-section {
-  padding: 63px 0 75px;
+  padding: 62px 0 76px;
 }
 
 //the white about/what we do/projects heading that appears on each page
@@ -76,19 +80,41 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   padding-bottom: 9px;
   text-align: center;
 
+
+
 }
 
 //the dark text large header that goes undernearth the page title
 #page-description {
 
   color: $charcoal;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 64px;
   text-align:center;
+
+  .page-description-small {
+    font-weight:500;
+  }
 
 }
 
+#page-info {
+  margin-bottom: 54px;
+
+  .small-header {
+    font-size: 24px;
+    color: $charcoal;
+    font-weight: 400;
+    text-align:center;
+    line-height: 36px;
+
+    .embolden {
+      font-weight: 700;
+      font-family: "adelle";
+    }
+  }
+}
 
 .section-header {
   color: $charcoal;
