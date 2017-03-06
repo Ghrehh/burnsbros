@@ -6,7 +6,7 @@
 
   }
 
-  #section-1 {
+  #examples {
     display: flex;
     max-width: 865px;
     margin: auto;
@@ -43,7 +43,7 @@
       flex: 0 0 100%;
 
       p {
-        width: 67%;
+        width: 85%;
       }
     }
 
@@ -56,7 +56,40 @@
 
   }
 
-  #section-2 {
+  #burns-unit {
+    background-color: $charcoal;
+    padding:62px 0 0px;
+    position:relative;
+    margin-bottom:190px;
+
+    .burns-unit-logo {
+      margin: auto;
+      display: block;
+      margin-bottom: 47px;
+    }
+
+    .body-writing {
+      color: white;
+      max-width: 619px;
+      margin: auto;
+      margin-bottom: 28px;
+    }
+
+    .slanted {
+      background-color: $charcoal;
+      height: 300px;
+      width: 100%;
+      transform: skewY(-7deg);
+      position: absolute;
+      z-index: -1;
+      bottom: -79px;
+    }
+
+  }
+
+
+
+  #companies {
     margin-bottom: 69px;
 
 
