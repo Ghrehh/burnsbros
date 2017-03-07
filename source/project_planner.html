@@ -1,70 +1,9 @@
-<!-- active navbar link -->
-{% set active_link = "contact" %}
-
-{% extends "templates/template.html" %}
+{% extends "templates/template-dark.html" %}
 
 {% block content %}
 
-
-  <main id="contact">
-    <header id="page-title-section" class="contact-title-section">
-      <h1 id="page-title">GET IN TOUCH!</h1>
-      <p id="page-description">
-        Got a great idea?
-        <br>
-        <span class="page-description-small">Let's make it happen!</span>
-      </p>
-    </header>
-
-    <section id="page-info">
-      <h2 class="small-header">
-        We're always on the look for one more
-        <span class="embolden">great client.</span>
-        <br />
-        Does this sound like you? Let's talk!
-      </h2>
-    </section>
-
-    <section id="project-planner">
-      <div class="text-container">
-
-        <h1 class="section-header">
-          Do you have a new project idea that you'd like
-          to talk about?
-        </h1>
-
-        <h2 class="small-header">Great! Let's get the ball rolling right away...</h2>
-
-        <p class="body-writing">
-          Our super-duper-easy-to-use project planning form helps us get a quick
-          and clear understanding of what your project is, it's scope and the budget that
-          you have to spend on it.
-        </p>
-
-
-        <a href="project_planner.html" class="orange-button">OPEN PROJECT PLANNER</a>
-
-
-      </div>
-      <div class="arrow-container">
-
-        {% for i in range(0, 30) %}
-
-          {% if i % 2 == 0 %}
-            {% set arrowColor = "black-arrow" %}
-          {% else %}
-            {% set arrowColor = "white-arrow" %}
-          {% endif %}
-
-          {% include "templates/partials/_arrow.html" %}
-        {% endfor %}
-
-
-      </div>
-    </section>
-
-
-    <section id="say-hello">
+<main id="project-planner">
+    <section id="form">
       <div class="overlay">
         <div class="overlay-inner">
           <div class="image-container party-popper-container">
@@ -86,25 +25,23 @@
         </div>
       </div>
 
-      <div id="say-hello-inner">
+      <div id="form-inner">
 
-        <div class="image-container wave-container">
-          <img alt="wave-emoji" src="assets/emojis/wave.png" />
-        </div>
 
-        <h1 class="section-header">Or, Just Say Hello</h1>
+       <h1 class="section-header large">Project Planner</h1>
 
         <p class="section-body">
-          If you'd prefer to drop us a quick line about your idea, or want to ask
-          us a question, or maybe you just want to say "hello"... We'd love to hear
-          frm you! Please get in touch using the form below!
+            Got an idea for a project? Great; we're all ears!
+            To get the ball
+            <br>
+            rolling let's gather some basic information
+            about your project.
         </p>
 
-        <div class="image-container bubble-container">
-          <img alt="bubble-emoji" src="assets/emojis/bubble.png" />
-        </div>
+        <h2 class="section-header">Your Details</h2>
 
-        <form id="contact-form">
+
+        <form id="project-planner-form">
 
           <div class="form-field name-field">
             <label for="name">Your Name</label>
@@ -153,8 +90,7 @@
         </div>
       </div>
     </section>
-  </main>
-
-
+</main>
+<script src="scripts/project-planner-form.js"></script>
 
 {% endblock %}

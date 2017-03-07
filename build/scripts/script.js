@@ -113,7 +113,7 @@ $(document).ready(function(){
    });
 
   //contact form
-  $('#submission-form').submit(function(e) {
+  $('#contact-form').submit(function(e) {
     var email = $("#email").val();
     var info = $("#info").val();
 
@@ -166,6 +166,7 @@ $(document).ready(function(){
     e.preventDefault();
 
   });
+
 
   //send another button that appears after a message is submitted on the contact screen
   $(".send-another").click(function(){

@@ -5,19 +5,20 @@
 
   }
 
-  #section-1 {
-    padding: 71px 0 125px;
+  #who-are-we {
+    padding: 64px 0 9px;
 
     .section-header {
-      margin: 0 0 45px;
+      margin: 0 0 44px;
     }
 
     .section-body  {
-
+      line-height: 28px;
+      max-width: 664px;
     }
   }
 
-  #section-2 {
+  #what-do-we-do {
     background-color: $orange;
     padding: 59px 0 33px;
 
@@ -48,15 +49,54 @@
         color: white;
         font-size: 24px;
         font-weight: 700;
-        margin-bottom: 37px;
-        padding: 27px 14px;
+        margin-bottom: 35px;
+        padding: 0px 21px;
         text-align:center;
-        width: 251px;
+        flex: 0 0 28.5%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        line-height: 37px;
+        height: 120px;
+      }
+
+      .half-size {
+        flex: 0 0 12%;
+
+      }
+    }
+
+  }
+
+  #why-do-we-do {
+    background-color: $light-orange;
+
+    .content {
+      max-width: 880px;
+      margin: auto;
+      display: flex;
+      padding: 71px 0px 62px;
+
+      img {
+        width: 391px;
+        height: 257px;
+      }
+
+      .right {
+        padding:5px 30px 0px 46px;
+
+        .small-header {
+          margin-bottom: 27px;
+        }
+
+        .body-writing {
+          line-height: 28px;
+        }
       }
     }
   }
 
-  #section-3 {
+  #meet-the {
     padding: 87px 0px 69px;
 
     .section-header {
@@ -125,11 +165,11 @@
         }
 
         #brian-picture {
-          background-image: url(../assets/brian.jpg);
+          background-image: url(../assets/about/brian.jpg);
         }
 
         #gerry-picture {
-          background-image: url(../assets/gerry.jpg);
+          background-image: url(../assets/about/gerry.jpg);
         }
 
         #brian-color {
@@ -196,7 +236,7 @@
     }
   }
 
-  #section-4 {
+  #how-do-we-work {
     background-color: $pink;
     padding: 59px 0 55px;
 
@@ -214,11 +254,22 @@
     }
   }
 
-  #section-5 {
-    padding: 87px 0px 69px;
+  #in-the-community {
+    padding: 65px 0px 0px;
 
     .section-header {
-      margin: 0 0 32px;
+      margin: 0 0 76px;
+    }
+
+    img {
+      display:block;
+      margin: auto;
+      margin-bottom: 52px;
+    }
+
+    .small-header {
+      text-align:center;
+      margin-bottom: 43px;
     }
 
     .section-body {
@@ -227,6 +278,7 @@
       margin-right: auto;
       max-width: 570px;
       margin-bottom: 45px;
+      line-height:28px;
     }
   }
 

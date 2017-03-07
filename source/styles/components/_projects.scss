@@ -58,14 +58,13 @@
 
   #burns-unit {
     background-color: $charcoal;
-    padding:62px 0 0px;
+    padding: 79px 0 0px;
     position:relative;
-    margin-bottom:190px;
+    margin-bottom:320px;
 
-    .burns-unit-logo {
-      margin: auto;
-      display: block;
-      margin-bottom: 47px;
+    .section-header {
+      color: white;
+      margin-bottom: 58px;
     }
 
     .body-writing {
@@ -75,14 +74,20 @@
       margin-bottom: 28px;
     }
 
+    .slanted-container {
+      height: 0px;
+      width: 100%;
+      position: relative;
+      z-index: -1;
+      bottom: 150px;
+    }
+
     .slanted {
       background-color: $charcoal;
       height: 300px;
       width: 100%;
       transform: skewY(-7deg);
-      position: absolute;
-      z-index: -1;
-      bottom: -79px;
+      position: relative;
     }
 
   }
@@ -116,6 +121,19 @@
       box-sizing:border-box;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
+
+      img {
+        margin-bottom: 40px;
+      }
+    }
+    .companies-2 {
+      width: 650px;
+      display: flex;
+      margin: auto;
+      box-sizing:border-box;
+      flex-wrap: wrap;
+      justify-content: space-around;
       align-items: center;
 
       img {

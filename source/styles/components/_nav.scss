@@ -59,3 +59,38 @@
   }
 
 }
+
+
+#dark {
+  #top-nav {
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: $link-blue;
+    }
+
+    .active {
+      color: $link-blue;
+    }
+
+    #nav-bar-logo {
+      fill: white;
+    }
+
+    .logo-link:hover {
+
+      #nav-bar-logo-container {
+        animation: logo-bounce 0.3s forwards;
+        #nav-bar-logo {
+
+          animation: color-pulse-white 5s infinite;
+        }
+
+      }
+
+    }
+
+  }
+}
