@@ -1179,12 +1179,16 @@ footer {
           display: inline-block; }
       #project-planner #form #project-planner-form .budget-field .budget .active-option .circle {
         background-color: #fc9e33; }
-    #project-planner #form #project-planner-form .orange-button, #project-planner #form #project-planner-form footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .orange-button-form {
-      padding: 5px 16px 6px; }
-    #project-planner #form #project-planner-form #required-fields {
-      color: #C5C3C3;
-      font-weight: 300;
-      font-size: 18px; }
+    #project-planner #form #project-planner-form .send-button-container {
+      display: flex; }
+      #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
+        padding: 5px 16px 6px;
+        display: inline-block; }
+      #project-planner #form #project-planner-form .send-button-container #required-fields {
+        color: #C5C3C3;
+        font-weight: 400;
+        font-size: 18px;
+        display: inline-block; }
   #project-planner #form .error-alert {
     display: none;
     background-color: #fd4561;

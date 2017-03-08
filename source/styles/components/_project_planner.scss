@@ -317,18 +317,26 @@
       }
 
 
-
       ////////////////////
 
-      .orange-button {
-        padding: 5px 16px 6px;
+      .send-button-container {
+        display: flex;
+
+        .orange-button {
+          padding: 5px 16px 6px;
+          display: inline-block;
+        }
+
+        #required-fields {
+          color: $light-grey;
+          font-weight: 400;
+          font-size: 18px;
+          display: inline-block;
+        }
+
       }
 
-      #required-fields {
-        color: $light-grey;
-        font-weight: 300;
-        font-size: 18px;
-      }
+
     }
 
 
