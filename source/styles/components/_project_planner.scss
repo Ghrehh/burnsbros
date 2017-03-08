@@ -249,11 +249,11 @@
           color: $light-grey;
           line-height: 18px;
           max-width: 550px;
+          margin-bottom: 57px;
         }
 
         .budget {
           display: flex;
-          padding-top: 50px;
           position:relative;
 
           .bar-container {
@@ -264,9 +264,9 @@
             .bar {
               position: relative;
               width: 80%;
-              height: 5px;
+              height: 6px;
               background-color: white;
-              top: 8px;
+              top: 10px;
               margin: auto;
               
 
@@ -283,19 +283,25 @@
             flex: 0 0 20%;
             text-align: center;
             z-index:1;
+            cursor: pointer;
 
             .number {
               height:0px;
               position: relative;
-              bottom: 22px;
+              bottom: 32px;
               color: $light-grey;
+              font-size: 18px;
+            }
+
+            .active-number {
+              color: white;
             }
             
 
             .circle {
               background-color: white;
-              height:22px;
-              width: 22px;
+              height:26px;
+              width: 26px;
               border-radius:10000px;
               display: inline-block;
 
@@ -303,9 +309,6 @@
           }
 
           .active-option {
-            .number {
-              color: white;
-            }
             .circle {
               background-color: $orange;
             }

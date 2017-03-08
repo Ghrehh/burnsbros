@@ -57,28 +57,36 @@ $(document).ready(function(){
 
   $(".budget-field .option").click(function(){
     $(".budget-field .option").removeClass("active-option");
-    $(this).addClass("active-option");
-    console.log(budget)
+    $(".budget-field .number").removeClass("active-number");
+
+    $(this).find(".number").addClass("active-number");
+    
+
     budget = String($(this).data("budget"));
     var bar_filled_percentage = "0%";
 
     if ( budget === "<10000"){
       bar_filled_percentage = "0%";
+      $(".budget-field .option-1").addClass("active-option");
     }
     else if ( budget === "20000"){
       bar_filled_percentage = "25%";
+      $(".budget-field .option-1, .budget-field .option-2").addClass("active-option");
     }
     else if ( budget === "30000"){
       bar_filled_percentage = "50%";
+      $(".budget-field .option-1, .budget-field .option-2, .budget-field .option-3").addClass("active-option");
     }
     else if ( budget === "40000"){
       bar_filled_percentage = "75%";
+      $(".budget-field .option-1, .budget-field .option-2, .budget-field .option-3, .budget-field .option-4").addClass("active-option");
     }
     else if ( budget === "50000+"){
       bar_filled_percentage = "100%";
+      $(".budget-field .option-1, .budget-field .option-2, .budget-field .option-3, .budget-field .option-4, .budget-field .option-5").addClass("active-option");
     }
 
-    $(".bar-inner").animate({width: bar_filled_percentage}, 1000);
+    $(".bar-inner").animate({width: bar_filled_percentage}, 500);
 
   })
 });

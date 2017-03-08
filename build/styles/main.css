@@ -1138,10 +1138,10 @@ footer {
     #project-planner #form #project-planner-form .budget-field .small {
       color: #C5C3C3;
       line-height: 18px;
-      max-width: 550px; }
+      max-width: 550px;
+      margin-bottom: 57px; }
     #project-planner #form #project-planner-form .budget-field .budget {
       display: flex;
-      padding-top: 50px;
       position: relative; }
       #project-planner #form #project-planner-form .budget-field .budget .bar-container {
         height: 0px;
@@ -1150,9 +1150,9 @@ footer {
         #project-planner #form #project-planner-form .budget-field .budget .bar-container .bar {
           position: relative;
           width: 80%;
-          height: 5px;
+          height: 6px;
           background-color: white;
-          top: 8px;
+          top: 10px;
           margin: auto; }
           #project-planner #form #project-planner-form .budget-field .budget .bar-container .bar .bar-inner {
             width: 0%;
@@ -1161,20 +1161,22 @@ footer {
       #project-planner #form #project-planner-form .budget-field .budget .option {
         flex: 0 0 20%;
         text-align: center;
-        z-index: 1; }
+        z-index: 1;
+        cursor: pointer; }
         #project-planner #form #project-planner-form .budget-field .budget .option .number {
           height: 0px;
           position: relative;
-          bottom: 22px;
-          color: #C5C3C3; }
+          bottom: 32px;
+          color: #C5C3C3;
+          font-size: 18px; }
+        #project-planner #form #project-planner-form .budget-field .budget .option .active-number {
+          color: white; }
         #project-planner #form #project-planner-form .budget-field .budget .option .circle {
           background-color: white;
-          height: 22px;
-          width: 22px;
+          height: 26px;
+          width: 26px;
           border-radius: 10000px;
           display: inline-block; }
-      #project-planner #form #project-planner-form .budget-field .budget .active-option .number {
-        color: white; }
       #project-planner #form #project-planner-form .budget-field .budget .active-option .circle {
         background-color: #fc9e33; }
     #project-planner #form #project-planner-form .orange-button, #project-planner #form #project-planner-form footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .orange-button-form {
