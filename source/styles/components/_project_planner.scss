@@ -52,14 +52,13 @@
       box-sizing:border-box;
     }
 
-
     .section-header {
       margin-bottom: 28px;
       color: white;
       margin-bottom: 44px;
     }
 
-    .large {
+    .large-header {
         color: $orange;
         font-size: 48px;
         margin-bottom: 43px;
@@ -78,13 +77,6 @@
     }
 
 
-    .error {
-      color: $pink;
-    }
-
-    .success {
-      color: $dark-mint-green;
-    }
 
     #project-planner-form {
       display: flex;
@@ -101,7 +93,7 @@
 
       .form-field {
         flex: 0 0 47%;
-        border-color: white;
+        border-color: $light-grey;
         color: white;
         margin-bottom: 21px;
 
@@ -182,6 +174,149 @@
         }
       }
 
+      //fields with custom styling///////////
+
+      .project-type-field {
+        margin-bottom: 26px;
+
+        label {
+          margin-bottom: 20px;
+        }
+
+        .project-type {
+          display:flex;
+          flex: 0 0 100%;
+          justify-content: space-between;
+          //margin-bottom: 26px;
+
+          .option {
+            flex: 0 0 22%;
+            border: 1px solid $light-grey;
+            border-radius: 4px;
+            text-align:center;
+            padding-top: 16px;
+            max-width: 144px;
+
+            .image-container {
+              display:flex;
+              align-items:center;
+              height: 50px;
+              justify-content:center;
+              margin-bottom: 2px;
+            }
+
+
+            .body-writing {
+              color: white;
+              line-height:28px;
+              margin-bottom: 19px;
+            }
+          }
+        }
+      }
+
+      .info-field {
+        margin-bottom: 25px;
+      }
+
+      .start-date-field, .deadline-field {
+        margin-bottom: 26px;
+
+          .start-date,.deadline {
+            display: flex;
+            justify-content: space-between;
+            
+            .option {
+              border: 1px solid $light-grey;
+              flex: 0 0 29%;
+              border-radius: 4px;
+
+              .body-writing {
+                color: $light-grey;
+                padding: 4px 10px 7px;
+              }
+            }
+          }
+      }
+
+      .budget-field {
+        
+        label {
+          margin-bottom:20px;
+        }
+
+        .small {
+          color: $light-grey;
+          line-height: 18px;
+          max-width: 550px;
+        }
+
+        .budget {
+          display: flex;
+          padding-top: 50px;
+          position:relative;
+
+          .bar-container {
+            height: 0px;
+            width: 100%;
+            position:absolute;
+
+            .bar {
+              position: relative;
+              width: 80%;
+              height: 5px;
+              background-color: white;
+              top: 8px;
+              margin: auto;
+              
+
+              .bar-inner {
+                width:0%;
+                height:100%;
+                background-color:$orange;
+              }
+           }
+          }
+          
+
+          .option {
+            flex: 0 0 20%;
+            text-align: center;
+            z-index:1;
+
+            .number {
+              height:0px;
+              position: relative;
+              bottom: 22px;
+              color: $light-grey;
+            }
+            
+
+            .circle {
+              background-color: white;
+              height:22px;
+              width: 22px;
+              border-radius:10000px;
+              display: inline-block;
+
+            }
+          }
+
+          .active-option {
+            .number {
+              color: white;
+            }
+            .circle {
+              background-color: $orange;
+            }
+          }
+        }
+      }
+
+
+
+      ////////////////////
+
       .orange-button {
         padding: 5px 16px 6px;
       }
@@ -193,17 +328,6 @@
       }
     }
 
-    .project-type {
-      display:flex;
-      flex: 0 0 100%;
-      justify-content: space-between;
-
-      .option {
-        flex: 0 0 22%;
-        border: 1px solid white;
-        border-radius: 4px;
-      }
-    }
 
     .error-alert {
       display: none;

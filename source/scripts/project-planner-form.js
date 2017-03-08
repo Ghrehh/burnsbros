@@ -1,3 +1,5 @@
+var budget = "<10000";
+
 $(document).ready(function(){
   $('#project-planner-form').submit(function(e) {
     var email = $("#email").val();
@@ -52,4 +54,31 @@ $(document).ready(function(){
     e.preventDefault();
 
   });
+
+  $(".budget-field .option").click(function(){
+    $(".budget-field .option").removeClass("active-option");
+    $(this).addClass("active-option");
+    console.log(budget)
+    budget = String($(this).data("budget"));
+    var bar_filled_percentage = "0%";
+
+    if ( budget === "<10000"){
+      bar_filled_percentage = "0%";
+    }
+    else if ( budget === "20000"){
+      bar_filled_percentage = "25%";
+    }
+    else if ( budget === "30000"){
+      bar_filled_percentage = "50%";
+    }
+    else if ( budget === "40000"){
+      bar_filled_percentage = "75%";
+    }
+    else if ( budget === "50000+"){
+      bar_filled_percentage = "100%";
+    }
+
+    $(".bar-inner").animate({width: bar_filled_percentage}, 1000);
+
+  })
 });
