@@ -76,8 +76,6 @@
 
     }
 
-
-
     #project-planner-form {
       display: flex;
       box-sizing:border-box;
@@ -176,6 +174,8 @@
 
       //fields with custom styling///////////
 
+
+
       .project-type-field {
         margin-bottom: 26px;
 
@@ -189,30 +189,40 @@
           justify-content: space-between;
           //margin-bottom: 26px;
 
-          .option {
-            flex: 0 0 22%;
-            border: 1px solid $light-grey;
-            border-radius: 4px;
-            text-align:center;
-            padding-top: 16px;
-            max-width: 144px;
+    
+        }
 
-            .image-container {
-              display:flex;
-              align-items:center;
-              height: 50px;
-              justify-content:center;
-              margin-bottom: 2px;
-            }
+        .option {
+          flex: 0 0 22%;
+          border: 1px solid $light-grey;
+          border-radius: 4px;
+          text-align:center;
+          padding-top: 16px;
+          max-width: 144px;
+          color: white;
+
+          .image-container {
+            display:flex;
+            align-items:center;
+            height: 50px;
+            justify-content:center;
+            margin-bottom: 2px;
+          }
+
+          .hover-image-container {
+            display:none;
+            
+          }
 
 
-            .body-writing {
-              color: white;
-              line-height:28px;
-              margin-bottom: 19px;
-            }
+          .body-writing {
+            color: inherit;
+            line-height:28px;
+            margin-bottom: 19px;
           }
         }
+
+
       }
 
       .info-field {
@@ -226,21 +236,23 @@
             display: flex;
             justify-content: space-between;
             
-            .option {
-              border: 1px solid $light-grey;
-              flex: 0 0 29%;
-              border-radius: 4px;
+          }
 
-              .body-writing {
-                color: $light-grey;
-                padding: 4px 10px 7px;
-              }
+          .option {
+            border: 1px solid $light-grey;
+            flex: 0 0 29%;
+            border-radius: 4px;
+            color: $light-grey;
+
+            .body-writing {
+              color: inherit;
+              padding: 4px 10px 7px;
             }
           }
       }
 
       .budget-field {
-        
+        margin-bottom: 59px;
         label {
           margin-bottom:20px;
         }
@@ -255,6 +267,9 @@
         .budget {
           display: flex;
           position:relative;
+          width: 120%;
+          margin: auto;
+          right: 10%;
 
           .bar-container {
             height: 0px;
@@ -276,14 +291,16 @@
                 background-color:$orange;
               }
            }
+
           }
           
 
           .option {
+            background-color: transparent !important;
             flex: 0 0 20%;
             text-align: center;
             z-index:1;
-            cursor: pointer;
+            cursor: default !important;
 
             .number {
               height:0px;
@@ -299,11 +316,13 @@
             
 
             .circle {
+              @include transition(background-color, 400ms);
               background-color: white;
               height:26px;
               width: 26px;
               border-radius:10000px;
               display: inline-block;
+              cursor: pointer;
 
             }
           }
@@ -313,32 +332,95 @@
               background-color: $orange;
             }
           }
+
+          //moves the first and last amounts slightly to the left or right
+          .option-1 {
+            .number {
+              left: 21px;
+            }
+          
+          }
+
+          .option-5 {
+            .number {
+              right: 25px;
+            }
+          
+          }
         }
       }
+
+      .option:hover, .active-option {
+
+        $duration: 100ms;
+
+        -webkit-transition: border-color $duration ease, background-color $duration ease;
+        -moz-transition: border-color $duration ease, background-color $duration ease;
+        -o-transition: border-color $duration ease, background-color $duration ease;
+        transition: border-color $duration ease, background-color $duration ease;
+
+        background-color: $orange !important;
+        color: $charcoal !important;
+        border-color: $charcoal !important;
+        cursor: pointer;
+
+        .body-writing {
+          @include transition(color, 100ms);
+          color: inherit;
+        }
+
+        .image-container {
+          display: none !important;
+        }
+
+        .hover-image-container {
+          display: flex !important;
+        }
+
+      }
+
+
+
 
 
       ////////////////////
 
       .send-button-container {
         display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 31px;
 
         .orange-button {
-          padding: 5px 16px 6px;
+          font-size: 18px;
+          padding: 14px 38px 17px;
           display: inline-block;
         }
 
-        #required-fields {
+        .orange-button:hover {
+          background-color: white;
+          color: $charcoal;
+        }
+
+        .required-fields {
           color: $light-grey;
           font-weight: 400;
           font-size: 18px;
           display: inline-block;
+          margin-left: 28px;
+        }
+
+        .hidden {
+          pointer-events:none;
+          opacity: 0;
+
         }
 
       }
 
 
     }
-
 
     .error-alert {
       display: none;

@@ -1,4 +1,7 @@
 var budget = "<10000";
+var project_type = "Web Development";
+var start_date = "ASAP";
+var deadline = "ASAP";
 
 $(document).ready(function(){
   $('#project-planner-form').submit(function(e) {
@@ -54,6 +57,28 @@ $(document).ready(function(){
     e.preventDefault();
 
   });
+
+  $(".project-type .option").click(function(){
+    $(".project-type .option").removeClass("active-option");
+
+    $(this).addClass("active-option")
+    project_type = $(this).data("value");
+  })
+
+  $(".start-date .option").click(function(){
+    $(".start-date .option").removeClass("active-option");
+
+    $(this).addClass("active-option")
+    start_date = $(this).data("value");
+  })
+
+  $(".deadline .option").click(function(){
+    $(".deadline .option").removeClass("active-option");
+
+    $(this).addClass("active-option")
+    deadline = $(this).data("value");
+    console.log(deadline)
+  })
 
   $(".budget-field .option").click(function(){
     $(".budget-field .option").removeClass("active-option");
