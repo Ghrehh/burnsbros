@@ -243,7 +243,7 @@
       }
 
       .start-date-field, .deadline-field {
-        margin-bottom: 26px;
+          margin-bottom: 26px;
 
           .start-date,.deadline {
             display: flex;
@@ -277,6 +277,10 @@
               
             }
 
+            .calendar-field:focus {
+              outline: none;
+            }
+
             .fa-calendar {
               color: inherit;
               display: inline-block;
@@ -286,6 +290,7 @@
             }
           }
 
+          //different color of placeholder to make the date selection seem seamless
           $opacity: 1;
           $color: inherit;
 

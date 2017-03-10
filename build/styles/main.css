@@ -1155,6 +1155,8 @@ footer {
           background-color: transparent;
           opacity: 0;
           font-size: 19px; }
+        #project-planner #form #project-planner-form .start-date-field .option .calendar-field:focus, #project-planner #form #project-planner-form .deadline-field .option .calendar-field:focus {
+          outline: none; }
         #project-planner #form #project-planner-form .start-date-field .option .fa-calendar, #project-planner #form #project-planner-form .deadline-field .option .fa-calendar {
           color: inherit;
           display: inline-block;
