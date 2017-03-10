@@ -992,7 +992,8 @@ footer {
     text-align: center;
     display: flex;
     align-items: center;
-    display: none; }
+    display: none;
+    z-index: 1336; }
     #project-planner #form .overlay .overlay-inner {
       margin: auto; }
     #project-planner #form .overlay .party-popper-container {

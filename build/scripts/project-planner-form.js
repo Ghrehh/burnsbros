@@ -15,9 +15,13 @@ $(document).ready(function(){
       $(".error-message").hide();
       $(".form-field").removeClass("form-error")
       $(".overlay").css({"display": "flex"})
+
+      var test = {"name": "bob",
+                  "age": 16}
+      console.log($.param(test))
       $.ajax({
 
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSeTDVuph6orVNtXd-hWp0L7d47JBg0pCuZr-qYcrBkzF5N1Uw/formResponse",
+            url: "http://dummy.co",
             data: $('#submission-form').serialize(),
             type: "POST",
             dataType: "xml",
@@ -74,7 +78,6 @@ $(document).ready(function(){
       }
     })
 
-    console.log(project_types)
   })
 
   $(".start-date .option").click(function(){
