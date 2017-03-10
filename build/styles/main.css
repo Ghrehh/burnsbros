@@ -168,6 +168,9 @@ table {
 #dark {
   background-color: #333333; }
 
+html {
+  -webkit-font-smoothing: antialiased; }
+
 h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   font-family: "adelle-sans"; }
 
@@ -212,7 +215,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   color: #333333; }
 
 .white-button:hover {
-  color: #009cd7;
+  color: white;
   background-color: #333333; }
 
 #page-title-section {
@@ -1087,18 +1090,14 @@ footer {
       #project-planner #form #project-planner-form .form-field textarea {
         height: 110px;
         max-width: 100%; }
-    #project-planner #form #project-planner-form .form-error {
-      color: #fd4561;
-      border-color: #fd4561; }
-      #project-planner #form #project-planner-form .form-error .error-message {
-        display: block; }
     #project-planner #form #project-planner-form .large {
       flex: 0 0 100%;
       margin-bottom: 32px; }
       #project-planner #form #project-planner-form .large label {
         margin-top: 5px; }
     #project-planner #form #project-planner-form .project-type-field {
-      margin-bottom: 26px; }
+      margin-bottom: 26px;
+      border-color: #C5C3C3; }
       #project-planner #form #project-planner-form .project-type-field label {
         margin-bottom: 20px; }
       #project-planner #form #project-planner-form .project-type-field .project-type {
@@ -1108,6 +1107,7 @@ footer {
       #project-planner #form #project-planner-form .project-type-field .option {
         flex: 0 0 22%;
         border: 1px solid #C5C3C3;
+        border-color: inherit;
         border-radius: 4px;
         text-align: center;
         padding-top: 16px;
@@ -1134,12 +1134,15 @@ footer {
     #project-planner #form #project-planner-form .info-field {
       margin-bottom: 25px; }
     #project-planner #form #project-planner-form .start-date-field, #project-planner #form #project-planner-form .deadline-field {
-      margin-bottom: 26px; }
+      margin-bottom: 26px;
+      border-color: #C5C3C3; }
       #project-planner #form #project-planner-form .start-date-field .start-date, #project-planner #form #project-planner-form .start-date-field .deadline, #project-planner #form #project-planner-form .deadline-field .start-date, #project-planner #form #project-planner-form .deadline-field .deadline {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        border-color: inherit; }
       #project-planner #form #project-planner-form .start-date-field .option, #project-planner #form #project-planner-form .deadline-field .option {
         border: 1px solid #C5C3C3;
+        border-color: inherit;
         flex: 0 0 29%;
         border-radius: 4px;
         color: #C5C3C3;
@@ -1261,6 +1264,11 @@ footer {
         display: none !important; }
       #project-planner #form #project-planner-form .option:hover .hover-image-container, #project-planner #form #project-planner-form .active-option .hover-image-container {
         display: flex !important; }
+    #project-planner #form #project-planner-form .form-error {
+      color: #fd4561;
+      border-color: #fd4561; }
+      #project-planner #form #project-planner-form .form-error .error-message {
+        display: block; }
     #project-planner #form #project-planner-form .send-button-container {
       display: flex;
       justify-content: center;

@@ -169,10 +169,8 @@ $(document).ready(function(){
 
 
   //send another button that appears after a message is submitted on the contact screen
-  $(".send-another").click(function(){
+  $("#say-hello .send-another").click(function(){
     $(".overlay").hide()
-    $(".form-field input, .form-field textarea").val("")
-
   })
 
   //newsletter signup

@@ -159,15 +159,6 @@
         }
       }
 
-      .form-error {
-        color: $pink;
-        border-color: $pink;
-
-        .error-message {
-          display: block;
-        }
-      }
-
       .large {
         flex: 0 0 100%;
         margin-bottom: 32px;
@@ -183,6 +174,7 @@
 
       .project-type-field {
         margin-bottom: 26px;
+        border-color: $light-grey;
 
         label {
           margin-bottom: 20px;
@@ -200,6 +192,7 @@
         .option {
           flex: 0 0 22%;
           border: 1px solid $light-grey;
+          border-color: inherit;
           border-radius: 4px;
           text-align:center;
           padding-top: 16px;
@@ -248,15 +241,18 @@
 
       .start-date-field, .deadline-field {
           margin-bottom: 26px;
+          border-color: $light-grey;
 
           .start-date,.deadline {
             display: flex;
             justify-content: space-between;
+            border-color: inherit;
             
           }
 
           .option {
             border: 1px solid $light-grey;
+            border-color: inherit;
             flex: 0 0 29%;
             border-radius: 4px;
             color: $light-grey;
@@ -442,6 +438,15 @@
           display: flex !important;
         }
 
+      }
+
+      .form-error {
+        color: $pink;
+        border-color: $pink;
+
+        .error-message {
+          display: block;
+        }
       }
 
 

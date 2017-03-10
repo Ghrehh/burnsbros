@@ -13,26 +13,40 @@ $(document).ready(function(){
 
     //required
     var name = $("#name").val();
-    var email = validateEmail($("#email").val());
+    var email = $("#email").val();
+    var valid_email = validateEmail($("#email").val());
     var info = $("#info").val();
 
     //not required
-    var company = $("#company").val();
+    var organisation = $("#organisation").val();
     var phone = $("#phone").val();
 
-    if (name && email && info && project_types.length > 0 && start_date && deadline && budget) {
+    //custom fields wont update the relevant variable until the next time the button is clicked in the on click method.
+    //easier to assign the calendar values here than do it in the on click method
+    if (start_date === "Custom") { start_date = $(".start-date").find(".calendar-field").val() }
+    if (deadline === "Custom") { deadline = $(".deadline").find(".calendar-field").val() }
+
+    //check if all required fields are filled, if they are, perform ajax request, if not make visible necessary error messages
+    if (name && valid_email && info && project_types.length > 0 && start_date && deadline && budget) {
       $(".error-alert").hide();
       $(".error-message").hide();
       $(".form-field").removeClass("form-error")
       $(".overlay").css({"display": "flex"})
 
-      var test = {"name": "bob",
-                  "age": 16}
-      console.log($.param(test))
+      var form_data = {"entry.1924694001": name,
+                      "entry.1855561109": organisation,
+                      "entry.1254274625": email,
+                      "entry.1214020820": phone,
+                      "entry.38978248": project_types.join(", "),
+                      "entry.567273467": info,
+                      "entry.873647966": start_date,
+                      "entry.940227614": deadline,
+                      "entry.778812851": budget}
+      var url_data = $.param(form_data)
       $.ajax({
 
-            url: "http://dummy.co",
-            data: $('#submission-form').serialize(),
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdK9YWsyj3uHhMEgYjzPweeH6Ye6GqNWuSQg8gQzh4nzn0AwA/formResponse",
+            data: url_data,
             type: "POST",
             dataType: "xml",
             crossDomain: true,
@@ -47,6 +61,8 @@ $(document).ready(function(){
 
       });
 
+      $(window).scrollTop($("#success-scroll").offset().top)
+
     }
     else {
       $(".error-alert").show();
@@ -56,7 +72,7 @@ $(document).ready(function(){
         $(".name-field").addClass("form-error");
       }
 
-      if (email == false) {
+      if (valid_email == false) {
         $(".email-field").addClass("form-error");
       }
 
@@ -67,9 +83,8 @@ $(document).ready(function(){
       if (project_types.length < 1) {
         $(".project-type-field").addClass("form-error");
       }
-      console.log(start_date)
+
       if (start_date == false) {
-        console.log("start-date false")
         $(".start-date-field").addClass("form-error");
         
       }
@@ -84,13 +99,17 @@ $(document).ready(function(){
 
     }
 
-
-
+    //prevents form from firing
     e.preventDefault();
 
   });
 
-  //custom form options
+  //send another button
+  $("#project-planner .send-another").click(function(){
+    $(".overlay").hide()
+  })
+
+  //custom form on click methods
 
   $(".project-type .option").click(function(){
 
@@ -121,12 +140,10 @@ $(document).ready(function(){
     if ($(this).data("value") === "Custom") {
       $(this).find(".body-writing").css({"opacity": "0"});
       $(this).find(".calendar-field").css({"opacity": "1"});
+    }
 
-      start_date = $(this).find(".calendar-field").val();
-    }
-    else {
-      start_date = $(this).data("value");
-    }
+    start_date = $(this).data("value");
+
 
     $(this).addClass("active-option")
     
@@ -144,11 +161,10 @@ $(document).ready(function(){
       $(this).find(".body-writing").css({"opacity": "0"});
       $(this).find(".calendar-field").css({"opacity": "1"});
 
-      deadline = $(this).find(".calendar-field").val();
     }
-    else {
-      deadline = $(this).data("value");
-    }
+
+    deadline = $(this).data("value");
+
 
     $(this).addClass("active-option")
     
@@ -190,6 +206,6 @@ $(document).ready(function(){
 
   })
 
-  //date pickers
+  //add date pickers, jquery-ui code of the date pickers is added at the bottom of the
   $( ".calendar-field" ).datepicker({ dateFormat: 'dd-mm-yy' });
 });
