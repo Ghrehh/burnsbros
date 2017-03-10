@@ -83,16 +83,46 @@ $(document).ready(function(){
   $(".start-date .option").click(function(){
     $(".start-date .option").removeClass("active-option");
 
+    //hide all custom value fields and show default custom message
+    $(".start-date .option").find(".body-writing").css({"opacity": "1"});
+    $(".start-date .option").find(".calendar-field").css({"opacity": "0"});
+
+    //if it's the custom field, hide the custom value message and display the custom value field
+    if ($(this).data("value") === "Custom") {
+      $(this).find(".body-writing").css({"opacity": "0"});
+      $(this).find(".calendar-field").css({"opacity": "1"});
+
+      start_date = $(this).find(".calendar-field").val();
+    }
+    else {
+      start_date = $(this).data("value");
+    }
+
     $(this).addClass("active-option")
-    start_date = $(this).data("value");
+    
   })
 
   $(".deadline .option").click(function(){
     $(".deadline .option").removeClass("active-option");
 
+    //hide all custom value fields and show default custom message
+    $(".deadline .option").find(".body-writing").css({"opacity": "1"});
+    $(".deadline .option").find(".calendar-field").css({"opacity": "0"});
+
+    //if it's the custom field, hide the custom value message and display the custom value field
+    if ($(this).data("value") === "Custom") {
+      $(this).find(".body-writing").css({"opacity": "0"});
+      $(this).find(".calendar-field").css({"opacity": "1"});
+
+      deadline = $(this).find(".calendar-field").val();
+    }
+    else {
+      deadline = $(this).data("value");
+    }
+
     $(this).addClass("active-option")
-    deadline = $(this).data("value");
-    console.log(deadline)
+    
+    
   })
 
   $(".budget-field .option").click(function(){
@@ -129,4 +159,6 @@ $(document).ready(function(){
     $(".bar-inner").animate({width: bar_filled_percentage}, 500);
 
   })
+
+  $( ".calendar-field" ).datepicker({ dateFormat: 'dd-mm-yy' });
 });

@@ -202,6 +202,15 @@
           max-width: 144px;
           color: white;
 
+
+          //makes item unhighlightable
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
           .image-container {
             display:flex;
             align-items:center;
@@ -220,7 +229,10 @@
             color: inherit;
             line-height:28px;
             margin-bottom: 19px;
+
           }
+
+
         }
 
 
@@ -244,11 +256,54 @@
             flex: 0 0 29%;
             border-radius: 4px;
             color: $light-grey;
+            position: relative;
 
             .body-writing {
               color: inherit;
               padding: 4px 10px 7px;
+              display: inline-block;
+              pointer-events: none;
             }
+
+            .calendar-field {
+              top: -1px;
+              position:absolute;
+              
+              border: none;
+              color: inherit;
+              background-color: transparent;
+              opacity: 0;
+              font-size: 19px;
+              
+            }
+
+            .fa-calendar {
+              color: inherit;
+              display: inline-block;
+              margin-left: 10px;
+              font-size: 18px;
+              pointer-events:none;
+            }
+          }
+
+          $opacity: 1;
+          $color: inherit;
+
+          input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $color;
+            opacity: $opacity;
+          }
+          input::-moz-placeholder, textarea::-moz-placeholder { /* Firefox 19+ */
+            color: $color;
+            opacity: $opacity;
+          }
+          input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE 10+ */
+            color: $color;
+            opacity: $opacity;
+          }
+          input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+            color: $color;
+            opacity: $opacity;
           }
       }
 
