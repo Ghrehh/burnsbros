@@ -1103,7 +1103,8 @@ footer {
       #project-planner #form #project-planner-form .project-type-field .project-type {
         display: flex;
         flex: 0 0 100%;
-        justify-content: space-between; }
+        justify-content: space-between;
+        border-color: inherit; }
       #project-planner #form #project-planner-form .project-type-field .option {
         flex: 0 0 22%;
         border: 1px solid #C5C3C3;
