@@ -1090,6 +1090,8 @@ footer {
     #project-planner #form #project-planner-form .form-error {
       color: #fd4561;
       border-color: #fd4561; }
+      #project-planner #form #project-planner-form .form-error .error-message {
+        display: block; }
     #project-planner #form #project-planner-form .large {
       flex: 0 0 100%;
       margin-bottom: 32px; }

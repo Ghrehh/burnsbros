@@ -1,16 +1,26 @@
-var budget = "50000+";
 var project_types = [];
-var start_date;
-var deadline;
+
+var start_date = false;
+var deadline = false;
+
+var budget = "50000+";
+
 
 $(document).ready(function(){
+
+  //form
   $('#project-planner-form').submit(function(e) {
-    var email = $("#email").val();
+
+    //required
+    var name = $("#name").val();
+    var email = validateEmail($("#email").val());
     var info = $("#info").val();
 
-    var validEmail = validateEmail(email);
+    //not required
+    var company = $("#company").val();
+    var phone = $("#phone").val();
 
-    if (validEmail && info) {
+    if (name && email && info && project_types.length > 0 && start_date && deadline && budget) {
       $(".error-alert").hide();
       $(".error-message").hide();
       $(".form-field").removeClass("form-error")
@@ -40,18 +50,36 @@ $(document).ready(function(){
     }
     else {
       $(".error-alert").show();
-      $(".error-message").hide();
-      $(".email-field").removeClass("form-error");
-      $(".info-field").removeClass("form-error");
+      $(".form-field").removeClass("form-error");
 
-      if (validEmail === false) {
+      if (name == false) {
+        $(".name-field").addClass("form-error");
+      }
+
+      if (email == false) {
         $(".email-field").addClass("form-error");
-        $(".email-field .error-message").show();
       }
 
       if (info == false) {
         $(".info-field").addClass("form-error");
-        $(".info-field .error-message").show();
+      }
+
+      if (project_types.length < 1) {
+        $(".project-type-field").addClass("form-error");
+      }
+      console.log(start_date)
+      if (start_date == false) {
+        console.log("start-date false")
+        $(".start-date-field").addClass("form-error");
+        
+      }
+
+      if (deadline == false) {
+        $(".deadline-field").addClass("form-error");
+      }
+
+      if (budget == false) {
+        $(".budget-field").addClass("form-error");
       }
 
     }
@@ -61,6 +89,8 @@ $(document).ready(function(){
     e.preventDefault();
 
   });
+
+  //custom form options
 
   $(".project-type .option").click(function(){
 
@@ -160,5 +190,6 @@ $(document).ready(function(){
 
   })
 
+  //date pickers
   $( ".calendar-field" ).datepicker({ dateFormat: 'dd-mm-yy' });
 });

@@ -162,6 +162,10 @@
       .form-error {
         color: $pink;
         border-color: $pink;
+
+        .error-message {
+          display: block;
+        }
       }
 
       .large {
