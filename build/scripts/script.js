@@ -124,10 +124,11 @@ $(document).ready(function(){
       $(".error-message").hide();
       $(".form-field").removeClass("form-error")
       $(".overlay").css({"display": "flex"})
+
       $.ajax({
 
             url: "https://docs.google.com/forms/d/e/1FAIpQLSeTDVuph6orVNtXd-hWp0L7d47JBg0pCuZr-qYcrBkzF5N1Uw/formResponse",
-            data: $('#submission-form').serialize(),
+            data: $('#contact-form').serialize(),
             type: "POST",
             dataType: "xml",
             crossDomain: true,
