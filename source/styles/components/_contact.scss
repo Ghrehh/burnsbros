@@ -103,7 +103,7 @@
     max-width: 674px;
     margin: auto;
     border-radius: 5px;
-    margin-bottom: 80px;
+    margin-bottom: 54px;
     position:relative;
 
     .overlay {
@@ -294,6 +294,39 @@
       .body-writing {
         color: white;
       }
+    }
+  }
+
+  #other-contact {
+    text-align: center;
+
+    .small-header {
+      margin-bottom: 26px;
+    }
+
+    .section-header {
+      margin-bottom: 53px;
+
+      a {
+        color: $blue;
+        text-decoration: none;
+        font-size: 36px;
+        
+
+      }
+
+
+
+      img {
+        position:relative;
+        top: 6px;
+        margin-right: 9px;
+      }
+
+    }
+
+    .second {
+      margin-bottom: 21px;
     }
   }
 

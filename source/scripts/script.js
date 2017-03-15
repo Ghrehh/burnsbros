@@ -190,6 +190,16 @@ $(document).ready(function(){
 
   }
 
+  //homepage fullscreen
+  if($("#index").length > 0){
+    var window_height = $(window).height();
+    var nav_height = $("#top-nav").height();
+
+    $("#index").css({"height": ((window_height - nav_height) * 1) + "px"})
+    $("#vertical-center").css({"padding-bottom": ((window_height - nav_height) * 0.025) + "px"})
+    $("#page-title-section").css({"padding":"0px"})
+  }
+
 
 
 });

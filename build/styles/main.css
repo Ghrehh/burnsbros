@@ -472,7 +472,11 @@ footer {
 
 #index #page-title-section {
   background-color: #00b070;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
   #index #page-title-section .title-container {
     text-align: center; }
     #index #page-title-section .title-container #page-title {
@@ -857,7 +861,7 @@ footer {
   max-width: 674px;
   margin: auto;
   border-radius: 5px;
-  margin-bottom: 80px;
+  margin-bottom: 54px;
   position: relative; }
   #contact #say-hello .overlay {
     position: absolute;
@@ -979,6 +983,23 @@ footer {
     margin-top: 32px; }
     #contact #say-hello .error-alert .body-writing, #contact #say-hello .error-alert .small, #contact #say-hello .error-alert .section-body, #contact #say-hello .error-alert footer #cards .card, footer #cards #contact #say-hello .error-alert .card, #contact #say-hello .error-alert footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #contact #say-hello .error-alert a, #contact #say-hello .error-alert #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #contact #say-hello .error-alert p, #contact #say-hello .error-alert #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #contact #say-hello .error-alert a, #contact #say-hello .error-alert #about #meet-the #collaborators p, #about #meet-the #collaborators #contact #say-hello .error-alert p, #contact #say-hello .error-alert #about #meet-the #job-opportunities, #about #meet-the #contact #say-hello .error-alert #job-opportunities, #contact #say-hello .error-alert #projects #examples .portfolio-image p, #projects #examples .portfolio-image #contact #say-hello .error-alert p, #contact #say-hello .error-alert #contact-form .form-field label, #contact #say-hello #contact-form .form-field .error-alert label, #contact #say-hello .error-alert #contact-form .form-field input, #contact #say-hello #contact-form .form-field .error-alert input, #contact #say-hello .error-alert #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field .error-alert textarea, #contact #say-hello .error-alert #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #contact #say-hello .error-alert label, #contact #say-hello .error-alert #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #contact #say-hello .error-alert input, #contact #say-hello .error-alert #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #contact #say-hello .error-alert textarea {
       color: white; }
+
+#contact #other-contact {
+  text-align: center; }
+  #contact #other-contact .small-header, #contact #other-contact footer #cards .card h3, footer #cards .card #contact #other-contact h3, #contact #other-contact footer #work-with-us .description, footer #work-with-us #contact #other-contact .description {
+    margin-bottom: 26px; }
+  #contact #other-contact .section-header {
+    margin-bottom: 53px; }
+    #contact #other-contact .section-header a {
+      color: #009cd7;
+      text-decoration: none;
+      font-size: 36px; }
+    #contact #other-contact .section-header img {
+      position: relative;
+      top: 6px;
+      margin-right: 9px; }
+  #contact #other-contact .second {
+    margin-bottom: 21px; }
 
 #project-planner #form {
   border: 1px solid #C5C3C3;
