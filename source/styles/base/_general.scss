@@ -7,9 +7,7 @@
 }
 
 html {
-
     -webkit-font-smoothing: antialiased;
-
 }
 
 h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
@@ -139,4 +137,20 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   display: block;
   margin: 0 auto 60px;
   max-width: 570px
+}
+
+
+@media (max-width: 500px) { 
+  #page-title-section {
+    padding: 39px 0 27px;
+    
+    #page-title {
+      font-size: 20px;
+    }
+
+    #page-description {
+      display: none;
+    }
+
+  }
 }

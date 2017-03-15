@@ -284,3 +284,17 @@
 
 
 }
+
+@media (max-width: 500px) { 
+  #about {
+    #who-are-we {
+      padding: 47px 0 9px;
+
+      .body-writing {
+        width: 82%;
+        padding: 0 9%;
+        font-size: 18px;
+      }
+    }
+  }
+}

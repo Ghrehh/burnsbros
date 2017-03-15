@@ -261,6 +261,14 @@ h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
   margin: 0 auto 60px;
   max-width: 570px; }
 
+@media (max-width: 500px) {
+  #page-title-section {
+    padding: 39px 0 27px; }
+    #page-title-section #page-title {
+      font-size: 20px; }
+    #page-title-section #page-description {
+      display: none; } }
+
 #top-nav {
   align-items: center;
   display: flex;
@@ -713,6 +721,14 @@ footer {
     max-width: 570px;
     margin-bottom: 45px;
     line-height: 28px; }
+
+@media (max-width: 500px) {
+  #about #who-are-we {
+    padding: 47px 0 9px; }
+    #about #who-are-we .body-writing, #about #who-are-we .small, #about #who-are-we .section-body, #about #who-are-we footer #cards .card, footer #cards #about #who-are-we .card, #about #who-are-we footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #about #who-are-we a, #about #who-are-we #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #who-are-we p, #about #who-are-we #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #who-are-we a, #about #who-are-we #meet-the #collaborators p, #about #meet-the #collaborators #who-are-we p, #about #who-are-we #meet-the #job-opportunities, #about #meet-the #who-are-we #job-opportunities, #about #who-are-we #projects #examples .portfolio-image p, #projects #examples .portfolio-image #about #who-are-we p, #about #who-are-we #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #about #who-are-we label, #about #who-are-we #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #about #who-are-we input, #about #who-are-we #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #about #who-are-we textarea, #about #who-are-we #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #about #who-are-we label, #about #who-are-we #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #about #who-are-we input, #about #who-are-we #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #about #who-are-we textarea {
+      width: 82%;
+      padding: 0 9%;
+      font-size: 18px; } }
 
 #projects .projects-title-section {
   background-color: #fc9e33;
