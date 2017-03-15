@@ -81,7 +81,7 @@ function moveArrows(mPos, arrowAngles){
   }
 
   setTimeout(function(){
-    //moveArrows(mPos, arrowAngles);
+    moveArrows(mPos, arrowAngles);
   }, 1000 / 120);
 
 
