@@ -1032,14 +1032,14 @@ footer {
       height: 260px;
       background-size: 100%; }
       #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container {
-        padding: 15px 14px 19px; }
+        padding: 12px 11px 15px; }
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
-          font-size: 22px; }
+          font-size: 21px; }
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
-          font-size: 13px;
-          bottom: 2px; }
+          font-size: 12px;
+          bottom: 3px; }
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
-          font-size: 16px;
+          font-size: 14px;
           bottom: 1px; } }
 
 #projects .projects-title-section {
