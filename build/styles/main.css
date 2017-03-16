@@ -497,7 +497,8 @@ footer {
         margin: auto;
         margin-bottom: 10px;
         display: block; }
-      footer #cards .card .card-inner .orange-button-form {
+      footer #cards .card .card-inner .orange-button-form, footer #cards .card .card-inner .orange-button-form-fix {
+        position: static;
         border-radius: 4px 4px 4px 4px;
         width: 100%;
         max-width: 300px;

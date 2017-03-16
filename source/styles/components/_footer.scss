@@ -294,7 +294,8 @@ footer {
             
           }
 
-          .orange-button-form {
+          .orange-button-form, .orange-button-form-fix {
+            position: static;
             border-radius: 4px 4px 4px 4px;
             width: 100%;
             max-width: 300px;
