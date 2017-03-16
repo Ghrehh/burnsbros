@@ -307,6 +307,8 @@ footer {
 
           .small {
             font-size: 12px;
+            line-height: 15px;
+            padding: 11px 0px 17px;
           }
         }
       }
@@ -490,8 +492,10 @@ footer {
           }
 
         }
-
-
+        
+        .grey-nav {
+          margin-bottom: 20px;
+        }
       }
     }
   }

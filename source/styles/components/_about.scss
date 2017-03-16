@@ -582,12 +582,54 @@
 
               .fa-location-arrow {
                 font-size: 13px;
-                bottom: 3px;
+                bottom: 2px;
               }
 
               .text-right {
                 font-size: 16px;
+                bottom: 1px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  
+}
+
+@media (max-width: 330px) {
+
+  #about {
+
+    #meet-the {
+
+      #profile-pictures{
+
+        .profile-picture-container {
+          width: 260px;
+
+          .profile-picture {
+            height: 260px;
+            background-size: 100%;
+
+            .text-container {
+              padding: 15px 14px 19px;
+
+              .text-left {
+                font-size: 22px;
+              }
+
+              .fa-location-arrow {
+                font-size: 13px;
                 bottom: 2px;
+              }
+
+              .text-right {
+                font-size: 16px;
+                bottom: 1px;
               }
             }
           }

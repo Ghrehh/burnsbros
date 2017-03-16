@@ -511,7 +511,9 @@ footer {
           margin: auto;
           display: block; }
         footer #cards .card .card-inner .small {
-          font-size: 12px; }
+          font-size: 12px;
+          line-height: 15px;
+          padding: 11px 0px 17px; }
     footer #cards #our-process-card {
       margin-bottom: 37px; }
       footer #cards #our-process-card .card-inner {
@@ -607,7 +609,9 @@ footer {
       footer #bottom-nav #bottom-nav-inner ul li {
         display: block; }
       footer #bottom-nav #bottom-nav-inner ul li:after {
-        content: ""; } }
+        content: ""; }
+    footer #bottom-nav #bottom-nav-inner .grey-nav {
+      margin-bottom: 20px; } }
 
 #index header {
   background-color: #00b070;
@@ -1016,10 +1020,27 @@ footer {
           font-size: 22px; }
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
           font-size: 13px;
-          bottom: 3px; }
+          bottom: 2px; }
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
           font-size: 16px;
-          bottom: 2px; } }
+          bottom: 1px; } }
+
+@media (max-width: 330px) {
+  #about #meet-the #profile-pictures .profile-picture-container {
+    width: 260px; }
+    #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
+      height: 260px;
+      background-size: 100%; }
+      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container {
+        padding: 15px 14px 19px; }
+        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
+          font-size: 22px; }
+        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
+          font-size: 13px;
+          bottom: 2px; }
+        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
+          font-size: 16px;
+          bottom: 1px; } }
 
 #projects .projects-title-section {
   background-color: #fc9e33;
