@@ -384,6 +384,10 @@ footer {
         footer #cards .card #stay-connected-container a {
           text-decoration: none; }
         footer #cards .card #stay-connected-container i {
+          -webkit-transition: color 100ms ease;
+          -moz-transition: color 100ms ease;
+          -o-transition: color 100ms ease;
+          transition: color 100ms ease;
           font-size: 24px;
           color: #333333; }
         footer #cards .card #stay-connected-container i:hover {
@@ -480,45 +484,130 @@ footer {
   font-size: 12px; }
 
 @media (max-width: 880px) {
-  footer #background {
-    display: none; }
-  footer #cards .card {
-    width: 82%; }
-    footer #cards .card .card-inner {
-      padding: 23px 26px 0px; }
-      footer #cards .card .card-inner #email-submission {
-        display: block; }
-      footer #cards .card .card-inner .email-field {
-        border-radius: 4px 4px 4px 4px;
-        width: 100%;
-        text-align: center;
-        padding: 6px 0px 8px;
-        max-width: 300px;
-        margin: auto;
-        margin-bottom: 10px;
-        display: block; }
-      footer #cards .card .card-inner .orange-button-form, footer #cards .card .card-inner .orange-button-form-fix {
-        position: static;
-        border-radius: 4px 4px 4px 4px;
-        width: 100%;
-        max-width: 300px;
-        margin: auto;
-        display: block; }
-      footer #cards .card .card-inner .small {
-        font-size: 12px; }
-  footer #cards #our-process-card {
-    margin-bottom: 37px; }
-    footer #cards #our-process-card .card-inner {
-      padding-bottom: 30px; }
-      footer #cards #our-process-card .card-inner .orange-button, footer #cards #our-process-card .card-inner .card .orange-button-form, footer #cards .card #our-process-card .card-inner .orange-button-form {
-        display: block;
-        text-align: center;
-        max-width: 300px;
-        margin: auto; }
-      footer #cards #our-process-card .card-inner br {
+  footer {
+    margin: 0; }
+    footer #background {
+      display: none; }
+    footer #cards .card {
+      width: 82%; }
+      footer #cards .card .card-inner {
+        padding: 23px 26px 0px; }
+        footer #cards .card .card-inner #email-submission {
+          display: block; }
+        footer #cards .card .card-inner .email-field {
+          border-radius: 4px 4px 4px 4px;
+          width: 100%;
+          text-align: center;
+          padding: 6px 0px 8px;
+          max-width: 300px;
+          margin: auto;
+          margin-bottom: 11px;
+          display: block; }
+        footer #cards .card .card-inner .orange-button-form, footer #cards .card .card-inner .orange-button-form-fix {
+          position: static;
+          border-radius: 4px 4px 4px 4px;
+          width: 100%;
+          max-width: 300px;
+          margin: auto;
+          display: block; }
+        footer #cards .card .card-inner .small {
+          font-size: 12px; }
+    footer #cards #our-process-card {
+      margin-bottom: 37px; }
+      footer #cards #our-process-card .card-inner {
+        padding-bottom: 30px; }
+        footer #cards #our-process-card .card-inner .orange-button, footer #cards #our-process-card .card-inner .card .orange-button-form, footer #cards .card #our-process-card .card-inner .orange-button-form {
+          display: block;
+          text-align: center;
+          max-width: 300px;
+          margin: auto; }
+        footer #cards #our-process-card .card-inner br {
+          display: none; }
+      footer #cards #our-process-card #stay-connected-container {
         display: none; }
-    footer #cards #our-process-card #stay-connected-container {
-      display: none; } }
+    footer #work-with-us {
+      width: 100%;
+      background-color: #E6E6E6;
+      margin-bottom: 0px;
+      text-align: center;
+      display: block;
+      padding: 35px 0px 40px; }
+      footer #work-with-us .description {
+        width: 82%;
+        margin: auto;
+        margin-bottom: 35px; }
+      footer #work-with-us .buttons {
+        width: 82%;
+        margin: auto; }
+        footer #work-with-us .buttons .orange-button, footer #work-with-us .buttons #cards .card .orange-button-form, footer #cards .card #work-with-us .buttons .orange-button-form, footer #work-with-us .buttons .white-button {
+          width: 100%;
+          max-width: 250px;
+          padding-left: initial;
+          padding-right: initial;
+          margin: 0; }
+        footer #work-with-us .buttons .orange-button, footer #work-with-us .buttons #cards .card .orange-button-form, footer #cards .card #work-with-us .buttons .orange-button-form {
+          margin-bottom: 11px; }
+    footer #bottom-nav #bottom-nav-inner {
+      flex-wrap: wrap;
+      padding: 42px 0px 38px; }
+      footer #bottom-nav #bottom-nav-inner ul {
+        flex: 0 0 100%; }
+        footer #bottom-nav #bottom-nav-inner ul li a {
+          padding: 5px 2px 6px; }
+      footer #bottom-nav #bottom-nav-inner .grey-nav {
+        margin-bottom: 8px; }
+        footer #bottom-nav #bottom-nav-inner .grey-nav li a {
+          color: grey; }
+        footer #bottom-nav #bottom-nav-inner .grey-nav li a:hover {
+          color: #009cd7; }
+        footer #bottom-nav #bottom-nav-inner .grey-nav li:after {
+          color: grey; }
+      footer #bottom-nav #bottom-nav-inner #footer-logo-link {
+        flex: 0 0 100%;
+        order: -2;
+        margin-bottom: 16px; }
+        footer #bottom-nav #bottom-nav-inner #footer-logo-link svg {
+          margin: auto; }
+      footer #bottom-nav #bottom-nav-inner .elsewhere {
+        display: flex; }
+        footer #bottom-nav #bottom-nav-inner .elsewhere .body-writing, footer #bottom-nav #bottom-nav-inner .elsewhere .small, footer #bottom-nav #bottom-nav-inner .elsewhere .section-body, footer #bottom-nav #bottom-nav-inner .elsewhere #cards .card, footer #cards #bottom-nav #bottom-nav-inner .elsewhere .card, footer #bottom-nav #bottom-nav-inner .elsewhere ul li a, footer #bottom-nav #bottom-nav-inner ul li .elsewhere a, footer #bottom-nav #bottom-nav-inner .elsewhere #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description footer #bottom-nav #bottom-nav-inner .elsewhere p, footer #bottom-nav #bottom-nav-inner .elsewhere #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description footer #bottom-nav #bottom-nav-inner .elsewhere a, footer #bottom-nav #bottom-nav-inner .elsewhere #about #meet-the #collaborators p, #about #meet-the #collaborators footer #bottom-nav #bottom-nav-inner .elsewhere p, footer #bottom-nav #bottom-nav-inner .elsewhere #about #meet-the #job-opportunities, #about #meet-the footer #bottom-nav #bottom-nav-inner .elsewhere #job-opportunities, footer #bottom-nav #bottom-nav-inner .elsewhere #projects #examples .portfolio-image p, #projects #examples .portfolio-image footer #bottom-nav #bottom-nav-inner .elsewhere p, footer #bottom-nav #bottom-nav-inner .elsewhere #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field footer #bottom-nav #bottom-nav-inner .elsewhere label, footer #bottom-nav #bottom-nav-inner .elsewhere #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field footer #bottom-nav #bottom-nav-inner .elsewhere input, footer #bottom-nav #bottom-nav-inner .elsewhere #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field footer #bottom-nav #bottom-nav-inner .elsewhere textarea, footer #bottom-nav #bottom-nav-inner .elsewhere #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field footer #bottom-nav #bottom-nav-inner .elsewhere label, footer #bottom-nav #bottom-nav-inner .elsewhere #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field footer #bottom-nav #bottom-nav-inner .elsewhere input, footer #bottom-nav #bottom-nav-inner .elsewhere #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field footer #bottom-nav #bottom-nav-inner .elsewhere textarea {
+          color: grey;
+          margin-right: 19px; }
+        footer #bottom-nav #bottom-nav-inner .elsewhere a {
+          text-decoration: none; }
+        footer #bottom-nav #bottom-nav-inner .elsewhere i {
+          -webkit-transition: color 100ms ease;
+          -moz-transition: color 100ms ease;
+          -o-transition: color 100ms ease;
+          transition: color 100ms ease;
+          font-size: 24px;
+          color: white;
+          position: relative;
+          top: 3px; }
+        footer #bottom-nav #bottom-nav-inner .elsewhere i:hover {
+          color: #009cd7;
+          cursor: pointer; }
+        footer #bottom-nav #bottom-nav-inner .elsewhere .twitter-icon {
+          margin-left: auto;
+          margin-right: 15px; }
+        footer #bottom-nav #bottom-nav-inner .elsewhere .instagram-icon {
+          margin-right: 27px; }
+  #copyright .small {
+    width: 82%;
+    margin: auto;
+    line-height: 18px;
+    padding: 20px; } }
+
+@media (max-width: 320px) {
+  footer #bottom-nav #bottom-nav-inner {
+    flex-wrap: wrap;
+    padding: 40px 0px; }
+    footer #bottom-nav #bottom-nav-inner ul {
+      flex: 0 0 100%; }
+      footer #bottom-nav #bottom-nav-inner ul li {
+        display: block; }
+      footer #bottom-nav #bottom-nav-inner ul li:after {
+        content: ""; } }
 
 #index header {
   background-color: #00b070;
@@ -859,8 +948,8 @@ footer {
     #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
       margin-bottom: 25px; }
     #about #meet-the #profile-pictures .profile-picture-container .description {
-      width: 96%;
-      padding: 0 4%;
+      width: 98%;
+      padding: 0 1%;
       font-size: 18px; }
     #about #meet-the #collaborators {
       flex-wrap: wrap;
@@ -926,10 +1015,11 @@ footer {
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
           font-size: 22px; }
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
-          font-size: 13px; }
+          font-size: 13px;
+          bottom: 3px; }
         #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
           font-size: 16px;
-          bottom: 1px; } }
+          bottom: 2px; } }
 
 #projects .projects-title-section {
   background-color: #fc9e33;

@@ -458,9 +458,10 @@
           }
 
           .description {
-            width: 96%;
-            padding: 0 4%;
+            width: 98%;
+            padding: 0 1%;
             font-size: 18px;
+
           }
 
         }
@@ -581,11 +582,12 @@
 
               .fa-location-arrow {
                 font-size: 13px;
+                bottom: 3px;
               }
 
               .text-right {
                 font-size: 16px;
-                bottom: 1px;
+                bottom: 2px;
               }
             }
           }
