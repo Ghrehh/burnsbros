@@ -6,10 +6,10 @@
   }
 
   #who-are-we {
-    padding: 64px 0 9px;
+    padding: 64px 0 10px;
 
     .section-header {
-      margin: 0 0 44px;
+      margin: 0 0 45px;
     }
 
     .section-body  {
@@ -20,18 +20,29 @@
 
   #what-do-we-do {
     background-color: $orange;
-    padding: 59px 0 33px;
+    padding: 76px 0 45px;
+
+    .white-title {
+      margin-bottom:38px;
+    }
 
     .section-header {
-      margin: 0 0 32px;
+      margin-bottom: 36px;
+      
     }
 
     >.section-body {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      max-width: 570px;
+      max-width: 566px;
       margin-bottom: 45px;
+      line-height: 28px;
+
+      .italic {
+        font-style: italic;
+        font-family: adelle;
+      }
     }
 
     .about-buttons {
@@ -49,8 +60,8 @@
         color: white;
         font-size: 24px;
         font-weight: 700;
-        margin-bottom: 35px;
-        padding: 0px 21px;
+        margin-bottom: 36px;
+        padding-bottom: 3px;
         text-align:center;
         flex: 0 0 28.5%;
         align-items: center;
@@ -59,6 +70,7 @@
         line-height: 37px;
         height: 120px;
       }
+
 
       .half-size {
         flex: 0 0 12%;
@@ -92,22 +104,31 @@
         .body-writing {
           line-height: 28px;
         }
+
+        .bold {
+          font-weight: 700;
+          font-family: adelle;
+          
+        }
       }
     }
   }
 
   #meet-the {
-    padding: 87px 0px 69px;
+    padding: 73px 0px 69px;
 
     .section-header {
-      margin: 0 0 48px;
+      margin: 0 0 44px;
     }
 
     .half-logo-top {
       left: 10px;
       position: relative;
       top: 7px;
+    }
 
+    br {
+      display: none;
     }
 
 
@@ -116,6 +137,7 @@
       justify-content: space-around;
       margin: 0px auto 53px;
       max-width: 870px;
+      flex-wrap: wrap;
 
 
       .profile-picture-container {
@@ -132,7 +154,7 @@
           .text-container {
             align-items: flex-end;
             display: flex;
-            padding: 18px 33px 19px;
+            padding: 16px 33px 20px;
             width: 100%;
 
             .text-left {
@@ -238,27 +260,63 @@
 
   #how-do-we-work {
     background-color: $pink;
-    padding: 59px 0 55px;
+    padding: 77px 0 15px;
 
-    .section-header {
-      margin: 0 0 32px;
-    }
+    .content {
+      max-width: 880px;
+      margin: auto;
+      display: flex;
+      padding: 47px 0px 62px;
 
-    .section-body {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 570px;
-      margin-bottom: 45px;
-      color: white;
+      img {
+        width: 391px;
+        height: 257px;
+      }
+
+      .right {
+        position: relative;
+        bottom: 3px;
+        padding:0px 30px 0px 46px;
+
+        .section-header {
+          margin-bottom: 37px;
+          text-align: left;
+        }
+
+        .body-writing {
+          color: white;
+          line-height: 28px;
+          margin-bottom: 32px;
+        }
+
+        .bold {
+          font-weight: 700;
+          font-family: adelle;
+        }
+
+        .white-button {
+          font-size: 18px;
+          font-weight: 700;
+          padding: 15px 30px 16px;
+          background-color: transparent;
+          color: white;
+          border: 1px solid white;
+          box-sizing:border-box;
+        }
+
+        .white-button:hover {
+          background-color: white;
+          color: $pink;
+        }
+      }
     }
   }
 
   #in-the-community {
-    padding: 65px 0px 0px;
+    padding: 80px 0px 0px;
 
     .section-header {
-      margin: 0 0 76px;
+      margin: 0 0 75px;
     }
 
     img {
@@ -270,6 +328,10 @@
     .small-header {
       text-align:center;
       margin-bottom: 43px;
+
+      br {
+        display: none;
+      }
     }
 
     .section-body {
@@ -277,7 +339,7 @@
       margin-left: auto;
       margin-right: auto;
       max-width: 570px;
-      margin-bottom: 45px;
+      margin-bottom: 22px;
       line-height:28px;
     }
   }
@@ -285,7 +347,7 @@
 
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 880px) { 
   #about {
     #who-are-we {
       padding: 47px 0 9px;
@@ -295,6 +357,243 @@
         padding: 0 9%;
         font-size: 18px;
       }
+
+    }
+
+    #what-do-we-do {
+      padding: 56px 0 40px;
+
+      .white-title {
+        margin-bottom: 38px;
+      }
+
+      .body-writing {
+        width: 82%;
+        padding: 0 9%;
+        font-size: 18px;
+      }
+
+      .about-buttons {
+
+        .about-button {
+          flex: 0 0 82%;
+          color: $light-charcoal;
+          border-color: $light-charcoal;
+          font-size: 19px;
+          height: initial;
+          padding: 10px 10px 12px;
+          margin-bottom: 20px;
+        }
+
+        br {
+          display: none;
+        }
+
+        .half-size {
+          display: none;
+        }
+      }
+
+
+    }
+
+    #why-do-we-do {
+
+      .content {
+        padding: 55px 0px 67px;
+
+        img {
+          display: none;
+        }
+
+        .right {
+          padding: 0;
+
+          .small-header {
+            width: 82%;
+            padding: 0 9%;
+            text-align: center;
+          }
+
+          .body-writing {
+            width: 82%;
+            padding: 0 9%;
+            font-size: 18px;
+            text-align: center;
+          }
+
+        }
+      }
+    }
+
+    #meet-the {
+      padding: 53px 0px 79px;
+
+      .section-header {
+        text-align: center;
+        margin: 0 0 62px;
+        
+      }
+
+      br {
+         display: inline-block;
+      }
+
+      .half-logo-top {
+        left: 0;
+        top: 15px;
+      }
+
+      #profile-pictures{
+
+        .brian-container {
+          margin-bottom: 60px;
+        }
+
+        .profile-picture-container {
+
+          .profile-picture {
+            margin-bottom: 25px;
+
+          }
+
+          .description {
+            width: 96%;
+            padding: 0 4%;
+            font-size: 18px;
+          }
+
+        }
+
+
+      }
+
+      #collaborators {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 82%;
+
+        .half-logo-bottom {
+          width: 72px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          flex: 0 0 100%;
+          padding: 0;
+          text-align: center;
+        }
+      }
+
+    }
+
+    #how-do-we-work {
+      padding-top: 56px;
+
+      .content {
+        display: block;
+        padding: 43px 0px 52px;
+
+
+        img {
+          width: 82%;
+          padding: 0 9%;
+          height: auto;
+          margin-bottom: 40px;
+        }
+
+        .right {
+          width: 82%;
+          padding: 0 9%;
+
+          .section-header {
+            text-align: center;
+          }
+
+          .section-body {
+            margin-bottom: 60px;
+          }
+
+          .button-container {
+            text-align:center;
+          }
+        }
+      }
+    }
+
+    #in-the-community {
+      padding: 55px 0px 0px;
+
+      .section-header {
+        width: 82%;
+        padding: 0 9%;
+        line-height: 53px;
+        font-size: 37px;
+        margin-bottom: 44px;
+      }
+
+      img {
+        width: 82%;
+        padding: 0 9%;
+        margin-bottom: 30px;
+      }
+
+      .small-header {
+        width: 82%;
+        padding: 0 9%;
+        line-height: 35px;
+        margin-bottom: 28px;
+
+        br {
+          display: inline-block;
+        }
+      }
+
+      .section-body {
+        width: 82%;
+        padding: 0 9%;
+      }
     }
   }
+}
+
+@media (max-width: 430px) {
+
+  #about {
+
+    #meet-the {
+
+      #profile-pictures{
+
+        .profile-picture-container {
+          width: 300px;
+
+          .profile-picture {
+            height: 300px;
+            background-size: 100%;
+
+            .text-container {
+              padding: 15px 14px 19px;
+
+              .text-left {
+                font-size: 22px;
+              }
+
+              .fa-location-arrow {
+                font-size: 13px;
+              }
+
+              .text-right {
+                font-size: 16px;
+                bottom: 1px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  
 }

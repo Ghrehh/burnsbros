@@ -1,23 +1,13 @@
-///////////////////
-//GENERAL/////////
-/////////////////
+html {
+    -webkit-font-smoothing: antialiased;
+}
 
 #dark {
   background-color: $charcoal;
 }
 
-html {
-    -webkit-font-smoothing: antialiased;
-}
-
 h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   font-family: "adelle-sans";
-}
-
-.body-writing {
-  color: $charcoal;
-  font-size: 19px;
-  line-height: 27px;
 }
 
 .small-header {
@@ -27,103 +17,76 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   font-size: 25px;
 }
 
+.body-writing {
+  color: $charcoal;
+  font-size: 19px;
+  line-height: 27px;
+}
+
 .small {
   @extend .body-writing;
   font-size: 13px;
 }
 
-.button-template {
 
-  $duration: 100ms;
+//*************
+//The headings of pages and sections that look similar
+//*************
 
-  -webkit-transition: color $duration ease, background-color $duration ease;
-  -moz-transition: color $duration ease, background-color $duration ease;
-  -o-transition: color $duration ease, background-color $duration ease;
-  transition: color $duration ease, background-color $duration ease;
-
-  text-decoration: none;
-  padding: 7px 16px;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 4px;
-  border: none;
-  line-height: 27px;
-}
-
-.orange-button {
-
-  @extend .button-template;
-  background-color: $orange;
-  color: $charcoal;
-}
-
-.orange-button:hover {
-  color: $orange;
-  background-color: $charcoal;
-}
-
-.white-button {
-  @extend .button-template;
-  background-color: white;
-  color: $charcoal;
-}
-
-.white-button:hover {
-  color: white;
-  background-color: $charcoal;
-}
-
-//the colored background at the top of each page, this gets extended and color added
-#page-title-section {
-  padding: 62px 0 76px;
-}
-
-//the white about/what we do/projects heading that appears on each page
-//currentlys looks theres on one of these, so it's an id
-#page-title {
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-  padding-bottom: 9px;
-  text-align: center;
-
-
-
-}
-
-//the dark text large header that goes undernearth the page title
-#page-description {
-
-  color: $charcoal;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 64px;
-  text-align:center;
-
-  .page-description-small {
-    font-weight:500;
+  //should still only be one of these, even if the page has multiple things that looks like this
+  header {
+    padding: 62px 0 76px;
   }
 
-}
+  //the white about/what we do/projects heading that appears on each page
 
-#page-info {
-  margin-bottom: 54px;
-
-  .small-header {
+  .white-title {
+    color: white;
     font-size: 24px;
-    color: $charcoal;
-    font-weight: 400;
-    text-align:center;
-    line-height: 36px;
+    font-weight: 700;
+    padding-bottom: 9px;
+    text-align: center;
 
-    .embolden {
-      font-weight: 700;
-      font-family: "adelle";
+
+
+  }
+
+  //the dark text large header that goes undernearth the page title
+  .page-description {
+
+    color: $charcoal;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align:center;
+
+    .page-description-small {
+      font-weight:500;
+    }
+
+  }
+
+  //descriptive text that appeaers below the header on some pages
+  #page-info {
+    margin-bottom: 54px;
+
+    .small-header {
       font-size: 24px;
+      color: $charcoal;
+      font-weight: 400;
+      text-align:center;
+      line-height: 36px;
+
+      .embolden {
+        font-weight: 700;
+        font-family: "adelle";
+        font-size: 24px;
+      }
     }
   }
-}
+
+//*************
+
 
 .section-header {
   color: $charcoal;
@@ -141,16 +104,16 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 
 
 @media (max-width: 500px) { 
-  #page-title-section {
+  header {
     padding: 39px 0 27px;
-    
-    #page-title {
-      font-size: 20px;
-    }
 
-    #page-description {
-      display: none;
-    }
+  }
 
+  .white-title {
+    font-size: 20px;
+  }
+
+  .page-description {
+    display: none;
   }
 }

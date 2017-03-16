@@ -1,5 +1,5 @@
 #index {
-  #page-title-section{
+  header{
     background-color: $dark-mint-green;
     margin-bottom: 20px;
     display:flex;
@@ -10,7 +10,7 @@
     .title-container {
       text-align:center;
 
-      #page-title {
+      .white-title {
         margin-bottom: 20px;
         display: inline-block;
         vertical-align: top;
@@ -35,7 +35,7 @@
 
 
 
-    #page-description {
+    .page-description {
       font-size: 49px;
       line-height: 61px;
       margin-bottom: 35px;

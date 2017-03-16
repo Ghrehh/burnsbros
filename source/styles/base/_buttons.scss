@@ -1,0 +1,41 @@
+.button-template {
+
+  $duration: 100ms;
+
+  -webkit-transition: color $duration ease, background-color $duration ease;
+  -moz-transition: color $duration ease, background-color $duration ease;
+  -o-transition: color $duration ease, background-color $duration ease;
+  transition: color $duration ease, background-color $duration ease;
+
+  text-decoration: none;
+  padding: 7px 16px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  line-height: 27px;
+}
+
+.orange-button {
+
+  @extend .button-template;
+  background-color: $orange;
+  color: $charcoal;
+}
+
+.orange-button:hover {
+  color: $orange;
+  background-color: $charcoal;
+}
+
+.white-button {
+  @extend .button-template;
+  background-color: white;
+  color: $charcoal;
+}
+
+.white-button:hover {
+  color: white;
+  background-color: $charcoal;
+}
