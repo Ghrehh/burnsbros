@@ -143,6 +143,8 @@ $(document).ready(function(){
 
       });
 
+      $(window).scrollTop($("#success-scroll").offset().top)
+
     }
     else {
       $(".error-alert").show();

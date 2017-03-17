@@ -118,7 +118,6 @@
         margin: auto;
       }
 
-
       .party-popper-container {
         margin-bottom: 25px;
       }
@@ -378,6 +377,24 @@
       #say-hello-inner {
         padding-left: 0;
         padding-right: 0;
+      }
+
+      .overlay {
+        .section-header {
+          width: 82%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .body-writing {
+          width: 82%;
+          margin-left: auto;
+          margin-right: auto;
+
+          br {
+            display: none;
+          }
+        }
       }
 
       .section-header {
