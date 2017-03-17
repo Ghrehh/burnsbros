@@ -12,6 +12,8 @@
     margin: auto;
     display: flex;
     margin-bottom: 100px;
+    border-radius: 3px;
+    overflow:hidden;
 
     .text-container {
       background-color: $charcoal;
@@ -339,7 +341,7 @@
 @media (max-width: 880px) { 
   #contact {
     #project-planner {
-      width: 100%;
+      width: 92%;
       margin-bottom: 58px;
 
       .text-container {

@@ -170,10 +170,8 @@
 
       //fields with custom styling///////////
 
-
-
       .project-type-field {
-        margin-bottom: 26px;
+        margin-bottom: 0px;
         border-color: $light-grey;
 
         label {
@@ -185,20 +183,21 @@
           flex: 0 0 100%;
           justify-content: space-between;
           border-color: inherit;
-          //margin-bottom: 26px;
+          flex-wrap: wrap;
 
     
         }
 
         .option {
-          flex: 0 0 22%;
           border: 1px solid $light-grey;
           border-color: inherit;
           border-radius: 4px;
           text-align:center;
           padding-top: 16px;
           max-width: 144px;
+          min-width: 144px;
           color: white;
+          margin-bottom: 26px;
 
 
           //makes item unhighlightable
@@ -231,6 +230,11 @@
           }
 
 
+        }
+
+        .error-message {
+          position: relative;
+          bottom: 26px;
         }
 
 
@@ -506,4 +510,217 @@
     }
   }
 
+}
+
+@media (max-width: 880px) { 
+  #project-planner {
+    #form {
+      width: 92%;
+
+      .overlay {
+        .section-header {
+          width: 82%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .body-writing {
+          width: 82%;
+          margin-left: auto;
+          margin-right: auto;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      #form-inner {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+      }
+
+      .section-header {
+        width: 82%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 35px;
+      }
+
+      .section-body {
+        width: 82%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+
+        br {
+          display: none;
+        }
+      }
+
+      #project-planner-form {
+        justify-content: center;
+
+        .form-field {
+          flex: 0 0 82%;
+        }
+
+        .project-type-field {
+
+          label {
+            text-align: center;
+          }
+
+          .project-type {
+            width: 318px;
+            margin: auto;
+          }
+
+          .error-message {
+            text-align: center;
+            bottom: 16px;
+          }
+        }
+
+        .start-date-field, .deadline-field {
+
+          label {
+            text-align: center;
+          }
+
+          .selection {
+            display: block;
+
+            .option {
+              max-width: 204px;
+              min-width: 204px;
+              margin: auto;
+              margin-bottom: 10px;
+              
+            }
+          }
+
+          .error-message {
+            text-align: center;
+          }
+        }
+
+        .budget-field {
+
+          label {
+            width: 100%;
+          }
+
+          .small {
+            width: 100%;
+            margin-bottom: 36px;
+          }
+
+          .budget {
+            width: 100%;
+            display: block;
+            position: static;
+
+            .option {
+
+              .number {
+                position: static;
+                height: initial;
+                text-align: center;
+                
+                background-color: $orange;
+                width: 100%;
+                max-width: 200px;
+                margin: auto;
+                margin-bottom: 10px;
+                color: $charcoal;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 4px;
+              }
+
+              .active-number {
+                background-color: white;
+
+              }
+
+              .circle {
+                display: none !important;
+              }
+            }
+
+            .bar-container {
+               display: none !important;
+            }
+          }
+        }
+
+        .send-button-container {
+          text-align: center;
+          display: block;
+
+          .hidden {
+            display: none;
+          }
+
+          .orange-button {
+            margin-bottom: 27px;
+          }
+
+          .required-fields {
+            display: block;
+            margin: 0;
+          }
+        }
+
+      }
+    }
+
+    .error-alert {
+      width: 82%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  #project-planner {
+    #form {
+
+      #project-planner-form {
+        justify-content: center;
+
+
+        .project-type-field {
+
+          label {
+            text-align: center;
+          }
+
+          .project-type {
+            display: block;
+            width: initial;
+            margin: auto;
+
+            .option {
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+
+          .error-message {
+            text-align: center;
+            margin-bottom: 25px;
+          }
+        }
+
+
+
+      }
+
+    }
+  }
 }

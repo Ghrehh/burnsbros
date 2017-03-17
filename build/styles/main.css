@@ -328,7 +328,6 @@ header {
     animation: color-pulse-white 5s infinite; }
 
 footer {
-  margin: 0 0 15px;
   overflow: hidden;
   padding: 50px 0px 0px;
   position: relative; }
@@ -487,10 +486,12 @@ footer {
       footer #bottom-nav #bottom-nav-inner .elsewhere {
         display: none; }
 
-#copyright .small {
-  text-align: center;
-  margin-bottom: 16px;
-  font-size: 12px; }
+#copyright {
+  background-color: white;
+  padding: 15px 0px 16px; }
+  #copyright .small {
+    text-align: center;
+    font-size: 12px; }
 
 @media (max-width: 880px) {
   footer {
@@ -1248,7 +1249,9 @@ footer {
   width: 824px;
   margin: auto;
   display: flex;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  border-radius: 3px;
+  overflow: hidden; }
   #contact #project-planner .text-container {
     background-color: #333333;
     padding: 31px 45px; }
@@ -1444,7 +1447,7 @@ footer {
 
 @media (max-width: 880px) {
   #contact #project-planner {
-    width: 100%;
+    width: 92%;
     margin-bottom: 58px; }
     #contact #project-planner .text-container {
       width: 100%;
@@ -1639,7 +1642,7 @@ footer {
       #project-planner #form #project-planner-form .large label {
         margin-top: 5px; }
     #project-planner #form #project-planner-form .project-type-field {
-      margin-bottom: 26px;
+      margin-bottom: 0px;
       border-color: #C5C3C3; }
       #project-planner #form #project-planner-form .project-type-field label {
         margin-bottom: 20px; }
@@ -1647,16 +1650,18 @@ footer {
         display: flex;
         flex: 0 0 100%;
         justify-content: space-between;
-        border-color: inherit; }
+        border-color: inherit;
+        flex-wrap: wrap; }
       #project-planner #form #project-planner-form .project-type-field .option {
-        flex: 0 0 22%;
         border: 1px solid #C5C3C3;
         border-color: inherit;
         border-radius: 4px;
         text-align: center;
         padding-top: 16px;
         max-width: 144px;
+        min-width: 144px;
         color: white;
+        margin-bottom: 26px;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -1675,6 +1680,9 @@ footer {
           color: inherit;
           line-height: 28px;
           margin-bottom: 19px; }
+      #project-planner #form #project-planner-form .project-type-field .error-message {
+        position: relative;
+        bottom: 26px; }
     #project-planner #form #project-planner-form .info-field {
       margin-bottom: 25px; }
     #project-planner #form #project-planner-form .start-date-field, #project-planner #form #project-planner-form .deadline-field {
@@ -1843,3 +1851,115 @@ footer {
     margin-top: 32px; }
     #project-planner #form .error-alert .body-writing, #project-planner #form .error-alert .small, #project-planner #form .error-alert .section-body, #project-planner #form .error-alert footer #cards .card, footer #cards #project-planner #form .error-alert .card, #project-planner #form .error-alert footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form .error-alert a, #project-planner #form .error-alert #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form .error-alert p, #project-planner #form .error-alert #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form .error-alert a, #project-planner #form .error-alert #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form .error-alert p, #project-planner #form .error-alert #about #meet-the #job-opportunities, #about #meet-the #project-planner #form .error-alert #job-opportunities, #project-planner #form .error-alert #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form .error-alert p, #project-planner #form .error-alert #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #project-planner #form .error-alert label, #project-planner #form .error-alert #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #project-planner #form .error-alert input, #project-planner #form .error-alert #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #project-planner #form .error-alert textarea, #project-planner #form .error-alert #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field .error-alert label, #project-planner #form .error-alert #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field .error-alert input, #project-planner #form .error-alert #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field .error-alert textarea {
       color: white; }
+
+@media (max-width: 880px) {
+  #project-planner #form {
+    width: 92%; }
+    #project-planner #form .overlay .section-header {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto; }
+    #project-planner #form .overlay .body-writing, #project-planner #form .overlay .small, #project-planner #form .overlay .section-body, #project-planner #form .overlay footer #cards .card, footer #cards #project-planner #form .overlay .card, #project-planner #form .overlay footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form .overlay a, #project-planner #form .overlay #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form .overlay p, #project-planner #form .overlay #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form .overlay a, #project-planner #form .overlay #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form .overlay p, #project-planner #form .overlay #about #meet-the #job-opportunities, #about #meet-the #project-planner #form .overlay #job-opportunities, #project-planner #form .overlay #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form .overlay p, #project-planner #form .overlay #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #project-planner #form .overlay label, #project-planner #form .overlay #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #project-planner #form .overlay input, #project-planner #form .overlay #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #project-planner #form .overlay textarea, #project-planner #form .overlay #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field .overlay label, #project-planner #form .overlay #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field .overlay input, #project-planner #form .overlay #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field .overlay textarea {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto; }
+      #project-planner #form .overlay .body-writing br, #project-planner #form .overlay .small br, #project-planner #form .overlay .section-body br, #project-planner #form .overlay footer #cards .card br, footer #cards #project-planner #form .overlay .card br, #project-planner #form .overlay footer #bottom-nav #bottom-nav-inner ul li a br, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form .overlay a br, #project-planner #form .overlay #about #meet-the #profile-pictures .profile-picture-container .description p br, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form .overlay p br, #project-planner #form .overlay #about #meet-the #profile-pictures .profile-picture-container .description a br, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form .overlay a br, #project-planner #form .overlay #about #meet-the #collaborators p br, #about #meet-the #collaborators #project-planner #form .overlay p br, #project-planner #form .overlay #about #meet-the #job-opportunities br, #about #meet-the #project-planner #form .overlay #job-opportunities br, #project-planner #form .overlay #projects #examples .portfolio-image p br, #projects #examples .portfolio-image #project-planner #form .overlay p br, #project-planner #form .overlay #contact #say-hello #contact-form .form-field label br, #contact #say-hello #contact-form .form-field #project-planner #form .overlay label br, #project-planner #form .overlay #contact #say-hello #contact-form .form-field input br, #contact #say-hello #contact-form .form-field #project-planner #form .overlay input br, #project-planner #form .overlay #contact #say-hello #contact-form .form-field textarea br, #contact #say-hello #contact-form .form-field #project-planner #form .overlay textarea br, #project-planner #form .overlay #project-planner-form .form-field label br, #project-planner #form #project-planner-form .form-field .overlay label br, #project-planner #form .overlay #project-planner-form .form-field input br, #project-planner #form #project-planner-form .form-field .overlay input br, #project-planner #form .overlay #project-planner-form .form-field textarea br, #project-planner #form #project-planner-form .form-field .overlay textarea br {
+        display: none; }
+    #project-planner #form #form-inner {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px; }
+    #project-planner #form .section-header {
+      width: 82%;
+      padding: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 35px; }
+    #project-planner #form .section-body {
+      width: 82%;
+      padding: 0;
+      margin-right: auto;
+      margin-left: auto; }
+      #project-planner #form .section-body br {
+        display: none; }
+    #project-planner #form #project-planner-form {
+      justify-content: center; }
+      #project-planner #form #project-planner-form .form-field {
+        flex: 0 0 82%; }
+      #project-planner #form #project-planner-form .project-type-field label {
+        text-align: center; }
+      #project-planner #form #project-planner-form .project-type-field .project-type {
+        width: 318px;
+        margin: auto; }
+      #project-planner #form #project-planner-form .project-type-field .error-message {
+        text-align: center;
+        bottom: 16px; }
+      #project-planner #form #project-planner-form .start-date-field label, #project-planner #form #project-planner-form .deadline-field label {
+        text-align: center; }
+      #project-planner #form #project-planner-form .start-date-field .selection, #project-planner #form #project-planner-form .deadline-field .selection {
+        display: block; }
+        #project-planner #form #project-planner-form .start-date-field .selection .option, #project-planner #form #project-planner-form .deadline-field .selection .option {
+          max-width: 204px;
+          min-width: 204px;
+          margin: auto;
+          margin-bottom: 10px; }
+      #project-planner #form #project-planner-form .start-date-field .error-message, #project-planner #form #project-planner-form .deadline-field .error-message {
+        text-align: center; }
+      #project-planner #form #project-planner-form .budget-field label {
+        width: 100%; }
+      #project-planner #form #project-planner-form .budget-field .small {
+        width: 100%;
+        margin-bottom: 36px; }
+      #project-planner #form #project-planner-form .budget-field .budget {
+        width: 100%;
+        display: block;
+        position: static; }
+        #project-planner #form #project-planner-form .budget-field .budget .option .number {
+          position: static;
+          height: initial;
+          text-align: center;
+          background-color: #fc9e33;
+          width: 100%;
+          max-width: 200px;
+          margin: auto;
+          margin-bottom: 10px;
+          color: #333333;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-radius: 4px; }
+        #project-planner #form #project-planner-form .budget-field .budget .option .active-number {
+          background-color: white; }
+        #project-planner #form #project-planner-form .budget-field .budget .option .circle {
+          display: none !important; }
+        #project-planner #form #project-planner-form .budget-field .budget .bar-container {
+          display: none !important; }
+      #project-planner #form #project-planner-form .send-button-container {
+        text-align: center;
+        display: block; }
+        #project-planner #form #project-planner-form .send-button-container .hidden {
+          display: none; }
+        #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
+          margin-bottom: 27px; }
+        #project-planner #form #project-planner-form .send-button-container .required-fields {
+          display: block;
+          margin: 0; }
+  #project-planner .error-alert {
+    width: 82%;
+    margin: auto;
+    margin-bottom: 20px; } }
+
+@media (max-width: 430px) {
+  #project-planner #form #project-planner-form {
+    justify-content: center; }
+    #project-planner #form #project-planner-form .project-type-field label {
+      text-align: center; }
+    #project-planner #form #project-planner-form .project-type-field .project-type {
+      display: block;
+      width: initial;
+      margin: auto; }
+      #project-planner #form #project-planner-form .project-type-field .project-type .option {
+        margin-left: auto;
+        margin-right: auto; }
+    #project-planner #form #project-planner-form .project-type-field .error-message {
+      text-align: center;
+      margin-bottom: 25px; } }
