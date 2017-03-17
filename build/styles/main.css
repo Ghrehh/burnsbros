@@ -1351,8 +1351,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    align-items: baseline;
-    -webkit-appearance: none; }
+    align-items: baseline; }
     #contact #say-hello #contact-form .form-field {
       flex: 0 0 45%;
       border-color: #C5C3C3;
@@ -1410,7 +1409,8 @@ footer {
       display: flex;
       align-items: center; }
     #contact #say-hello #contact-form .orange-button, #contact #say-hello #contact-form footer #cards .card .orange-button-form, footer #cards .card #contact #say-hello #contact-form .orange-button-form {
-      padding: 5px 16px 6px; }
+      padding: 5px 16px 6px;
+      -webkit-appearance: none; }
     #contact #say-hello #contact-form #required-fields {
       color: #C5C3C3;
       font-weight: 300;

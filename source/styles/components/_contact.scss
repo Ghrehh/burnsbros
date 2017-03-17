@@ -189,7 +189,7 @@
       justify-content: space-between;
       align-items: center;
       align-items: baseline;
-      -webkit-appearance: none;
+      
 
 
 
@@ -278,6 +278,7 @@
 
       .orange-button {
         padding: 5px 16px 6px;
+        -webkit-appearance: none;
       }
 
       #required-fields {
