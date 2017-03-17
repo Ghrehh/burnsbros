@@ -1509,6 +1509,8 @@ footer {
       top: 8px; } }
 
 @media (max-width: 400px) {
+  #contact #project-planner .text-container .orange-button, #contact #project-planner .text-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-form {
+    font-size: 16px; }
   #contact #other-contact .small-header, #contact #other-contact footer #cards .card h3, footer #cards .card #contact #other-contact h3, #contact #other-contact footer #work-with-us .description, footer #work-with-us #contact #other-contact .description {
     font-size: 16px;
     margin-bottom: 0px; }

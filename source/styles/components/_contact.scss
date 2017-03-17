@@ -460,6 +460,14 @@
 @media (max-width: 400px) {
   #contact {
 
+    #project-planner {
+      .text-container {
+        .orange-button {
+          font-size: 16px;
+        }
+      }
+    }
+
     #other-contact {
       .small-header {
         font-size: 16px;
