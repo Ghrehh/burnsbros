@@ -237,7 +237,14 @@ header {
   .white-title {
     font-size: 20px; }
   .page-description {
-    display: none; } }
+    display: none; }
+  #page-info {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px; }
+    #page-info .small-header br, #page-info footer #cards .card h3 br, footer #cards .card #page-info h3 br, #page-info footer #work-with-us .description br, footer #work-with-us #page-info .description br {
+      display: none; } }
 
 .button-template, .orange-button, footer #cards .card .orange-button-form, .white-button {
   -webkit-transition: color 100ms ease, background-color 100ms ease;
@@ -477,6 +484,8 @@ footer {
         display: flex; }
       footer #bottom-nav #bottom-nav-inner a:hover {
         color: #009cd7; }
+      footer #bottom-nav #bottom-nav-inner .elsewhere {
+        display: none; }
 
 #copyright .small {
   text-align: center;
@@ -1150,9 +1159,8 @@ footer {
 
 #projects #burns-unit {
   background-color: #333333;
-  padding: 79px 0 0px;
-  position: relative;
-  margin-bottom: 320px; }
+  padding: 79px 0 73px;
+  position: relative; }
   #projects #burns-unit .section-header {
     color: white;
     margin-bottom: 58px; }
@@ -1161,32 +1169,21 @@ footer {
     max-width: 619px;
     margin: auto;
     margin-bottom: 28px; }
-  #projects #burns-unit .slanted-container {
-    height: 0px;
-    width: 100%;
-    position: relative;
-    z-index: -1;
-    bottom: 150px; }
-  #projects #burns-unit .slanted {
-    background-color: #333333;
-    height: 300px;
-    width: 100%;
-    transform: skewY(-7deg);
-    position: relative; }
 
 #projects #companies {
+  padding-top: 79px;
   margin-bottom: 69px; }
   #projects #companies .section-header {
     margin-bottom: 28px; }
   #projects #companies .section-body {
     max-width: 619px;
     line-height: 27.8px;
-    margin-bottom: 43px; }
+    margin-bottom: 63px; }
   #projects #companies a {
     color: #009cd7;
     text-decoration: none; }
   #projects #companies .companies {
-    width: 822px;
+    max-width: 822px;
     display: flex;
     margin: auto;
     box-sizing: border-box;
@@ -1194,9 +1191,9 @@ footer {
     justify-content: space-between;
     align-items: center; }
     #projects #companies .companies img {
-      margin-bottom: 40px; }
+      margin-bottom: 44px; }
   #projects #companies .companies-2 {
-    width: 650px;
+    max-width: 650px;
     display: flex;
     margin: auto;
     box-sizing: border-box;
@@ -1205,6 +1202,41 @@ footer {
     align-items: center; }
     #projects #companies .companies-2 img {
       margin-bottom: 40px; }
+
+@media (max-width: 880px) {
+  #projects #examples {
+    width: 82%;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 32px; }
+    #projects #examples .large, #projects #examples .medium, #projects #examples .small {
+      flex: 0 0 100%;
+      margin-bottom: 60px; }
+      #projects #examples .large p, #projects #examples .medium p, #projects #examples .small p {
+        width: 96%; }
+  #projects #burns-unit {
+    padding-top: 55px; }
+    #projects #burns-unit .section-header {
+      margin-bottom: 50px;
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto; }
+    #projects #burns-unit .body-writing, #projects #burns-unit .small, #projects #burns-unit .section-body, #projects #burns-unit footer #cards .card, footer #cards #projects #burns-unit .card, #projects #burns-unit footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #projects #burns-unit a, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit p, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit a, #projects #burns-unit #about #meet-the #collaborators p, #about #meet-the #collaborators #projects #burns-unit p, #projects #burns-unit #about #meet-the #job-opportunities, #about #meet-the #projects #burns-unit #job-opportunities, #projects #burns-unit #examples .portfolio-image p, #projects #examples .portfolio-image #burns-unit p, #projects #burns-unit #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #projects #burns-unit label, #projects #burns-unit #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #projects #burns-unit input, #projects #burns-unit #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #projects #burns-unit textarea, #projects #burns-unit #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #projects #burns-unit label, #projects #burns-unit #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #projects #burns-unit input, #projects #burns-unit #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #projects #burns-unit textarea {
+      width: 82%; }
+  #projects #companies {
+    padding-top: 55px; }
+    #projects #companies .section-header {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px; }
+    #projects #companies .body-writing, #projects #companies .small, #projects #companies .section-body, #projects #companies footer #cards .card, footer #cards #projects #companies .card, #projects #companies footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #projects #companies a, #projects #companies #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #projects #companies p, #projects #companies #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #projects #companies a, #projects #companies #about #meet-the #collaborators p, #about #meet-the #collaborators #projects #companies p, #projects #companies #about #meet-the #job-opportunities, #about #meet-the #projects #companies #job-opportunities, #projects #companies #examples .portfolio-image p, #projects #examples .portfolio-image #companies p, #projects #companies #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #projects #companies label, #projects #companies #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #projects #companies input, #projects #companies #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #projects #companies textarea, #projects #companies #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #projects #companies label, #projects #companies #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #projects #companies input, #projects #companies #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #projects #companies textarea {
+      width: 82%; }
+    #projects #companies .companies, #projects #companies .companies-2 {
+      display: block; }
+      #projects #companies .companies img, #projects #companies .companies-2 img {
+        display: block;
+        margin: 0px auto 60px; } }
 
 #contact .contact-title-section {
   background-color: #fd4561;
@@ -1259,6 +1291,7 @@ footer {
       animation: arrow-pulse-black 3s infinite; }
 
 #contact #say-hello {
+  width: 92%;
   border: 1px solid #C5C3C3;
   max-width: 674px;
   margin: auto;
@@ -1395,13 +1428,66 @@ footer {
     #contact #other-contact .section-header a {
       color: #009cd7;
       text-decoration: none;
-      font-size: 36px; }
+      font-size: inherit; }
     #contact #other-contact .section-header img {
       position: relative;
       top: 6px;
       margin-right: 9px; }
   #contact #other-contact .second {
     margin-bottom: 21px; }
+
+@media (max-width: 880px) {
+  #contact #project-planner {
+    width: 100%;
+    margin-bottom: 58px; }
+    #contact #project-planner .text-container {
+      width: 100%;
+      padding-right: 9%;
+      padding-left: 9%;
+      box-sizing: border-box;
+      padding-bottom: 52px; }
+      #contact #project-planner .text-container .body-writing, #contact #project-planner .text-container .small, #contact #project-planner .text-container .section-body, #contact #project-planner .text-container footer #cards .card, footer #cards #contact #project-planner .text-container .card, #contact #project-planner .text-container footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #contact #project-planner .text-container a, #contact #project-planner .text-container #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #contact #project-planner .text-container p, #contact #project-planner .text-container #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #contact #project-planner .text-container a, #contact #project-planner .text-container #about #meet-the #collaborators p, #about #meet-the #collaborators #contact #project-planner .text-container p, #contact #project-planner .text-container #about #meet-the #job-opportunities, #about #meet-the #contact #project-planner .text-container #job-opportunities, #contact #project-planner .text-container #projects #examples .portfolio-image p, #projects #examples .portfolio-image #contact #project-planner .text-container p, #contact #project-planner .text-container #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #project-planner .text-container label, #contact #project-planner .text-container #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #project-planner .text-container input, #contact #project-planner .text-container #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #project-planner .text-container textarea, #contact #project-planner .text-container #form #project-planner-form .form-field label, #contact #project-planner #form #project-planner-form .form-field .text-container label, #contact #project-planner .text-container #form #project-planner-form .form-field input, #contact #project-planner #form #project-planner-form .form-field .text-container input, #contact #project-planner .text-container #form #project-planner-form .form-field textarea, #contact #project-planner #form #project-planner-form .form-field .text-container textarea {
+        margin-bottom: 72px; }
+      #contact #project-planner .text-container .button-container {
+        text-align: center; }
+      #contact #project-planner .text-container .orange-button, #contact #project-planner .text-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-form {
+        width: 100%;
+        max-width: 300px;
+        text-align: enter; }
+    #contact #project-planner .arrow-container {
+      display: none; } }
+
+@media (max-width: 600px) {
+  #contact #say-hello .section-body {
+    padding: 0; }
+  #contact #say-hello #contact-form .form-field {
+    flex: 0 0 100%; }
+  #contact #other-contact .small-header, #contact #other-contact footer #cards .card h3, footer #cards .card #contact #other-contact h3, #contact #other-contact footer #work-with-us .description, footer #work-with-us #contact #other-contact .description {
+    font-size: 23px;
+    margin-bottom: 0px;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto; }
+  #contact #other-contact .section-header {
+    font-size: 29px;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto; }
+    #contact #other-contact .section-header img {
+      top: 8px; } }
+
+@media (max-width: 400px) {
+  #contact #other-contact .small-header, #contact #other-contact footer #cards .card h3, footer #cards .card #contact #other-contact h3, #contact #other-contact footer #work-with-us .description, footer #work-with-us #contact #other-contact .description {
+    font-size: 16px;
+    margin-bottom: 0px; }
+  #contact #other-contact .section-header {
+    font-size: 21px;
+    margin-bottom: 43px; }
+    #contact #other-contact .section-header img {
+      top: 7px;
+      width: 30px; }
+  #contact #other-contact .second {
+    margin-bottom: 18px; } }
 
 #project-planner #form {
   border: 1px solid #C5C3C3;

@@ -58,9 +58,8 @@
 
   #burns-unit {
     background-color: $charcoal;
-    padding: 79px 0 0px;
+    padding: 79px 0 73px;
     position:relative;
-    margin-bottom:320px;
 
     .section-header {
       color: white;
@@ -74,27 +73,11 @@
       margin-bottom: 28px;
     }
 
-    .slanted-container {
-      height: 0px;
-      width: 100%;
-      position: relative;
-      z-index: -1;
-      bottom: 150px;
-    }
-
-    .slanted {
-      background-color: $charcoal;
-      height: 300px;
-      width: 100%;
-      transform: skewY(-7deg);
-      position: relative;
-    }
 
   }
 
-
-
   #companies {
+    padding-top: 79px;
     margin-bottom: 69px;
 
 
@@ -105,7 +88,7 @@
     .section-body {
       max-width: 619px;
       line-height: 27.8px;
-      margin-bottom: 43px;
+      margin-bottom: 63px;
 
     }
 
@@ -115,7 +98,7 @@
     }
 
     .companies {
-      width: 822px;
+      max-width: 822px;
       display: flex;
       margin: auto;
       box-sizing:border-box;
@@ -124,11 +107,11 @@
       align-items: center;
 
       img {
-        margin-bottom: 40px;
+        margin-bottom: 44px;
       }
     }
     .companies-2 {
-      width: 650px;
+      max-width: 650px;
       display: flex;
       margin: auto;
       box-sizing:border-box;
@@ -142,4 +125,64 @@
     }
   }
 
+}
+
+@media (max-width: 880px) {
+  #projects {
+    #examples {
+      
+      width: 82%;
+      margin: auto;
+      padding: 0;
+      padding-bottom: 32px;
+
+      .large, .medium, .small {
+        flex: 0 0 100%;
+        margin-bottom: 60px;
+
+        p {
+          width: 96%;
+        }
+      }
+    }
+
+    #burns-unit {
+      padding-top: 55px;
+
+      .section-header {
+        margin-bottom: 50px;
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .body-writing {
+         width: 82%
+      }
+    }
+
+    #companies {
+      padding-top: 55px;
+
+      .section-header {
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+      }
+
+      .body-writing {
+         width: 82%
+      }
+
+      .companies, .companies-2 {
+        display: block;
+
+        img {
+          display: block;
+          margin: 0px auto 60px;
+        }
+      }
+    }
+  }
 }
