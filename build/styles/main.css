@@ -565,7 +565,6 @@ footer {
         footer #bottom-nav #bottom-nav-inner .grey-nav li:after {
           color: grey; }
       footer #bottom-nav #bottom-nav-inner #footer-logo-link {
-        flex: 0 0 100%;
         order: -2;
         margin-bottom: 16px; }
         footer #bottom-nav #bottom-nav-inner #footer-logo-link svg {
@@ -677,6 +676,81 @@ footer {
       animation: button-rise 0.2s forwards;
       background-color: white;
       color: #00b070; }
+
+@media (max-width: 880px) {
+  #index {
+    height: initial !important; }
+    #index header {
+      padding: 50px 0px !important; }
+      #index header .page-description {
+        display: block;
+        width: 88%;
+        margin: auto;
+        font-size: 41px;
+        line-height: 50px;
+        margin-bottom: 30px; }
+      #index header .body-writing, #index header .small, #index header .section-body, #index header footer #cards .card, footer #cards #index header .card, #index header footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #index header a, #index header #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #index header p, #index header #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #index header a, #index header #about #meet-the #collaborators p, #about #meet-the #collaborators #index header p, #index header #about #meet-the #job-opportunities, #about #meet-the #index header #job-opportunities, #index header #projects #examples .portfolio-image p, #projects #examples .portfolio-image #index header p, #index header #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #index header label, #index header #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #index header input, #index header #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #index header textarea, #index header #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #index header label, #index header #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #index header input, #index header #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #index header textarea {
+        width: 88%;
+        margin: auto;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 50px; }
+        #index header .body-writing br, #index header .small br, #index header .section-body br, #index header footer #cards .card br, footer #cards #index header .card br, #index header footer #bottom-nav #bottom-nav-inner ul li a br, footer #bottom-nav #bottom-nav-inner ul li #index header a br, #index header #about #meet-the #profile-pictures .profile-picture-container .description p br, #about #meet-the #profile-pictures .profile-picture-container .description #index header p br, #index header #about #meet-the #profile-pictures .profile-picture-container .description a br, #about #meet-the #profile-pictures .profile-picture-container .description #index header a br, #index header #about #meet-the #collaborators p br, #about #meet-the #collaborators #index header p br, #index header #about #meet-the #job-opportunities br, #about #meet-the #index header #job-opportunities br, #index header #projects #examples .portfolio-image p br, #projects #examples .portfolio-image #index header p br, #index header #contact #say-hello #contact-form .form-field label br, #contact #say-hello #contact-form .form-field #index header label br, #index header #contact #say-hello #contact-form .form-field input br, #contact #say-hello #contact-form .form-field #index header input br, #index header #contact #say-hello #contact-form .form-field textarea br, #contact #say-hello #contact-form .form-field #index header textarea br, #index header #project-planner #form #project-planner-form .form-field label br, #project-planner #form #project-planner-form .form-field #index header label br, #index header #project-planner #form #project-planner-form .form-field input br, #project-planner #form #project-planner-form .form-field #index header input br, #index header #project-planner #form #project-planner-form .form-field textarea br, #project-planner #form #project-planner-form .form-field #index header textarea br {
+          display: none; }
+      #index header .button-container {
+        width: 88%;
+        margin: auto; }
+        #index header .button-container .orange-button, #index header .button-container footer #cards .card .orange-button-form, footer #cards .card #index header .button-container .orange-button-form {
+          animation: none;
+          margin: 0 0 15px;
+          width: 100%;
+          max-width: 300px;
+          padding-left: 30px;
+          padding-right: 30px;
+          box-sizing: border-box; }
+        #index header .button-container .orange-button:hover, #index header .button-container footer #cards .card .orange-button-form:hover, footer #cards .card #index header .button-container .orange-button-form:hover {
+          animation: none; }
+        #index header .button-container .white-button {
+          animation: none;
+          width: 100%;
+          max-width: 300px;
+          padding-left: 0;
+          padding-right: 0; }
+        #index header .button-container .white-button:hover {
+          animation: none; } }
+
+@media (max-width: 380px) {
+  #index header {
+    padding: 50px 0px !important; }
+    #index header .page-description {
+      font-size: 35px;
+      line-height: 44px;
+      margin-bottom: 18px; }
+    #index header .body-writing, #index header .small, #index header .section-body, #index header footer #cards .card, footer #cards #index header .card, #index header footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #index header a, #index header #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #index header p, #index header #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #index header a, #index header #about #meet-the #collaborators p, #about #meet-the #collaborators #index header p, #index header #about #meet-the #job-opportunities, #about #meet-the #index header #job-opportunities, #index header #projects #examples .portfolio-image p, #projects #examples .portfolio-image #index header p, #index header #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #index header label, #index header #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #index header input, #index header #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #index header textarea, #index header #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #index header label, #index header #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #index header input, #index header #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #index header textarea {
+      margin-bottom: 33px;
+      font-size: 18px;
+      line-height: 24px; }
+    #index header .button-container {
+      width: 88%;
+      margin: auto; }
+      #index header .button-container .orange-button, #index header .button-container footer #cards .card .orange-button-form, footer #cards .card #index header .button-container .orange-button-form {
+        animation: none;
+        margin: 0 0 15px;
+        width: 100%;
+        max-width: 300px;
+        padding: 13px 0px 17px;
+        box-sizing: border-box;
+        font-size: 16px; }
+      #index header .button-container .orange-button:hover, #index header .button-container footer #cards .card .orange-button-form:hover, footer #cards .card #index header .button-container .orange-button-form:hover {
+        animation: none; }
+      #index header .button-container .white-button {
+        animation: none;
+        width: 100%;
+        max-width: 300px;
+        padding: 13px 0px 17px;
+        font-size: 16px; }
+      #index header .button-container .white-button:hover {
+        animation: none; } }
 
 #about .about-title-section {
   background-color: #009cd7; }

@@ -32,9 +32,6 @@
 
     }
 
-
-
-
     .page-description {
       font-size: 49px;
       line-height: 61px;
@@ -95,4 +92,119 @@
 
   }
 
+}
+
+@media (max-width: 880px) { 
+  #index {
+    //using important here to overwrite the javascript styles
+    height: initial !important;
+
+    header {
+      padding: 50px 0px !important;
+
+      .page-description {
+        display: block;
+        width: 88%;
+        margin: auto;
+        font-size: 41px;
+        line-height: 50px;
+        margin-bottom: 30px;
+      }
+
+      .body-writing {
+        width: 88%;
+        margin: auto;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 50px;
+
+          br {
+            display: none;
+          }        
+      }
+
+      .button-container {
+        width: 88%;
+        margin: auto;
+
+        .orange-button {
+          animation: none;
+          margin: 0 0 15px;
+          width: 100%;
+          max-width: 300px;
+          padding-left: 30px;
+          padding-right: 30px;
+          box-sizing: border-box;
+        }
+
+        .orange-button:hover {
+          animation: none;
+        }
+
+        .white-button {
+          animation: none;
+          width: 100%;
+          max-width: 300px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .white-button:hover {
+          animation: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #index {
+
+    header {
+      padding: 50px 0px !important;
+
+      .page-description {
+        font-size: 35px;
+        line-height: 44px;
+        margin-bottom: 18px;
+      }
+
+      .body-writing {
+        margin-bottom: 33px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .button-container {
+        width: 88%;
+        margin: auto;
+
+        .orange-button {
+          animation: none;
+          margin: 0 0 15px;
+          width: 100%;
+          max-width: 300px;
+          padding: 13px 0px 17px;
+          box-sizing: border-box;
+          font-size: 16px;
+        }
+
+        .orange-button:hover {
+          animation: none;
+        }
+
+        .white-button {
+          animation: none;
+          width: 100%;
+          max-width: 300px;
+          padding: 13px 0px 17px;
+          font-size: 16px;
+        }
+
+        .white-button:hover {
+          animation: none;
+        }
+      }
+    }
+  }
 }
