@@ -1351,7 +1351,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    align-items: baseline; }
+    align-items: baseline;
+    -webkit-appearance: none; }
     #contact #say-hello #contact-form .form-field {
       flex: 0 0 45%;
       border-color: #C5C3C3;
@@ -1404,12 +1405,17 @@ footer {
       margin-bottom: 32px; }
       #contact #say-hello #contact-form .large label {
         margin-top: 5px; }
+    #contact #say-hello #contact-form .bottom {
+      flex: 0 0 100%;
+      display: flex;
+      align-items: center; }
     #contact #say-hello #contact-form .orange-button, #contact #say-hello #contact-form footer #cards .card .orange-button-form, footer #cards .card #contact #say-hello #contact-form .orange-button-form {
       padding: 5px 16px 6px; }
     #contact #say-hello #contact-form #required-fields {
       color: #C5C3C3;
       font-weight: 300;
-      font-size: 18px; }
+      font-size: 18px;
+      margin-left: auto; }
   #contact #say-hello .error-alert {
     display: none;
     background-color: #fd4561;
@@ -1458,10 +1464,26 @@ footer {
       display: none; } }
 
 @media (max-width: 600px) {
+  #contact #say-hello #say-hello-inner {
+    padding-left: 0;
+    padding-right: 0; }
+  #contact #say-hello .section-header {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto; }
   #contact #say-hello .section-body {
-    padding: 0; }
-  #contact #say-hello #contact-form .form-field {
-    flex: 0 0 100%; }
+    padding: 0;
+    width: 82%; }
+  #contact #say-hello .error-alert {
+    width: 77%;
+    margin-left: auto;
+    margin-right: auto; }
+  #contact #say-hello #contact-form {
+    justify-content: center; }
+    #contact #say-hello #contact-form .form-field {
+      flex: 0 0 82%; }
+    #contact #say-hello #contact-form .bottom {
+      flex: 0 0 82%; }
   #contact #other-contact .small-header, #contact #other-contact footer #cards .card h3, footer #cards .card #contact #other-contact h3, #contact #other-contact footer #work-with-us .description, footer #work-with-us #contact #other-contact .description {
     font-size: 23px;
     margin-bottom: 0px;
