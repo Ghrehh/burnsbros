@@ -96,7 +96,7 @@
         color: white;
         margin-bottom: 21px;
 
-        label {
+        label, .label {
           @extend .body-writing;
           display: block;
           box-sizing: border-box;
@@ -163,7 +163,7 @@
         flex: 0 0 100%;
         margin-bottom: 32px;
 
-        label {
+        label, .label {
           margin-top: 5px;
         }
       }
@@ -174,7 +174,7 @@
         margin-bottom: 0px;
         border-color: $light-grey;
 
-        label {
+        label, .label {
           margin-bottom: 20px;
         }
 
@@ -311,7 +311,7 @@
 
       .budget-field {
         margin-bottom: 59px;
-        label {
+        label, .label {
           margin-bottom:20px;
         }
 
@@ -562,7 +562,7 @@
 
         .project-type-field {
 
-          label {
+          label, .label {
             text-align: center;
           }
 
@@ -579,7 +579,7 @@
 
         .start-date-field, .deadline-field {
 
-          label {
+          label, .label {
             text-align: center;
           }
 
@@ -602,7 +602,7 @@
 
         .budget-field {
 
-          label {
+          label, .label {
             width: 100%;
           }
 
@@ -698,7 +698,7 @@
         .project-type-field {
           overflow: hidden;
 
-          label {
+          label, .label {
             text-align: center;
           }
 
