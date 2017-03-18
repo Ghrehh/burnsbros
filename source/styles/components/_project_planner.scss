@@ -736,19 +736,22 @@
             margin: auto;
 
             .option {
-              display: block;
+              display: flex;
               justify-content: center;
               align-items:center;
               padding: 10px 40px;
               min-width: initial;
+              cursor: pointer;
 
-
-
-
+              .image-container {
+                cursor: pointer;
+              }
+              
               .body-writing {
                 display: inline-block;
                 margin: 0;
                 margin-left: 20px;
+                cursor: pointer;
 
                 br {
                   display: none;
