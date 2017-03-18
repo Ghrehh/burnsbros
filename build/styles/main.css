@@ -1981,7 +1981,7 @@ footer {
         width: initial;
         margin: auto; }
         #project-planner #form #project-planner-form .project-type-field .project-type .option {
-          display: flex;
+          display: block;
           justify-content: center;
           align-items: center;
           padding: 10px 40px;

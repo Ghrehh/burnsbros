@@ -596,6 +596,7 @@
           .project-type {
             width: 318px;
             margin: auto;
+
           }
 
           .error-message {
@@ -735,11 +736,13 @@
             margin: auto;
 
             .option {
-              display: flex;
+              display: block;
               justify-content: center;
               align-items:center;
               padding: 10px 40px;
               min-width: initial;
+
+
 
 
               .body-writing {
