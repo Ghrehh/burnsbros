@@ -194,7 +194,7 @@
           border-radius: 4px;
           text-align:center;
           padding-top: 16px;
-          max-width: 144px;
+
           min-width: 144px;
           color: white;
           margin-bottom: 26px;
@@ -624,30 +624,39 @@
             position: static;
 
             .option {
+              border-color: $light-grey !important;
 
               .number {
                 position: static;
                 height: initial;
                 text-align: center;
                 
-                background-color: $orange;
+
                 width: 100%;
                 max-width: 200px;
                 margin: auto;
                 margin-bottom: 10px;
-                color: $charcoal;
+                color: $light-grey;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 border-radius: 4px;
+                border: 1px solid black;
+                border-color: inherit;
               }
 
               .active-number {
-                background-color: white;
-
+                background-color: $orange;
               }
 
               .circle {
                 display: none !important;
+              }
+            }
+
+            .active-option {
+              .active-number {
+                border-color: $orange;
+                color: $charcoal;
               }
             }
 
@@ -693,8 +702,8 @@
       #project-planner-form {
         justify-content: center;
 
-
         .project-type-field {
+          overflow: hidden;
 
           label {
             text-align: center;
@@ -706,9 +715,25 @@
             margin: auto;
 
             .option {
-              margin-left: auto;
-              margin-right: auto;
+              display: flex;
+              justify-content: center;
+              align-items:center;
+              padding: 10px 40px;
+              min-width: initial;
+
+
+              .body-writing {
+                display: inline-block;
+                margin: 0;
+                margin-left: 20px;
+
+                br {
+                  display: none;
+                }
+              }
             }
+
+         
           }
 
           .error-message {
@@ -717,6 +742,32 @@
           }
         }
 
+        .budget-field {
+          margin-bottom: 39px;
+        }
+
+        .send-button-container {
+          text-align: center;
+          display: block;
+          width: 100%;
+
+          .hidden {
+            display: none;
+          }
+
+          .orange-button {
+            margin-bottom: 27px;
+            max-width: 100%;
+            font-size: 17px;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+
+          .required-fields {
+            display: block;
+            margin: 0;
+          }
+        }
 
 
       }
