@@ -1660,13 +1660,7 @@ footer {
         padding-top: 16px;
         min-width: 144px;
         color: white;
-        margin-bottom: 26px;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none; }
+        margin-bottom: 26px; }
         #project-planner #form #project-planner-form .project-type-field .option .image-container {
           display: flex;
           align-items: center;
@@ -1829,7 +1823,8 @@ footer {
       #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
         font-size: 18px;
         padding: 14px 38px 17px;
-        display: inline-block; }
+        display: inline-block;
+        -webkit-appearance: none; }
       #project-planner #form #project-planner-form .send-button-container .orange-button:hover, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form:hover, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form:hover {
         background-color: white;
         color: #333333; }
