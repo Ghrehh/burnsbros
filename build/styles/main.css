@@ -1895,7 +1895,10 @@ footer {
       #project-planner #form .section-body br {
         display: none; }
     #project-planner #form #project-planner-form {
-      justify-content: center; }
+      justify-content: center;
+      display: block;
+      width: 82%;
+      margin: auto; }
       #project-planner #form #project-planner-form .form-field {
         flex: 0 0 82%; }
       #project-planner #form #project-planner-form .project-type-field label, #project-planner #form #project-planner-form .project-type-field .label {
