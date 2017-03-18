@@ -199,6 +199,14 @@
           color: white;
           margin-bottom: 26px;
 
+          //makes item unhighlightable
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
 
           .image-container {
             display:flex;
@@ -285,6 +293,14 @@
               font-size: 18px;
               pointer-events:none;
             }
+
+            //makes item unhighlightable
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
           }
 
           //different color of placeholder to make the date selection seem seamless
@@ -359,6 +375,14 @@
             text-align: center;
             z-index:1;
             cursor: default !important;
+
+            //makes item unhighlightable
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
 
             .number {
               height:0px;

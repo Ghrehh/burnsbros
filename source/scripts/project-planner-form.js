@@ -111,7 +111,7 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-  $(".project-type .option").click(function(){
+  $(".project-type .option").on('click touchstart', function(){
 
     if ($(this).hasClass("active-option")){
       $(this).removeClass("active-option");
@@ -129,7 +129,7 @@ $(document).ready(function(){
 
   })
 
-  $(".start-date .option").click(function(){
+  $(".start-date .option").on('click touchstart', function(){
     $(".start-date .option").removeClass("active-option");
 
     //hide all custom value fields and show default custom message
@@ -149,7 +149,7 @@ $(document).ready(function(){
     
   })
 
-  $(".deadline .option").click(function(){
+  $(".deadline .option").on('click touchstart', function(){
     $(".deadline .option").removeClass("active-option");
 
     //hide all custom value fields and show default custom message
@@ -171,7 +171,7 @@ $(document).ready(function(){
     
   })
 
-  $(".budget-field .option").click(function(){
+  $(".budget-field .option").on('click touchstart', function(){
     $(".budget-field .option").removeClass("active-option");
     $(".budget-field .number").removeClass("active-number");
 

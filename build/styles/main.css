@@ -1660,7 +1660,13 @@ footer {
         padding-top: 16px;
         min-width: 144px;
         color: white;
-        margin-bottom: 26px; }
+        margin-bottom: 26px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
         #project-planner #form #project-planner-form .project-type-field .option .image-container {
           display: flex;
           align-items: center;
@@ -1691,7 +1697,13 @@ footer {
         flex: 0 0 29%;
         border-radius: 4px;
         color: #C5C3C3;
-        position: relative; }
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
         #project-planner #form #project-planner-form .start-date-field .option .body-writing, #project-planner #form #project-planner-form .start-date-field .option .small, #project-planner #form #project-planner-form .start-date-field .option .section-body, #project-planner #form #project-planner-form .start-date-field .option footer #cards .card, footer #cards #project-planner #form #project-planner-form .start-date-field .option .card, #project-planner #form #project-planner-form .start-date-field .option footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .start-date-field .option a, #project-planner #form #project-planner-form .start-date-field .option #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .start-date-field .option p, #project-planner #form #project-planner-form .start-date-field .option #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .start-date-field .option a, #project-planner #form #project-planner-form .start-date-field .option #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form #project-planner-form .start-date-field .option p, #project-planner #form #project-planner-form .start-date-field .option #about #meet-the #job-opportunities, #about #meet-the #project-planner #form #project-planner-form .start-date-field .option #job-opportunities, #project-planner #form #project-planner-form .start-date-field .option #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form #project-planner-form .start-date-field .option p, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .start-date-field .option label, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .start-date-field .option input, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .start-date-field .option textarea, #project-planner #form #project-planner-form .start-date-field .option .form-field label, #project-planner #form #project-planner-form .form-field .start-date-field .option label, #project-planner #form #project-planner-form .start-date-field .option .form-field .label, #project-planner #form #project-planner-form .form-field .start-date-field .option .label, #project-planner #form #project-planner-form .start-date-field .option .form-field input, #project-planner #form #project-planner-form .form-field .start-date-field .option input, #project-planner #form #project-planner-form .start-date-field .option .form-field textarea, #project-planner #form #project-planner-form .form-field .start-date-field .option textarea, #project-planner #form #project-planner-form .deadline-field .option .body-writing, #project-planner #form #project-planner-form .deadline-field .option .small, #project-planner #form #project-planner-form .deadline-field .option .section-body, #project-planner #form #project-planner-form .deadline-field .option footer #cards .card, footer #cards #project-planner #form #project-planner-form .deadline-field .option .card, #project-planner #form #project-planner-form .deadline-field .option footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .deadline-field .option a, #project-planner #form #project-planner-form .deadline-field .option #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .deadline-field .option p, #project-planner #form #project-planner-form .deadline-field .option #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .deadline-field .option a, #project-planner #form #project-planner-form .deadline-field .option #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form #project-planner-form .deadline-field .option p, #project-planner #form #project-planner-form .deadline-field .option #about #meet-the #job-opportunities, #about #meet-the #project-planner #form #project-planner-form .deadline-field .option #job-opportunities, #project-planner #form #project-planner-form .deadline-field .option #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form #project-planner-form .deadline-field .option p, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .deadline-field .option label, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .deadline-field .option input, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .deadline-field .option textarea, #project-planner #form #project-planner-form .deadline-field .option .form-field label, #project-planner #form #project-planner-form .form-field .deadline-field .option label, #project-planner #form #project-planner-form .deadline-field .option .form-field .label, #project-planner #form #project-planner-form .form-field .deadline-field .option .label, #project-planner #form #project-planner-form .deadline-field .option .form-field input, #project-planner #form #project-planner-form .form-field .deadline-field .option input, #project-planner #form #project-planner-form .deadline-field .option .form-field textarea, #project-planner #form #project-planner-form .form-field .deadline-field .option textarea {
           color: inherit;
           padding: 4px 10px 7px;
@@ -1764,7 +1776,13 @@ footer {
           flex: 0 0 20%;
           text-align: center;
           z-index: 1;
-          cursor: default !important; }
+          cursor: default !important;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
           #project-planner #form #project-planner-form .budget-field .budget .option .number {
             height: 0px;
             position: relative;
