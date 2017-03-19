@@ -194,6 +194,7 @@
           border-radius: 4px;
           text-align:center;
           padding-top: 16px;
+          text-decoration: none;
 
           min-width: 144px;
           color: white;
@@ -262,6 +263,7 @@
             border-radius: 4px;
             color: $light-grey;
             position: relative;
+            text-decoration: none;
 
             .body-writing {
               color: inherit;
@@ -383,6 +385,7 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            text-decoration: none;
 
             .number {
               height:0px;
@@ -469,9 +472,6 @@
           display: block;
         }
       }
-
-
-
 
 
       ////////////////////
@@ -619,6 +619,7 @@
               min-width: 204px;
               margin: auto;
               margin-bottom: 10px;
+              display: block;
               
             }
           }
@@ -795,8 +796,21 @@
           }
         }
 
+        .send-button-container {
+
+          .orange-button {
+            padding-top: 12px;
+            padding-bottom: 15px;
+            font-size: 15px;
+          }
+        
+        }
 
       }
+
+
+
+      
 
     }
   }

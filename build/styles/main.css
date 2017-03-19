@@ -1658,6 +1658,7 @@ footer {
         border-radius: 4px;
         text-align: center;
         padding-top: 16px;
+        text-decoration: none;
         min-width: 144px;
         color: white;
         margin-bottom: 26px;
@@ -1698,6 +1699,7 @@ footer {
         border-radius: 4px;
         color: #C5C3C3;
         position: relative;
+        text-decoration: none;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -1782,7 +1784,8 @@ footer {
           -khtml-user-select: none;
           -moz-user-select: none;
           -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+          text-decoration: none; }
           #project-planner #form #project-planner-form .budget-field .budget .option .number {
             height: 0px;
             position: relative;
@@ -1917,7 +1920,8 @@ footer {
           max-width: 204px;
           min-width: 204px;
           margin: auto;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          display: block; }
       #project-planner #form #project-planner-form .start-date-field .error-message, #project-planner #form #project-planner-form .deadline-field .error-message {
         text-align: center; }
       #project-planner #form #project-planner-form .budget-field label, #project-planner #form #project-planner-form .budget-field .label {
@@ -2015,4 +2019,8 @@ footer {
         padding-right: 15px; }
       #project-planner #form #project-planner-form .send-button-container .required-fields {
         display: block;
-        margin: 0; } }
+        margin: 0; }
+    #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
+      padding-top: 12px;
+      padding-bottom: 15px;
+      font-size: 15px; } }
