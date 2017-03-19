@@ -9,43 +9,6 @@ var deadline = false;
 
 var budget = "50000+";
 
-function hasSelectedProjectType(){
-  if (project_types["Web Development"]) {
-    return true;
-  }
-  else if (project_types["App Development"]) {
-    return true;
-  }
-  else if (project_types["Research & Consultation"]) {
-    return true;
-  }
-  else if (project_types["Something Else"]) {
-    return true;
-  }
-  else {
-    return false;
-  }
-}
-
-function getSelectedProjectTypes(){
-  var selected = [];
-
-  if (project_types["Web Development"]) {
-    selected.push("Web Development");
-  }
-  if (project_types["App Development"]) {
-    selected.push("App Development");
-  }
-  if (project_types["Research & Consultation"]) {
-    selected.push("Research & Consultation");
-  }
-  if (project_types["Something Else"]) {
-    selected.push("Something Else");
-  }
-
-  return selected;
-}
-
 
 $(document).ready(function(){
 
@@ -68,26 +31,22 @@ $(document).ready(function(){
     if (deadline === "Custom") { deadline = $(".deadline").find(".calendar-field").val() }
 
     //check if all required fields are filled, if they are, perform ajax request, if not make visible necessary error messages
-    if (name && valid_email && info && hasSelectedProjectType() && start_date && deadline && budget) {
+    if (name && valid_email && info && project_types.length > 0 && start_date && deadline && budget) {
       $(".error-alert").hide();
       $(".error-message").hide();
       $(".form-field").removeClass("form-error")
       $(".overlay").css({"display": "flex"})
 
-
       var form_data = {"entry.1924694001": name,
                       "entry.1855561109": organisation,
                       "entry.1254274625": email,
                       "entry.1214020820": phone,
-                      "entry.38978248": getSelectedProjectTypes().join(", "),
+                      "entry.38978248": project_types.join(", "),
                       "entry.567273467": info,
                       "entry.873647966": start_date,
                       "entry.940227614": deadline,
                       "entry.778812851": budget}
       var url_data = $.param(form_data)
-
-      console.log(form_data)
-      /*
       $.ajax({
 
             url: "https://docs.google.com/forms/d/e/1FAIpQLSdK9YWsyj3uHhMEgYjzPweeH6Ye6GqNWuSQg8gQzh4nzn0AwA/formResponse",
@@ -105,7 +64,6 @@ $(document).ready(function(){
             }
 
       });
-      */
 
       $(window).scrollTop($("#success-scroll").offset().top)
 
@@ -126,7 +84,7 @@ $(document).ready(function(){
         $(".info-field").addClass("form-error");
       }
 
-      if (hasSelectedProjectType() === false) {
+      if (project_types.length < 1) {
         $(".project-type-field").addClass("form-error");
       }
 
@@ -157,7 +115,7 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-  /*$(".project-type .option").click(function(){
+  $(".project-type .option").click(function(){
 
     if ($(this).hasClass("active-option")){
       $(this).removeClass("active-option");
@@ -173,61 +131,7 @@ $(document).ready(function(){
       }
     })
 
-  })*/
-
-
-  $(".project-type #web-development").click(function(){
-    if (project_types["Web Development"] === false) {
-      project_types["Web Development"] = true;
-      $("#web-development").addClass("active-option")
-    }
-    else {
-      project_types["Web Development"] = false;
-      $("#web-development").removeClass("active-option")
-    }
-
-    console.log(project_types)
   })
-
-  $(".project-type #app-development").click(function(){
-    if (project_types["App Development"] === false) {
-      project_types["App Development"] = true;
-      $("#app-development").addClass("active-option")
-    }
-    else {
-      project_types["App Development"] = false;
-      $("#app-development").removeClass("active-option")
-    }
-
-    console.log(project_types)
-  })
-
-  $(".project-type #research-and-consultation").click(function(){
-    if (project_types["Research & Consultation"] === false) {
-      project_types["Research & Consultation"] = true;
-      $("#research-and-consultation").addClass("active-option")
-    }
-    else {
-      project_types["Research & Consultation"] = false;
-      $("#research-and-consultation").removeClass("active-option")
-    }
-
-    console.log(project_types)
-  })
-
-  $(".project-type #something-else").click(function(){
-    if (project_types["Something Else"] === false) {
-      project_types["Something Else"] = true;
-      $("#something-else").addClass("active-option")
-    }
-    else {
-      project_types["Something Else"] = false;
-      $("#something-else").removeClass("active-option")
-    }
-
-    console.log(project_types)
-  })
-
 
   $(".start-date .option").click(function(){
     $(".start-date .option").removeClass("active-option");
