@@ -1,8 +1,4 @@
-var project_types = {"Web Development":false,
-                     "App Development": false,
-                     "Research & Consultation": false,
-                     "Something Else": false,
-                    };
+var project_types = [];
 
 var start_date = false;
 var deadline = false;
@@ -109,13 +105,13 @@ $(document).ready(function(){
   });
 
   //send another button
-  $("#project-planner .send-another").on("click touchend", function(){
+  $("#project-planner .send-another").click(function(){
     $(".overlay").hide()
   })
 
   //custom form on click methods
 
-  $(".project-type .option").click(function(){
+  $(".project-type .option").on("click touchend", function(){
 
     if ($(this).hasClass("active-option")){
       $(this).removeClass("active-option");
