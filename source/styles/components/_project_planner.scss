@@ -444,9 +444,9 @@
         -o-transition: border-color $duration ease, background-color $duration ease;
         transition: border-color $duration ease, background-color $duration ease;
 
-        background-color: $orange !important;
-        color: $charcoal !important;
-        border-color: $orange !important;
+        background-color: $orange ;
+        color: $charcoal ;
+        border-color: $orange ;
         cursor: pointer;
 
         .body-writing {
@@ -706,6 +706,20 @@
           }
         }
 
+        .option:hover {
+          background-color: transparent !important;
+          color: white !important;
+          border-color: $light-grey !important;
+
+          .image-container {
+            display: flex !important;
+          }
+
+          .hover-image-container {
+            display: none !important;
+          }
+        }
+
       }
     }
 
@@ -804,6 +818,20 @@
             font-size: 15px;
           }
         
+        }
+
+        .option:hover {
+          background-color: transparent !important;
+          color: white !important;
+          border-color: $light-grey !important;
+
+          .image-container {
+            display: inline-block !important;
+          }
+
+          .hover-image-container {
+            display: none !important;
+          }
         }
 
       }

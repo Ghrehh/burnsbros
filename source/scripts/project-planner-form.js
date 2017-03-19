@@ -111,9 +111,7 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-  var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-
-  if (isMobile.matches) {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
     $(".project-type .option").on("touchstart", function(){
 
@@ -133,7 +131,6 @@ $(document).ready(function(){
 
     })
 
-    $("body").css({"background-color":"blue"});
   }
   else {
 
