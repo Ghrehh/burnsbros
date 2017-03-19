@@ -115,7 +115,7 @@ $(document).ready(function(){
 
   if (isMobile.matches) {
 
-    $(".project-type .option").click(function(){
+    $(".project-type .option").hover(function(){
 
       if ($(this).hasClass("active-option")){
         $(this).removeClass("active-option");
