@@ -111,11 +111,11 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-   var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+  var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
   if (isMobile.matches) {
 
-    $(".project-type .option").hover(function(){
+    $(".project-type .option").on("touchstart", function(){
 
       if ($(this).hasClass("active-option")){
         $(this).removeClass("active-option");
