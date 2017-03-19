@@ -109,7 +109,7 @@ $(document).ready(function(){
   });
 
   //send another button
-  $("#project-planner .send-another").click(function(){
+  $("#project-planner .send-another").on("click touchend", function(){
     $(".overlay").hide()
   })
 
