@@ -111,7 +111,7 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-  $(".project-type .option").on("click touchend", function(){
+  $(".project-type .option").on("click touch", function(){
 
     if ($(this).hasClass("active-option")){
       $(this).removeClass("active-option");
