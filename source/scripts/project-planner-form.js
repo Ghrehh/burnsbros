@@ -111,25 +111,30 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    $(".project-type .option").hover(function(){
+   var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
+  if (isMobile.matches) {
+
+    $(".project-type .option").click(function(){
+
+      if ($(this).hasClass("active-option")){
+        $(this).removeClass("active-option");
+      }
+      else {
+        $(this).addClass("active-option")
+      }
+      project_types = [];
+
+      $(".project-type .option").each(function(i, ele){
         if ($(this).hasClass("active-option")){
-          $(this).removeClass("active-option");
+          project_types.push($(this).data("value"))
         }
-        else {
-          $(this).addClass("active-option")
-        }
-        project_types = [];
-
-        $(".project-type .option").each(function(i, ele){
-          if ($(this).hasClass("active-option")){
-            project_types.push($(this).data("value"))
-          }
-        })
-
       })
-    }
+
+    })
+
+    $("body").css({"background-color":"blue"});
+  }
   else {
 
     $(".project-type .option").click(function(){
