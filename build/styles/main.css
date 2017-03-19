@@ -1922,6 +1922,8 @@ footer {
           margin: auto;
           margin-bottom: 10px;
           display: block; }
+        #project-planner #form #project-planner-form .start-date-field .selection .option:hover, #project-planner #form #project-planner-form .deadline-field .selection .option:hover {
+          color: #C5C3C3 !important; }
       #project-planner #form #project-planner-form .start-date-field .error-message, #project-planner #form #project-planner-form .deadline-field .error-message {
         text-align: center; }
       #project-planner #form #project-planner-form .budget-field label, #project-planner #form #project-planner-form .budget-field .label {
@@ -2031,12 +2033,4 @@ footer {
     #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
       padding-top: 12px;
       padding-bottom: 15px;
-      font-size: 15px; }
-    #project-planner #form #project-planner-form .option:hover {
-      background-color: transparent !important;
-      color: white !important;
-      border-color: #C5C3C3 !important; }
-      #project-planner #form #project-planner-form .option:hover .image-container {
-        display: inline-block !important; }
-      #project-planner #form #project-planner-form .option:hover .hover-image-container {
-        display: none !important; } }
+      font-size: 15px; } }

@@ -622,11 +622,17 @@
               display: block;
               
             }
+
+            .option:hover {
+              color: $light-grey !important;
+            }
           }
 
           .error-message {
             text-align: center;
           }
+
+
         }
 
         .budget-field {
@@ -820,19 +826,6 @@
         
         }
 
-        .option:hover {
-          background-color: transparent !important;
-          color: white !important;
-          border-color: $light-grey !important;
-
-          .image-container {
-            display: inline-block !important;
-          }
-
-          .hover-image-container {
-            display: none !important;
-          }
-        }
 
       }
 
