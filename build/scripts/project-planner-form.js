@@ -111,7 +111,7 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var first = document.getElementById('first');
     var second = document.getElementById('second');
     var third = document.getElementById('third');
@@ -123,41 +123,41 @@ $(document).ready(function(){
     var mc4 = new Hammer(fourth);
 
     mc1.on("tap press", function(ev) {
-      if (("#first").hasClass(".active-class")) {
-        $("#first").removeClass(".active-class");
+      if ($("#first").hasClass("active-option")) {
+        $("#first").removeClass("active-option");
       }
       else {
-        $("#first").addClass(".active-class");
+        $("#first").addClass("active-option");
       }
         
     });
 
     mc2.on("tap press", function(ev) {
-      if (("#second").hasClass(".active-class")) {
-        $("#second").removeClass(".active-class");
+      if ($("#second").hasClass("active-option")) {
+        $("#second").removeClass("active-option");
       }
       else {
-        $("#second").addClass(".active-class");
+        $("#second").addClass("active-option");
       }
         
     });
 
     mc3.on("tap press", function(ev) {
-      if (("#third").hasClass(".active-class")) {
-        $("#third").removeClass(".active-class");
+      if ($("#third").hasClass("active-option")) {
+        $("#third").removeClass("active-option");
       }
       else {
-        $("#third").addClass(".active-class");
+        $("#third").addClass("active-option");
       }
         
     });
 
      mc4.on("tap press", function(ev) {
-      if (("#fourth").hasClass(".active-class")) {
-        $("#fourth").removeClass(".active-class");
+      if ($("#fourth").hasClass("active-option")) {
+        $("#fourth").removeClass("active-option");
       }
       else {
-        $("#fourth").addClass(".active-class");
+        $("#fourth").addClass("active-option");
       }
         
     });
