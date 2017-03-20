@@ -1816,9 +1816,9 @@ footer {
       -moz-transition: border-color 100ms ease, background-color 100ms ease;
       -o-transition: border-color 100ms ease, background-color 100ms ease;
       transition: border-color 100ms ease, background-color 100ms ease;
-      background-color: #fc9e33;
-      color: #333333;
-      border-color: #fc9e33;
+      background-color: #fc9e33 !important;
+      color: #333333 !important;
+      border-color: #fc9e33 !important;
       cursor: pointer; }
       #project-planner #form #project-planner-form .option:hover .body-writing, #project-planner #form #project-planner-form .option:hover .small, #project-planner #form #project-planner-form .option:hover .section-body, #project-planner #form #project-planner-form .option:hover footer #cards .card, footer #cards #project-planner #form #project-planner-form .option:hover .card, #project-planner #form #project-planner-form .option:hover footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .option:hover a, #project-planner #form #project-planner-form .option:hover #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .option:hover p, #project-planner #form #project-planner-form .option:hover #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .option:hover a, #project-planner #form #project-planner-form .option:hover #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form #project-planner-form .option:hover p, #project-planner #form #project-planner-form .option:hover #about #meet-the #job-opportunities, #about #meet-the #project-planner #form #project-planner-form .option:hover #job-opportunities, #project-planner #form #project-planner-form .option:hover #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form #project-planner-form .option:hover p, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .option:hover label, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .option:hover input, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .option:hover textarea, #project-planner #form #project-planner-form .option:hover .form-field label, #project-planner #form #project-planner-form .form-field .option:hover label, #project-planner #form #project-planner-form .option:hover .form-field .label, #project-planner #form #project-planner-form .form-field .option:hover .label, #project-planner #form #project-planner-form .option:hover .form-field input, #project-planner #form #project-planner-form .form-field .option:hover input, #project-planner #form #project-planner-form .option:hover .form-field textarea, #project-planner #form #project-planner-form .form-field .option:hover textarea, #project-planner #form #project-planner-form .active-option .body-writing, #project-planner #form #project-planner-form .active-option .small, #project-planner #form #project-planner-form .active-option .section-body, #project-planner #form #project-planner-form .active-option footer #cards .card, footer #cards #project-planner #form #project-planner-form .active-option .card, #project-planner #form #project-planner-form .active-option footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .active-option a, #project-planner #form #project-planner-form .active-option #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .active-option p, #project-planner #form #project-planner-form .active-option #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .active-option a, #project-planner #form #project-planner-form .active-option #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form #project-planner-form .active-option p, #project-planner #form #project-planner-form .active-option #about #meet-the #job-opportunities, #about #meet-the #project-planner #form #project-planner-form .active-option #job-opportunities, #project-planner #form #project-planner-form .active-option #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form #project-planner-form .active-option p, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .active-option label, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .active-option input, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .active-option textarea, #project-planner #form #project-planner-form .active-option .form-field label, #project-planner #form #project-planner-form .form-field .active-option label, #project-planner #form #project-planner-form .active-option .form-field .label, #project-planner #form #project-planner-form .form-field .active-option .label, #project-planner #form #project-planner-form .active-option .form-field input, #project-planner #form #project-planner-form .form-field .active-option input, #project-planner #form #project-planner-form .active-option .form-field textarea, #project-planner #form #project-planner-form .form-field .active-option textarea {
         -webkit-transition: color 100ms ease;
@@ -1922,8 +1922,6 @@ footer {
           margin: auto;
           margin-bottom: 10px;
           display: block; }
-        #project-planner #form #project-planner-form .start-date-field .selection .option:hover, #project-planner #form #project-planner-form .deadline-field .selection .option:hover {
-          color: #C5C3C3 !important; }
       #project-planner #form #project-planner-form .start-date-field .error-message, #project-planner #form #project-planner-form .deadline-field .error-message {
         text-align: center; }
       #project-planner #form #project-planner-form .budget-field label, #project-planner #form #project-planner-form .budget-field .label {
@@ -1970,14 +1968,6 @@ footer {
         #project-planner #form #project-planner-form .send-button-container .required-fields {
           display: block;
           margin: 0; }
-      #project-planner #form #project-planner-form .option:hover {
-        background-color: transparent !important;
-        color: white !important;
-        border-color: #C5C3C3 !important; }
-        #project-planner #form #project-planner-form .option:hover .image-container {
-          display: flex !important; }
-        #project-planner #form #project-planner-form .option:hover .hover-image-container {
-          display: none !important; }
   #project-planner .error-alert {
     width: 82%;
     margin: auto;

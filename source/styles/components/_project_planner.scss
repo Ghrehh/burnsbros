@@ -444,9 +444,9 @@
         -o-transition: border-color $duration ease, background-color $duration ease;
         transition: border-color $duration ease, background-color $duration ease;
 
-        background-color: $orange ;
-        color: $charcoal ;
-        border-color: $orange ;
+        background-color: $orange !important;
+        color: $charcoal !important;
+        border-color: $orange !important;
         cursor: pointer;
 
         .body-writing {
@@ -622,17 +622,11 @@
               display: block;
               
             }
-
-            .option:hover {
-              color: $light-grey !important;
-            }
           }
 
           .error-message {
             text-align: center;
           }
-
-
         }
 
         .budget-field {
@@ -711,20 +705,7 @@
             margin: 0;
           }
         }
-
-        .option:hover {
-          background-color: transparent !important;
-          color: white !important;
-          border-color: $light-grey !important;
-
-          .image-container {
-            display: flex !important;
-          }
-
-          .hover-image-container {
-            display: none !important;
-          }
-        }
+        
 
       }
     }
@@ -825,7 +806,6 @@
           }
         
         }
-
 
       }
 
