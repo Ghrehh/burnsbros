@@ -112,7 +112,7 @@ $(document).ready(function(){
   //custom form on click methods
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    /*var first = document.getElementById('first');
+    var first = document.getElementById('first');
     var second = document.getElementById('second');
     var third = document.getElementById('third');
     var fourth = document.getElementById('fourth');
@@ -160,27 +160,7 @@ $(document).ready(function(){
         $("#fourth").addClass("active-option");
       }
         
-    });*/
-
-    $(".project-type .option").on("touchend click", function(){
-
-      if ($(this).hasClass("active-option")){
-        $(this).removeClass("active-option");
-      }
-      else {
-        $(this).addClass("active-option")
-      }
-      project_types = [];
-
-      $(".project-type .option").each(function(i, ele){
-        if ($(this).hasClass("active-option")){
-          project_types.push($(this).data("value"))
-        }
-      })
-
-    })
-
-
+    });
 
   }
   else {
