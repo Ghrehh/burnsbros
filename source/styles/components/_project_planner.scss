@@ -705,6 +705,34 @@
             margin: 0;
           }
         }
+
+        .option:hover {
+          background-color: transparent !important;
+          border-color: $light-grey !important;
+          color: white !important;
+
+          .image-container {
+            display: flex !important;
+          }
+
+          .hover-image-container {
+            display: none !important;
+          }
+        }
+
+        .active-option:hover {
+          background-color: $orange !important;
+          border-color: $orange !important;
+          color: $charcoal !important;
+
+          .image-container {
+            display: none !important;
+          }
+
+          .hover-image-container {
+            display: flex !important;
+          }
+        }
         
 
       }
