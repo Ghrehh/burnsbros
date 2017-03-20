@@ -126,7 +126,7 @@
             <p class="label">What type of project(s) have you got in mind?*</p>
             <div class="project-type selection" data-type="project type">
               
-              <a href="javascript:void(0)" onclick="" class="option" data-value="Web Development">
+              <div id="first" class="option" data-value="Web Development">
                 <div class="image-container">
                   <img alt="web dev icon" src="assets/project_planner/webdev.svg">
                 </div>
@@ -138,9 +138,9 @@
                   <br>
                   Development
                 </p>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" onclick="" class="option" data-value="App Development">
+              <div id="second" class="option" data-value="App Development">
                 <div class="image-container">
                   <img alt="app dev icon" src="assets/project_planner/appdev.svg">
                 </div>
@@ -152,9 +152,9 @@
                   <br>
                   Development
                 </p>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" onclick="" class="option" data-value="Research and Consulting">
+              <div id="third" class="option" data-value="Research and Consulting">
                 <div class="image-container">
                   <img alt="research and consulting icon" src="assets/project_planner/research.svg">
                 </div>
@@ -166,9 +166,9 @@
                   <br>
                   Consultation
                 </p>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" onclick="" class="option" data-value="Something Else">
+              <div id="fourth" class="option" data-value="Something Else">
                 <div class="image-container">
                   <img alt="question mark icon" src="assets/project_planner/somethingelse.svg">
                 </div>
@@ -180,7 +180,7 @@
                   <br>
                   Else
                 </p>
-              </a>
+              </div>
 
             </div>
             <p class="body-writing error-message">
@@ -200,20 +200,20 @@
             <p class="label">When would you like us to start working on your project?*</p>
             <div class="start-date selection" data-type="begin date">
               
-              <a href="javascript:void(0)" class="option" data-value="ASAP">
+              <div class="option" data-value="ASAP">
                 <p class="body-writing">
                   ASAP
                 </p>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option" data-value="No Rush">
+              <div class="option" data-value="No Rush">
          
                 <p class="body-writing">
                   No Huge Hurry!
                 </p>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option" data-value="Custom">
+              <div class="option" data-value="Custom">
         
                 <p class="body-writing">
                   Select Ideal Date
@@ -221,7 +221,7 @@
                 <input placeholder="Select Ideal Date" class="calendar-field" type="text">
                 <i class="fa fa-calendar" aria-hidden="true"></i>
 
-              </a>
+              </div>
 
 
             </div>
@@ -234,27 +234,27 @@
             <p class="label">Do you have a deadline in mind for your project?*</p>
             <div class="deadline selection" data-type="deadline">
               
-              <a href="javascript:void(0)" class="option" data-value="ASAP">
+              <div class="option" data-value="ASAP">
                 <p class="body-writing">
                   ASAP (Yesterday!)
                 </p>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option" data-value="No Rush">
+              <div class="option" data-value="No Rush">
          
                 <p class="body-writing">
                   When It's Done
                 </p>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option" data-value="Custom">
+              <div class="option" data-value="Custom">
         
                 <p class="body-writing">
                   Select Ideal Date
                 </p>
                 <input placeholder="Select Ideal Date" class="calendar-field" type="text">
                 <i class="fa fa-calendar" aria-hidden="true"></i>
-              </a>
+              </div>
 
             </div>
             <p class="body-writing error-message">
@@ -278,30 +278,30 @@
                 </div>
               </div>
               
-              <a href="javascript:void(0)" class="option option-1  active-option" data-budget="<10000">
+              <div class="option option-1  active-option" data-budget="<10000">
                 <p class="body-text number">&lt;£10,000</p>
                 <div class="circle"></div>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option option-2  active-option" data-budget="20000">
+              <div class="option option-2  active-option" data-budget="20000">
                 <p class="body-text number">£20,000</p>
                 <div class="circle"></div>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option option-3  active-option" data-budget="30000">
+              <div class="option option-3  active-option" data-budget="30000">
                 <p class="body-text number">£30,000</p>
                 <div class="circle"></div>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option option-4  active-option" data-budget="40000">
+              <div class="option option-4  active-option" data-budget="40000">
                 <p class="body-text number">£40,000</p>
                 <div class="circle"></div>
-              </a>
+              </div>
 
-              <a href="javascript:void(0)" class="option option-5  active-option" data-budget="50000+">
+              <div class="option option-5  active-option" data-budget="50000+">
                 <p class="body-text number active-number">£50,000+</p>
                 <div class="circle"></div>
-              </a>
+              </div>
   
   
             </div>
@@ -333,6 +333,7 @@
 </main>
 
 <script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/hammer.min.js"></script>
 <script src="scripts/project-planner-form.js"></script>
 
 

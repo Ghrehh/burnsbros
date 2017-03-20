@@ -112,24 +112,55 @@ $(document).ready(function(){
   //custom form on click methods
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    var first = document.getElementById('first');
+    var second = document.getElementById('second');
+    var third = document.getElementById('third');
+    var fourth = document.getElementById('fourth');
 
-    $(".project-type .option").on("touchstart", function(){
+    var mc1 = new Hammer(first);
+    var mc2 = new Hammer(second);
+    var mc3 = new Hammer(third);
+    var mc4 = new Hammer(fourth);
 
-      if ($(this).hasClass("active-option")){
-        $(this).removeClass("active-option");
+    mc1.on("tap press", function(ev) {
+      if (("#first").hasClass(".active-class")) {
+        $("#first").removeClass(".active-class");
       }
       else {
-        $(this).addClass("active-option")
+        $("#first").addClass(".active-class");
       }
-      project_types = [];
+        
+    });
 
-      $(".project-type .option").each(function(i, ele){
-        if ($(this).hasClass("active-option")){
-          project_types.push($(this).data("value"))
-        }
-      })
+    mc2.on("tap press", function(ev) {
+      if (("#second").hasClass(".active-class")) {
+        $("#second").removeClass(".active-class");
+      }
+      else {
+        $("#second").addClass(".active-class");
+      }
+        
+    });
 
-    })
+    mc3.on("tap press", function(ev) {
+      if (("#third").hasClass(".active-class")) {
+        $("#third").removeClass(".active-class");
+      }
+      else {
+        $("#third").addClass(".active-class");
+      }
+        
+    });
+
+     mc4.on("tap press", function(ev) {
+      if (("#fourth").hasClass(".active-class")) {
+        $("#fourth").removeClass(".active-class");
+      }
+      else {
+        $("#fourth").addClass(".active-class");
+      }
+        
+    });
 
   }
   else {
