@@ -111,7 +111,7 @@ $(document).ready(function(){
 
   //custom form on click methods
 
-  if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var first = document.getElementById('first');
     var second = document.getElementById('second');
     var third = document.getElementById('third');
