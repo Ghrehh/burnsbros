@@ -166,7 +166,9 @@ table {
     fill: black; } }
 
 html {
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation; }
 
 #dark {
   background-color: #333333; }
