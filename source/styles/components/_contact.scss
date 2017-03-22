@@ -314,10 +314,15 @@
       margin-bottom: 53px;
 
       a {
+        @include transition(color, 100ms);
         color: $blue;
         text-decoration: none;
         font-size: inherit;
         
+      }
+
+      a:hover {
+        color: $dark-blue;
       }
 
 
@@ -337,6 +342,7 @@
 
 
 }
+
 
 @media (max-width: 880px) { 
   #contact {
@@ -371,6 +377,7 @@
     }
   }
 }
+
 
 @media (max-width: 600px) {
   #contact {

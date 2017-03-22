@@ -308,18 +308,23 @@ header {
     margin-right: 17px;
     text-decoration: none; }
   #top-nav a:hover {
-    color: #229ccc; }
+    color: #009cd7; }
   #top-nav .active {
-    color: #229ccc; }
+    color: #009cd7; }
+  #top-nav .active:hover {
+    color: #086788; }
 
 #dark #top-nav a {
   color: white; }
 
 #dark #top-nav a:hover {
-  color: #229ccc; }
+  color: #009cd7; }
 
 #dark #top-nav .active {
-  color: #229ccc; }
+  color: #009cd7; }
+
+#dark #top-nav .active-hover {
+  color: #086788; }
 
 #dark #top-nav #nav-bar-logo {
   fill: white; }
@@ -899,9 +904,15 @@ footer {
         #about #meet-the #profile-pictures .profile-picture-container .description p {
           margin-bottom: 25px; }
         #about #meet-the #profile-pictures .profile-picture-container .description a {
-          color: #229ccc;
+          color: #009cd7;
           display: block;
           text-decoration: none; }
+        #about #meet-the #profile-pictures .profile-picture-container .description a:hover {
+          -webkit-transition: color 100ms ease;
+          -moz-transition: color 100ms ease;
+          -o-transition: color 100ms ease;
+          transition: color 100ms ease;
+          color: #086788; }
   #about #meet-the #collaborators {
     max-width: 826px;
     display: flex;
@@ -1185,6 +1196,12 @@ footer {
   #projects #companies a {
     color: #009cd7;
     text-decoration: none; }
+  #projects #companies a:hover {
+    -webkit-transition: color 100ms ease;
+    -moz-transition: color 100ms ease;
+    -o-transition: color 100ms ease;
+    transition: color 100ms ease;
+    color: #086788; }
   #projects #companies .companies {
     max-width: 822px;
     display: flex;
@@ -1437,9 +1454,15 @@ footer {
   #contact #other-contact .section-header {
     margin-bottom: 53px; }
     #contact #other-contact .section-header a {
+      -webkit-transition: color 100ms ease;
+      -moz-transition: color 100ms ease;
+      -o-transition: color 100ms ease;
+      transition: color 100ms ease;
       color: #009cd7;
       text-decoration: none;
       font-size: inherit; }
+    #contact #other-contact .section-header a:hover {
+      color: #086788; }
     #contact #other-contact .section-header img {
       position: relative;
       top: 6px;

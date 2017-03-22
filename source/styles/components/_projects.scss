@@ -97,6 +97,11 @@
       text-decoration: none;
     }
 
+    a:hover {
+      @include transition(color, 100ms);
+      color: $dark-blue;
+    }
+
     .companies {
       max-width: 822px;
       display: flex;

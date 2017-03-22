@@ -216,10 +216,15 @@
 
           a {
             @extend .body-writing;
-            color: $link-blue;
+            color: $blue;
             display: block;
             text-decoration: none;
 
+          }
+
+          a:hover {
+            @include transition(color, 100ms);
+            color: $dark-blue;
           }
         }
 

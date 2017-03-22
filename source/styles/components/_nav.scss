@@ -51,11 +51,15 @@
   }
 
   a:hover {
-    color: $link-blue;
+    color: $blue;
   }
 
   .active {
-    color: $link-blue;
+    color: $blue;
+  }
+
+  .active:hover {
+    color: $dark-blue;
   }
 
 }
@@ -68,11 +72,15 @@
     }
 
     a:hover {
-      color: $link-blue;
+      color: $blue;
     }
 
     .active {
-      color: $link-blue;
+      color: $blue;
+    }
+
+    .active-hover {
+      color: $dark-blue;
     }
 
     #nav-bar-logo {
