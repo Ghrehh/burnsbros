@@ -134,6 +134,7 @@ footer {
         padding: 6px 11px 6px;
         -webkit-appearance: none;
         border: none;
+        cursor: pointer;
       }
 
       //fixes form button on safari and iphone browsers.
@@ -264,6 +265,17 @@ footer {
   .small {
     text-align:center;
     font-size: 12px;
+  }
+}
+
+//sets the footer card border to charcoal for the dark theme
+#dark {
+  footer {
+    #cards {
+      .card {
+        border: 1px solid $charcoal;
+      }
+    }
   }
 }
 

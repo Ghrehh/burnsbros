@@ -424,7 +424,8 @@ footer {
         border-radius: 0px 4px 4px 0px;
         padding: 6px 11px 6px;
         -webkit-appearance: none;
-        border: none; }
+        border: none;
+        cursor: pointer; }
       footer #cards .card .orange-button-form-fix {
         position: relative;
         right: 2px;
@@ -499,6 +500,9 @@ footer {
   #copyright .small {
     text-align: center;
     font-size: 12px; }
+
+#dark footer #cards .card {
+  border: 1px solid #333333; }
 
 @media (max-width: 880px) {
   footer {
