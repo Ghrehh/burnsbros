@@ -7,7 +7,7 @@ var project_types = {"Web Development": false,
 var start_date = false;
 var deadline = false;
 
-var budget = "50000+";
+var budget = "<5000";
 
 function hasSelectedProjectType(){
   if (project_types["Web Development"]){
@@ -154,7 +154,7 @@ $(document).ready(function(){
   })
 
   //custom form on click methods
-
+  //hammer used for mobile touch events because apple is bad
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
     var pt1 = new Hammer(document.getElementById('pt-first'));
@@ -520,23 +520,23 @@ $(document).ready(function(){
       budget = String($(this).data("budget"));
       var bar_filled_percentage = "0%";
 
-      if ( budget === "<10000"){
+      if ( budget === "<5000"){
         bar_filled_percentage = "0%";
         $(".budget-field .option-1").addClass("active-option");
       }
-      else if ( budget === "20000"){
+      else if ( budget === "10000"){
         bar_filled_percentage = "25%";
         $(".budget-field .option-1, .budget-field .option-2").addClass("active-option");
       }
-      else if ( budget === "30000"){
+      else if ( budget === "15000"){
         bar_filled_percentage = "50%";
         $(".budget-field .option-1, .budget-field .option-2, .budget-field .option-3").addClass("active-option");
       }
-      else if ( budget === "40000"){
+      else if ( budget === "20000"){
         bar_filled_percentage = "75%";
         $(".budget-field .option-1, .budget-field .option-2, .budget-field .option-3, .budget-field .option-4").addClass("active-option");
       }
-      else if ( budget === "50000+"){
+      else if ( budget === "25000+"){
         bar_filled_percentage = "100%";
         $(".budget-field .option-1, .budget-field .option-2, .budget-field .option-3, .budget-field .option-4, .budget-field .option-5").addClass("active-option");
       }

@@ -1799,7 +1799,7 @@ footer {
             top: 10px;
             margin: auto; }
             #project-planner #form #project-planner-form .budget-field .budget .bar-container .bar .bar-inner {
-              width: 100%;
+              width: 0%;
               height: 100%;
               background-color: #fc9e33; }
         #project-planner #form #project-planner-form .budget-field .budget .option {
