@@ -85,7 +85,6 @@ $(document).ready(function(){
                       "entry.778812851": budget}
       var url_data = $.param(form_data);
 
-      //console.log(form_data)
       
       $.ajax({
 
@@ -546,8 +545,6 @@ $(document).ready(function(){
 
     })
   }
-
-  
 
   //add date pickers, jquery-ui code of the date pickers is added at the bottom of the
   $( ".calendar-field" ).datepicker({ dateFormat: 'dd-mm-yy' });
