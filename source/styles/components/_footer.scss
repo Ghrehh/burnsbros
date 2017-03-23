@@ -386,6 +386,7 @@ footer {
 
         .orange-button {
           margin-bottom: 11px;
+          margin-right: 10px;
         }
       }
     }
@@ -486,7 +487,6 @@ footer {
 @media (max-width: 320px) { 
   footer {
 
-
     #bottom-nav {
 
       #bottom-nav-inner {
@@ -513,5 +513,14 @@ footer {
         }
       }
     }
+
+    #work-with-us {
+      .buttons {
+        .orange-button {
+          margin-right: 0px;
+        }
+      }
+    }
+    
   }
 }

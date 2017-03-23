@@ -102,6 +102,31 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+function resizeHeroItem(){
+  var window_height = $(window).height();
+  var nav_height = $("#top-nav").height();
+
+  var hero_item_height = $("#vertical-center").height(); //item actually containing content
+
+  if (window_height > hero_item_height) {
+
+    $("#index").css({"height": ((window_height - nav_height) * 1) + "px"})
+    $("#vertical-center").css({"padding-bottom": ((window_height - nav_height) * 0.025) + "px"})
+    $("header").css({"padding":"0px"})
+
+    console.log("resizing hero item")
+
+  }
+  else {
+
+    $("#index").removeAttr("style")
+    $("#vertical-center").removeAttr("style")
+    $("header").removeAttr("style")
+    
+    console.log("did not resize hero item, screen too small")
+  }
+}
+
 $(document).ready(function(){
 
   checkForAppleDevices();
@@ -194,12 +219,11 @@ $(document).ready(function(){
 
   //homepage fullscreen
   if($("#index").length > 0){
-    var window_height = $(window).height();
-    var nav_height = $("#top-nav").height();
+    resizeHeroItem();
 
-    $("#index").css({"height": ((window_height - nav_height) * 1) + "px"})
-    $("#vertical-center").css({"padding-bottom": ((window_height - nav_height) * 0.025) + "px"})
-    $("header").css({"padding":"0px"})
+    $(window).resize(function(){
+      resizeHeroItem();
+    })
   }
 
 
