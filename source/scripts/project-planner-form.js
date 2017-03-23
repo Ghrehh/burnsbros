@@ -518,6 +518,7 @@ $(document).ready(function(){
       
 
       budget = String($(this).data("budget"));
+      
       var bar_filled_percentage = "0%";
 
       if ( budget === "<5000"){

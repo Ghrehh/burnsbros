@@ -264,6 +264,7 @@
             color: $light-grey;
             position: relative;
             text-decoration: none;
+            cursor: pointer;
 
             .body-writing {
               color: inherit;
@@ -393,6 +394,7 @@
               bottom: 32px;
               color: $light-grey;
               font-size: 18px;
+              cursor: pointer;
             }
 
             .active-number {
