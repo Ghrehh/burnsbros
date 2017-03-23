@@ -2015,6 +2015,9 @@ footer {
           display: none !important; }
         #project-planner #form #project-planner-form .active-option:hover .hover-image-container {
           display: flex !important; }
+      #project-planner #form #project-planner-form .send-button-container .orange-button:hover, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form:hover, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form:hover {
+        background-color: #fc9e33;
+        color: #333333; }
   #project-planner .error-alert {
     width: 82%;
     margin: auto;
@@ -2061,13 +2064,11 @@ footer {
       #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
         margin-bottom: 27px;
         max-width: 100%;
-        font-size: 17px;
         padding-left: 15px;
-        padding-right: 15px; }
+        padding-right: 15px;
+        padding-top: 12px;
+        padding-bottom: 15px;
+        font-size: 15px; }
       #project-planner #form #project-planner-form .send-button-container .required-fields {
         display: block;
-        margin: 0; }
-    #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
-      padding-top: 12px;
-      padding-bottom: 15px;
-      font-size: 15px; } }
+        margin: 0; } }

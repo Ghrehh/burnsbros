@@ -735,6 +735,14 @@
             display: flex !important;
           }
         }
+
+        .send-button-container {
+          .orange-button:hover {
+            background-color: $orange;
+            color: $charcoal;
+          }
+
+        }
         
 
       }
@@ -816,9 +824,11 @@
           .orange-button {
             margin-bottom: 27px;
             max-width: 100%;
-            font-size: 17px;
             padding-left: 15px;
             padding-right: 15px;
+            padding-top: 12px;
+            padding-bottom: 15px;
+            font-size: 15px;
           }
 
           .required-fields {
@@ -827,21 +837,7 @@
           }
         }
 
-        .send-button-container {
-
-          .orange-button {
-            padding-top: 12px;
-            padding-bottom: 15px;
-            font-size: 15px;
-          }
-        
-        }
-
       }
-
-
-
-      
 
     }
   }
