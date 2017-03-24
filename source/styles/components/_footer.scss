@@ -287,78 +287,36 @@ footer {
     }
 
     #cards {
-
+      max-width: 750px;
       .card {
-        width: 82%;
+        width: 332px;
 
         .card-inner {
-          padding: 23px 26px 0px;
 
-          #email-submission {
-            display: block;
-            
-          }
-
-          .email-field{
-            border-radius: 4px 4px 4px 4px;
-            width: 100%;
-            text-align: center;
-            padding: 6px 0px 8px;
-            max-width: 300px;
-            margin: auto;
-            margin-bottom: 11px;
-            display: block;
-            
-          }
-
-          .orange-button-form, .orange-button-form-fix {
-            position: static;
-            border-radius: 4px 4px 4px 4px;
-            width: 100%;
-            max-width: 300px;
-            margin: auto;
-            display: block;
-            
+          .email-field {   
+            width: 166px;
           }
 
           .small {
             font-size: 12px;
-            line-height: 15px;
-            padding: 11px 0px 17px;
           }
         }
       }
 
       #our-process-card {
-        margin-bottom: 37px;
-
         .card-inner {
-          padding-bottom: 30px;
+            padding-bottom: 20px;
 
-          .orange-button {
-
-            display: block;
-            text-align: center;
-            max-width: 300px;
-            margin: auto;
-          }
-
-          br {
-            display: none;
-          }
-        }
-
-        #stay-connected-container {
-          display: none;
+            p {
+              margin-bottom: 23px;
+            }
         }
       }
 
-      #newsletter-card {
-
-      }
     }
 
     #work-with-us {
+      max-width: initial;
       width: 100%;
       background-color: #E6E6E6;
       margin-bottom: 0px;
@@ -434,40 +392,7 @@ footer {
           }
         }
 
-        .elsewhere {
-          display: flex;
-
-          .body-writing { 
-            color: grey;
-            margin-right: 19px;
-          }
-
-          a {
-            text-decoration: none;
-          }
-
-          i {
-            @include transition(color, 100ms);
-            font-size: 24px;
-            color: white;
-            position: relative;
-            top: 3px;
-          }
-
-          i:hover {
-            color: $blue;
-            cursor: pointer;
-          }
-
-          .twitter-icon {
-            margin-left: auto;
-            margin-right: 15px;
-          }
-
-          .instagram-icon {
-            margin-right: 27px;
-          }
-        }
+        
       }
     }
   }
@@ -482,6 +407,130 @@ footer {
     
   }
 }
+
+@media (max-width: 780px) {
+  footer {
+    #cards {
+      max-width: 710px;
+    }
+  }
+}
+
+@media (max-width: 730px){
+  footer {
+    #cards {
+
+      .card {
+        width: 82%;
+
+        .card-inner {
+          padding: 23px 26px 0px;
+
+          #email-submission {
+            display: block;
+            
+          }
+
+          .email-field{
+            border-radius: 4px 4px 4px 4px;
+            width: 100%;
+            text-align: center;
+            padding: 6px 0px 8px;
+            max-width: 300px;
+            margin: auto;
+            margin-bottom: 11px;
+            display: block;
+            
+          }
+
+          .orange-button-form, .orange-button-form-fix {
+            position: static;
+            border-radius: 4px 4px 4px 4px;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+            display: block;
+            
+          }
+
+          .small {
+            font-size: 12px;
+            line-height: 15px;
+            padding: 11px 0px 17px;
+          }
+        }
+      }
+
+      #our-process-card {
+        margin-bottom: 37px;
+
+        .card-inner {
+          padding-bottom: 30px;
+
+          .orange-button {
+
+            display: block;
+            text-align: center;
+            max-width: 300px;
+            margin: auto;
+          }
+
+          br {
+            display: none;
+          }
+        }
+
+        #stay-connected-container {
+          display: none;
+        }
+      }
+
+      #newsletter-card {
+
+      }
+    }
+
+    #bottom-nav {
+      #bottom-nav-inner {
+        .elsewhere {
+            display: flex;
+
+            .body-writing { 
+              color: grey;
+              margin-right: 19px;
+            }
+
+            a {
+              text-decoration: none;
+            }
+
+            i {
+              @include transition(color, 100ms);
+              font-size: 24px;
+              color: white;
+              position: relative;
+              top: 3px;
+            }
+
+            i:hover {
+              color: $blue;
+              cursor: pointer;
+            }
+
+            .twitter-icon {
+              margin-left: auto;
+              margin-right: 15px;
+            }
+
+            .instagram-icon {
+              margin-right: 27px;
+            }
+          }
+      }
+    }
+  }
+}
+
 
 //stack links when screen gets small enough
 @media (max-width: 320px) { 
