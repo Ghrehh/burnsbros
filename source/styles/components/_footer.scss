@@ -288,6 +288,7 @@ footer {
 
     #cards {
       max-width: 750px;
+
       .card {
         width: 332px;
 
@@ -300,8 +301,19 @@ footer {
           .small {
             font-size: 12px;
           }
+
+
+          
+        }
+
+        #stay-connected-container {
+          h3 {
+            padding: 5px 0px 7px 31px;
+          }
         }
       }
+
+
 
       #our-process-card {
         .card-inner {
@@ -526,6 +538,21 @@ footer {
               margin-right: 27px;
             }
           }
+      }
+    }
+
+    #work-with-us {
+      .buttons {
+        display: block;
+
+        .orange-button {
+          max-width: 300px;
+          margin-right: 0px;
+        }
+
+        .white-button {
+          max-width: 300px;
+        }
       }
     }
   }

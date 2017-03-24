@@ -517,6 +517,8 @@ footer {
           width: 166px; }
         footer #cards .card .card-inner .small {
           font-size: 12px; }
+        footer #cards .card #stay-connected-container h3 {
+          padding: 5px 0px 7px 31px; }
       footer #cards #our-process-card .card-inner {
         padding-bottom: 20px; }
         footer #cards #our-process-card .card-inner p {
@@ -638,7 +640,14 @@ footer {
       margin-left: auto;
       margin-right: 15px; }
     footer #bottom-nav #bottom-nav-inner .elsewhere .instagram-icon {
-      margin-right: 27px; } }
+      margin-right: 27px; }
+  footer #work-with-us .buttons {
+    display: block; }
+    footer #work-with-us .buttons .orange-button, footer #work-with-us .buttons #cards .card .orange-button-form, footer #cards .card #work-with-us .buttons .orange-button-form {
+      max-width: 300px;
+      margin-right: 0px; }
+    footer #work-with-us .buttons .white-button {
+      max-width: 300px; } }
 
 @media (max-width: 320px) {
   footer #bottom-nav #bottom-nav-inner {
@@ -1022,7 +1031,7 @@ footer {
     margin-bottom: 22px;
     line-height: 28px; }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   #about #who-are-we {
     padding: 47px 0 9px; }
     #about #who-are-we .body-writing, #about #who-are-we .small, #about #who-are-we .section-body, #about #who-are-we footer #cards .card, footer #cards #about #who-are-we .card, #about #who-are-we footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #about #who-are-we a, #about #who-are-we #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #who-are-we p, #about #who-are-we #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #who-are-we a, #about #who-are-we #meet-the #collaborators p, #about #meet-the #collaborators #who-are-we p, #about #who-are-we #meet-the #job-opportunities, #about #meet-the #who-are-we #job-opportunities, #about #who-are-we #projects #examples .portfolio-image p, #projects #examples .portfolio-image #about #who-are-we p, #about #who-are-we #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #about #who-are-we label, #about #who-are-we #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #about #who-are-we input, #about #who-are-we #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #about #who-are-we textarea, #about #who-are-we #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #about #who-are-we label, #about #who-are-we #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #about #who-are-we .label, #about #who-are-we #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #about #who-are-we input, #about #who-are-we #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #about #who-are-we textarea {
@@ -1044,7 +1053,8 @@ footer {
       font-size: 19px;
       height: initial;
       padding: 10px 10px 12px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      max-width: 500px; }
     #about #what-do-we-do .about-buttons br {
       display: none; }
     #about #what-do-we-do .about-buttons .half-size {
@@ -1066,22 +1076,24 @@ footer {
         text-align: center; }
   #about #meet-the {
     padding: 53px 0px 79px; }
-    #about #meet-the .section-header {
-      text-align: center;
-      margin: 0 0 62px; }
-    #about #meet-the br {
-      display: inline-block; }
-    #about #meet-the .half-logo-top {
-      left: 0;
-      top: 15px; }
-    #about #meet-the #profile-pictures .brian-container {
-      margin-bottom: 60px; }
-    #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
-      margin-bottom: 25px; }
-    #about #meet-the #profile-pictures .profile-picture-container .description {
-      width: 98%;
-      padding: 0 1%;
-      font-size: 18px; }
+    #about #meet-the #profile-pictures {
+      display: block; }
+      #about #meet-the #profile-pictures .brian-container {
+        margin-bottom: 60px; }
+      #about #meet-the #profile-pictures .profile-picture-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 82%; }
+        #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 33px;
+          width: 392px;
+          display: flex; }
+        #about #meet-the #profile-pictures .profile-picture-container .description {
+          width: 98%;
+          padding: 0 1%;
+          font-size: 18px; }
     #about #meet-the #collaborators {
       flex-wrap: wrap;
       justify-content: center;
@@ -1135,39 +1147,47 @@ footer {
       width: 82%;
       padding: 0 9%; } }
 
-@media (max-width: 430px) {
-  #about #meet-the #profile-pictures .profile-picture-container {
-    width: 300px; }
-    #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
-      height: 300px;
-      background-size: 100%; }
-      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container {
-        padding: 15px 14px 19px; }
-        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
-          font-size: 22px; }
-        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
-          font-size: 13px;
-          bottom: 2px; }
-        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
-          font-size: 16px;
-          bottom: 1px; } }
+@media (max-width: 480px) {
+  #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
+    width: 320px;
+    height: 320px;
+    background-size: 100%; }
+    #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container {
+      padding: 14px 18px 17px; }
+      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
+        font-size: 21px; }
+      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
+        font-size: 12px;
+        bottom: 3px; }
+      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
+        font-size: 14px;
+        bottom: 3px; } }
 
-@media (max-width: 330px) {
-  #about #meet-the #profile-pictures .profile-picture-container {
-    width: 260px; }
-    #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
-      height: 260px;
-      background-size: 100%; }
-      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container {
-        padding: 12px 11px 15px; }
-        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
-          font-size: 21px; }
-        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
-          font-size: 12px;
-          bottom: 3px; }
-        #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
-          font-size: 14px;
-          bottom: 1px; } }
+@media (max-width: 430px) {
+  #about #meet-the .section-header {
+    text-align: center;
+    margin: 0 0 62px; }
+  #about #meet-the br {
+    display: inline-block; }
+  #about #meet-the .half-logo-top {
+    left: 0;
+    top: 15px; } }
+
+@media (max-width: 390px) {
+  #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
+    width: 260px;
+    height: 260px;
+    background-size: 100%; }
+    #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container {
+      padding: 12px 11px 15px; }
+      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-left {
+        font-size: 21px; }
+      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .fa-location-arrow {
+        font-size: 12px;
+        bottom: 3px; }
+      #about #meet-the #profile-pictures .profile-picture-container .profile-picture .text-container .text-right {
+        font-size: 14px;
+        bottom: 1px; } }
 
 #projects .projects-title-section {
   background-color: #fc9e33;
