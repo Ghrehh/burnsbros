@@ -212,6 +212,8 @@
           p {
             @extend .body-writing;
             margin-bottom: 25px;
+
+
           }
 
           a {
@@ -219,6 +221,18 @@
             color: $blue;
             display: block;
             text-decoration: none;
+
+            .fa-twitter {
+              position: relative;
+              top: 1px;
+            }
+
+            .fa-envelope {
+              font-size: 16px;
+              position: relative;
+              left: 1px;
+              margin-right: 3px;
+            }
 
           }
 
@@ -546,14 +560,26 @@
         line-height: 35px;
         margin-bottom: 28px;
 
-        br {
-          display: inline-block;
-        }
+ 
       }
 
       .section-body {
         width: 82%;
         padding: 0 9%;
+      }
+    }
+  }
+}
+
+//breaks the in the community text into two lines
+@media (max-width: 500px) {
+  #about {
+    #in-the-community {
+
+      .small-header {
+        br {
+          display: block;
+        }
       }
     }
   }

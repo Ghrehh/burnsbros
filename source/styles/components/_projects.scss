@@ -103,7 +103,7 @@
     }
 
     .companies {
-      max-width: 822px;
+      max-width: 882px;
       display: flex;
       margin: auto;
       box-sizing:border-box;
@@ -111,9 +111,12 @@
       justify-content: space-between;
       align-items: center;
 
+
+
       img {
         margin-bottom: 44px;
       }
+
     }
     .companies-2 {
       max-width: 650px;
@@ -128,11 +131,17 @@
         margin-bottom: 40px;
       }
     }
+
+    .company-container {
+      flex: 33.333%;
+      display: flex;
+      justify-content: center;
+    }
   }
 
 }
 
-@media (max-width: 880px) {
+@media (max-width: 960px) {
   #projects {
     #examples {
       
@@ -142,7 +151,6 @@
       padding-bottom: 32px;
 
       .large, .medium, .small {
-        flex: 0 0 100%;
         margin-bottom: 60px;
 
         p {
@@ -181,6 +189,56 @@
       }
 
       .companies, .companies-2 {
+        display: flex;
+        width: 82%;
+
+        img {
+          display: block;
+          margin: 0px auto 60px;
+        }
+      }
+
+      .company-container {
+        flex: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #projects {
+    #examples {
+      
+      width: 82%;
+      margin: auto;
+      padding: 0;
+      padding-bottom: 32px;
+
+      .large, .medium, .small {
+        flex: 0 0 100%;
+        margin-bottom: 60px;
+
+        p {
+          width: 96%;
+        }
+      }
+    }
+
+    #companies {
+      padding-top: 55px;
+
+      .section-header {
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+      }
+
+      .body-writing {
+         width: 82%
+      }
+
+      .companies, .companies-2 {
         display: block;
 
         img {
@@ -189,5 +247,6 @@
         }
       }
     }
+
   }
 }

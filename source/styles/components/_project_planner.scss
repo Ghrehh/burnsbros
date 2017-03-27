@@ -70,7 +70,7 @@
       max-width: none;
       text-align: center;
       line-height: 27.4px;
-      margin-bottom: 71px;
+      margin-bottom: 50px;
       padding: 0px 40px;
       font-size: 18px;
       color: white;
@@ -580,16 +580,21 @@
       }
 
       #project-planner-form {
-        justify-content: center;
-        display: block;
+        justify-content: space-between;
+        display: flex;
         width: 82%;
         margin: auto;
 
         .form-field {
-          flex: 0 0 82%;
+          flex: 0 0 45%;
+        }
+
+        .large {
+          flex: 0 0 100%;
         }
 
         .project-type-field {
+          flex: 0 0 100%;
 
           label, .label {
             text-align: center;
@@ -608,6 +613,7 @@
         }
 
         .start-date-field, .deadline-field {
+          flex: 0 0 100%;
 
           label, .label {
             text-align: center;
@@ -632,6 +638,7 @@
         }
 
         .budget-field {
+          flex: 0 0 100%;
 
           label, .label {
             width: 100%;
@@ -693,6 +700,7 @@
         .send-button-container {
           text-align: center;
           display: block;
+          flex: 0 0 100%;
 
           .hidden {
             display: none;
@@ -752,6 +760,23 @@
       width: 82%;
       margin: auto;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #project-planner {
+    #form {
+      #project-planner-form {
+        display: block;
+        .form-field {
+          flex: 0 0 82%;
+
+          label, .label {
+            padding-top: 10px;
+          }
+        }
+      }
     }
   }
 }

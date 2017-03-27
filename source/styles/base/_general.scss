@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
     font-weight: 700;
     line-height: 64px;
     text-align:center;
-    max-width: 82%;
+    
     margin: auto;
 
     .page-description-small {
@@ -107,6 +107,24 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   max-width: 570px
 }
 
+//makes pages description below header 82% wide
+@media (max-width: 800px) {
+  #page-info {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+
+    br {
+      display: none;
+    }
+  }
+
+  .page-description {
+    max-width: 82%;
+  }
+}
+
+//makes header text inline
 @media (max-width: 720px){
   header {
     br {
@@ -117,13 +135,8 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 
 
 @media (max-width: 500px) { 
-  header {
 
-  }
 
-  .white-title {
-    font-size: 20px;
-  }
 
 
   #page-info {
@@ -143,11 +156,15 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
     }
   }
 }
-
-@media (max-width: 350px) {
+//reduces font-size on header
+@media (max-width: 450px) {
   header {
     padding: 39px 0 47px;
     
+  }
+
+  .white-title {
+    font-size: 20px;
   }
 
   .page-description {

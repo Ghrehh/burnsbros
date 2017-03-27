@@ -206,7 +206,6 @@ header {
   font-weight: 700;
   line-height: 64px;
   text-align: center;
-  max-width: 82%;
   margin: auto; }
   .page-description .page-description-small {
     font-weight: 500; }
@@ -235,13 +234,21 @@ header {
   margin: 0 auto 60px;
   max-width: 570px; }
 
+@media (max-width: 800px) {
+  #page-info {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto; }
+    #page-info br {
+      display: none; }
+  .page-description {
+    max-width: 82%; } }
+
 @media (max-width: 720px) {
   header br {
     display: none; } }
 
 @media (max-width: 500px) {
-  .white-title {
-    font-size: 20px; }
   #page-info {
     width: 82%;
     margin-left: auto;
@@ -250,9 +257,11 @@ header {
     #page-info .small-header br, #page-info footer #cards .card h3 br, footer #cards .card #page-info h3 br, #page-info footer #work-with-us .description br, footer #work-with-us #page-info .description br {
       display: none; } }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   header {
     padding: 39px 0 47px; }
+  .white-title {
+    font-size: 20px; }
   .page-description {
     font-size: 38px;
     line-height: 44px; } }
@@ -961,6 +970,14 @@ footer {
           color: #009cd7;
           display: block;
           text-decoration: none; }
+          #about #meet-the #profile-pictures .profile-picture-container .description a .fa-twitter {
+            position: relative;
+            top: 1px; }
+          #about #meet-the #profile-pictures .profile-picture-container .description a .fa-envelope {
+            font-size: 16px;
+            position: relative;
+            left: 1px;
+            margin-right: 3px; }
         #about #meet-the #profile-pictures .profile-picture-container .description a:hover {
           -webkit-transition: color 100ms ease;
           -moz-transition: color 100ms ease;
@@ -1156,11 +1173,13 @@ footer {
       padding: 0 9%;
       line-height: 35px;
       margin-bottom: 28px; }
-      #about #in-the-community .small-header br, #about #in-the-community footer #cards .card h3 br, footer #cards .card #about #in-the-community h3 br, #about #in-the-community footer #work-with-us .description br, footer #work-with-us #about #in-the-community .description br {
-        display: inline-block; }
     #about #in-the-community .section-body {
       width: 82%;
       padding: 0 9%; } }
+
+@media (max-width: 500px) {
+  #about #in-the-community .small-header br, #about #in-the-community footer #cards .card h3 br, footer #cards .card #about #in-the-community h3 br, #about #in-the-community footer #work-with-us .description br, footer #work-with-us #about #in-the-community .description br {
+    display: block; } }
 
 @media (max-width: 480px) {
   #about #meet-the #profile-pictures .profile-picture-container .profile-picture {
@@ -1268,7 +1287,7 @@ footer {
     transition: color 100ms ease;
     color: #086788; }
   #projects #companies .companies {
-    max-width: 822px;
+    max-width: 882px;
     display: flex;
     margin: auto;
     box-sizing: border-box;
@@ -1287,15 +1306,18 @@ footer {
     align-items: center; }
     #projects #companies .companies-2 img {
       margin-bottom: 40px; }
+  #projects #companies .company-container {
+    flex: 33.333%;
+    display: flex;
+    justify-content: center; }
 
-@media (max-width: 880px) {
+@media (max-width: 960px) {
   #projects #examples {
     width: 82%;
     margin: auto;
     padding: 0;
     padding-bottom: 32px; }
     #projects #examples .large, #projects #examples .medium, #projects #examples .small {
-      flex: 0 0 100%;
       margin-bottom: 60px; }
       #projects #examples .large p, #projects #examples .medium p, #projects #examples .small p {
         width: 96%; }
@@ -1308,6 +1330,35 @@ footer {
       margin-right: auto; }
     #projects #burns-unit .body-writing, #projects #burns-unit .small, #projects #burns-unit .section-body, #projects #burns-unit footer #cards .card, footer #cards #projects #burns-unit .card, #projects #burns-unit footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #projects #burns-unit a, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit p, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit a, #projects #burns-unit #about #meet-the #collaborators p, #about #meet-the #collaborators #projects #burns-unit p, #projects #burns-unit #about #meet-the #job-opportunities, #about #meet-the #projects #burns-unit #job-opportunities, #projects #burns-unit #examples .portfolio-image p, #projects #examples .portfolio-image #burns-unit p, #projects #burns-unit #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #projects #burns-unit label, #projects #burns-unit #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #projects #burns-unit input, #projects #burns-unit #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #projects #burns-unit textarea, #projects #burns-unit #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #projects #burns-unit label, #projects #burns-unit #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #projects #burns-unit .label, #projects #burns-unit #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #projects #burns-unit input, #projects #burns-unit #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #projects #burns-unit textarea {
       width: 82%; }
+  #projects #companies {
+    padding-top: 55px; }
+    #projects #companies .section-header {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px; }
+    #projects #companies .body-writing, #projects #companies .small, #projects #companies .section-body, #projects #companies footer #cards .card, footer #cards #projects #companies .card, #projects #companies footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #projects #companies a, #projects #companies #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #projects #companies p, #projects #companies #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #projects #companies a, #projects #companies #about #meet-the #collaborators p, #about #meet-the #collaborators #projects #companies p, #projects #companies #about #meet-the #job-opportunities, #about #meet-the #projects #companies #job-opportunities, #projects #companies #examples .portfolio-image p, #projects #examples .portfolio-image #companies p, #projects #companies #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #projects #companies label, #projects #companies #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #projects #companies input, #projects #companies #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #projects #companies textarea, #projects #companies #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #projects #companies label, #projects #companies #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #projects #companies .label, #projects #companies #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #projects #companies input, #projects #companies #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #projects #companies textarea {
+      width: 82%; }
+    #projects #companies .companies, #projects #companies .companies-2 {
+      display: flex;
+      width: 82%; }
+      #projects #companies .companies img, #projects #companies .companies-2 img {
+        display: block;
+        margin: 0px auto 60px; }
+    #projects #companies .company-container {
+      flex: 50%; } }
+
+@media (max-width: 600px) {
+  #projects #examples {
+    width: 82%;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 32px; }
+    #projects #examples .large, #projects #examples .medium, #projects #examples .small {
+      flex: 0 0 100%;
+      margin-bottom: 60px; }
+      #projects #examples .large p, #projects #examples .medium p, #projects #examples .small p {
+        width: 96%; }
   #projects #companies {
     padding-top: 55px; }
     #projects #companies .section-header {
@@ -1603,7 +1654,7 @@ footer {
 
 @media (max-width: 400px) {
   #contact #project-planner .text-container .orange-button, #contact #project-planner .text-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-form {
-    font-size: 16px; }
+    font-size: 15px; }
   #contact #other-contact .small-header, #contact #other-contact footer #cards .card h3, footer #cards .card #contact #other-contact h3, #contact #other-contact footer #work-with-us .description, footer #work-with-us #contact #other-contact .description {
     font-size: 16px;
     margin-bottom: 0px; }
@@ -1664,7 +1715,7 @@ footer {
     max-width: none;
     text-align: center;
     line-height: 27.4px;
-    margin-bottom: 71px;
+    margin-bottom: 50px;
     padding: 0px 40px;
     font-size: 18px;
     color: white; }
@@ -1990,69 +2041,78 @@ footer {
       #project-planner #form .section-body br {
         display: none; }
     #project-planner #form #project-planner-form {
-      justify-content: center;
-      display: block;
+      justify-content: space-between;
+      display: flex;
       width: 82%;
       margin: auto; }
       #project-planner #form #project-planner-form .form-field {
-        flex: 0 0 82%; }
-      #project-planner #form #project-planner-form .project-type-field label, #project-planner #form #project-planner-form .project-type-field .label {
-        text-align: center; }
-      #project-planner #form #project-planner-form .project-type-field .project-type {
-        width: 318px;
-        margin: auto; }
-      #project-planner #form #project-planner-form .project-type-field .error-message {
-        text-align: center;
-        bottom: 16px; }
-      #project-planner #form #project-planner-form .start-date-field label, #project-planner #form #project-planner-form .start-date-field .label, #project-planner #form #project-planner-form .deadline-field label, #project-planner #form #project-planner-form .deadline-field .label {
-        text-align: center; }
-      #project-planner #form #project-planner-form .start-date-field .selection, #project-planner #form #project-planner-form .deadline-field .selection {
-        display: block; }
-        #project-planner #form #project-planner-form .start-date-field .selection .option, #project-planner #form #project-planner-form .deadline-field .selection .option {
-          max-width: 204px;
-          min-width: 204px;
-          margin: auto;
-          margin-bottom: 10px;
+        flex: 0 0 45%; }
+      #project-planner #form #project-planner-form .large {
+        flex: 0 0 100%; }
+      #project-planner #form #project-planner-form .project-type-field {
+        flex: 0 0 100%; }
+        #project-planner #form #project-planner-form .project-type-field label, #project-planner #form #project-planner-form .project-type-field .label {
+          text-align: center; }
+        #project-planner #form #project-planner-form .project-type-field .project-type {
+          width: 318px;
+          margin: auto; }
+        #project-planner #form #project-planner-form .project-type-field .error-message {
+          text-align: center;
+          bottom: 16px; }
+      #project-planner #form #project-planner-form .start-date-field, #project-planner #form #project-planner-form .deadline-field {
+        flex: 0 0 100%; }
+        #project-planner #form #project-planner-form .start-date-field label, #project-planner #form #project-planner-form .start-date-field .label, #project-planner #form #project-planner-form .deadline-field label, #project-planner #form #project-planner-form .deadline-field .label {
+          text-align: center; }
+        #project-planner #form #project-planner-form .start-date-field .selection, #project-planner #form #project-planner-form .deadline-field .selection {
           display: block; }
-      #project-planner #form #project-planner-form .start-date-field .error-message, #project-planner #form #project-planner-form .deadline-field .error-message {
-        text-align: center; }
-      #project-planner #form #project-planner-form .budget-field label, #project-planner #form #project-planner-form .budget-field .label {
-        width: 100%; }
-      #project-planner #form #project-planner-form .budget-field .small {
-        width: 100%;
-        margin-bottom: 36px; }
-      #project-planner #form #project-planner-form .budget-field .budget {
-        width: 100%;
-        display: block;
-        position: static; }
-        #project-planner #form #project-planner-form .budget-field .budget .option {
-          border-color: #C5C3C3 !important; }
-          #project-planner #form #project-planner-form .budget-field .budget .option .number {
-            position: static;
-            height: initial;
-            text-align: center;
-            width: 100%;
-            max-width: 200px;
+          #project-planner #form #project-planner-form .start-date-field .selection .option, #project-planner #form #project-planner-form .deadline-field .selection .option {
+            max-width: 204px;
+            min-width: 204px;
             margin: auto;
             margin-bottom: 10px;
-            color: #C5C3C3;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-radius: 4px;
-            border: 1px solid black;
-            border-color: inherit; }
-          #project-planner #form #project-planner-form .budget-field .budget .option .active-number {
-            background-color: #fc9e33; }
-          #project-planner #form #project-planner-form .budget-field .budget .option .circle {
+            display: block; }
+        #project-planner #form #project-planner-form .start-date-field .error-message, #project-planner #form #project-planner-form .deadline-field .error-message {
+          text-align: center; }
+      #project-planner #form #project-planner-form .budget-field {
+        flex: 0 0 100%; }
+        #project-planner #form #project-planner-form .budget-field label, #project-planner #form #project-planner-form .budget-field .label {
+          width: 100%; }
+        #project-planner #form #project-planner-form .budget-field .small {
+          width: 100%;
+          margin-bottom: 36px; }
+        #project-planner #form #project-planner-form .budget-field .budget {
+          width: 100%;
+          display: block;
+          position: static; }
+          #project-planner #form #project-planner-form .budget-field .budget .option {
+            border-color: #C5C3C3 !important; }
+            #project-planner #form #project-planner-form .budget-field .budget .option .number {
+              position: static;
+              height: initial;
+              text-align: center;
+              width: 100%;
+              max-width: 200px;
+              margin: auto;
+              margin-bottom: 10px;
+              color: #C5C3C3;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-radius: 4px;
+              border: 1px solid black;
+              border-color: inherit; }
+            #project-planner #form #project-planner-form .budget-field .budget .option .active-number {
+              background-color: #fc9e33; }
+            #project-planner #form #project-planner-form .budget-field .budget .option .circle {
+              display: none !important; }
+          #project-planner #form #project-planner-form .budget-field .budget .active-option .active-number {
+            border-color: #fc9e33;
+            color: #333333; }
+          #project-planner #form #project-planner-form .budget-field .budget .bar-container {
             display: none !important; }
-        #project-planner #form #project-planner-form .budget-field .budget .active-option .active-number {
-          border-color: #fc9e33;
-          color: #333333; }
-        #project-planner #form #project-planner-form .budget-field .budget .bar-container {
-          display: none !important; }
       #project-planner #form #project-planner-form .send-button-container {
         text-align: center;
-        display: block; }
+        display: block;
+        flex: 0 0 100%; }
         #project-planner #form #project-planner-form .send-button-container .hidden {
           display: none; }
         #project-planner #form #project-planner-form .send-button-container .orange-button, #project-planner #form #project-planner-form .send-button-container footer #cards .card .orange-button-form, footer #cards .card #project-planner #form #project-planner-form .send-button-container .orange-button-form {
@@ -2083,6 +2143,14 @@ footer {
     width: 82%;
     margin: auto;
     margin-bottom: 20px; } }
+
+@media (max-width: 600px) {
+  #project-planner #form #project-planner-form {
+    display: block; }
+    #project-planner #form #project-planner-form .form-field {
+      flex: 0 0 82%; }
+      #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field .label {
+        padding-top: 10px; } }
 
 @media (max-width: 430px) {
   #project-planner #form #project-planner-form {
