@@ -279,6 +279,7 @@ footer {
   }
 }
 
+//smaller horizontal cards
 @media (max-width: 880px) { 
   footer {
     margin: 0;
@@ -420,6 +421,7 @@ footer {
   }
 }
 
+//cards container is decreased in size to fit better
 @media (max-width: 780px) {
   footer {
     #cards {
@@ -428,6 +430,7 @@ footer {
   }
 }
 
+//cards go vertical stacked
 @media (max-width: 730px){
   footer {
     #cards {
@@ -439,30 +442,11 @@ footer {
           padding: 23px 26px 0px;
 
           #email-submission {
-            display: block;
-            
-          }
+            justify-content: center;
 
-          .email-field{
-            border-radius: 4px 4px 4px 4px;
-            width: 100%;
-            text-align: center;
-            padding: 6px 0px 8px;
-            max-width: 300px;
-            margin: auto;
-            margin-bottom: 11px;
-            display: block;
-            
-          }
-
-          .orange-button-form, .orange-button-form-fix {
-            position: static;
-            border-radius: 4px 4px 4px 4px;
-            width: 100%;
-            max-width: 300px;
-            margin: auto;
-            display: block;
-            
+            .email-field {
+              width: 225px;
+            }
           }
 
           .small {
@@ -558,9 +542,45 @@ footer {
   }
 }
 
+//stacks email signup form
+@media (max-width: 490px) {
+ footer {
+    #cards {
+      .card {
+        .card-inner {
+          #email-submission {
+            display: block;
+            
+            .email-field{
+              border-radius: 4px 4px 4px 4px;
+              width: 100%;
+              text-align: center;
+              padding: 6px 0px 8px;
+              max-width: 300px;
+              margin: auto;
+              margin-bottom: 11px;
+              display: block;
+              
+            }
+
+            .orange-button-form, .orange-button-form-fix {
+              position: static;
+              border-radius: 4px 4px 4px 4px;
+              width: 100%;
+              max-width: 300px;
+              margin: auto;
+              display: block;
+              
+            }
+          }
+        }
+      }
+    }
+ }
+}
 
 //stack links when screen gets small enough
-@media (max-width: 320px) { 
+@media (max-width: 340px) { 
   footer {
 
     #bottom-nav {

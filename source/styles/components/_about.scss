@@ -187,11 +187,11 @@
         }
 
         #brian-picture {
-          background-image: url(../assets/about/brian.jpg);
+          background-image: url(../assets/about/brian-color.png);
         }
 
         #gerry-picture {
-          background-image: url(../assets/about/gerry.jpg);
+          background-image: url(../assets/about/gerry-color.png);
         }
 
         #brian-color {
@@ -352,7 +352,7 @@
 
 }
 
-@media (max-width: 900px) { 
+@media (max-width: 970px) { 
   #about {
     #who-are-we {
       padding: 47px 0 9px;

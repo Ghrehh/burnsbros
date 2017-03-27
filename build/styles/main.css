@@ -205,7 +205,9 @@ header {
   font-size: 48px;
   font-weight: 700;
   line-height: 64px;
-  text-align: center; }
+  text-align: center;
+  max-width: 82%;
+  margin: auto; }
   .page-description .page-description-small {
     font-weight: 500; }
 
@@ -233,13 +235,13 @@ header {
   margin: 0 auto 60px;
   max-width: 570px; }
 
+@media (max-width: 720px) {
+  header br {
+    display: none; } }
+
 @media (max-width: 500px) {
-  header {
-    padding: 39px 0 27px; }
   .white-title {
     font-size: 20px; }
-  .page-description {
-    display: none; }
   #page-info {
     width: 82%;
     margin-left: auto;
@@ -247,6 +249,13 @@ header {
     margin-bottom: 42px; }
     #page-info .small-header br, #page-info footer #cards .card h3 br, footer #cards .card #page-info h3 br, #page-info footer #work-with-us .description br, footer #work-with-us #page-info .description br {
       display: none; } }
+
+@media (max-width: 350px) {
+  header {
+    padding: 39px 0 47px; }
+  .page-description {
+    font-size: 38px;
+    line-height: 44px; } }
 
 .button-template, .orange-button, footer #cards .card .orange-button-form, .white-button {
   -webkit-transition: color 100ms ease, background-color 100ms ease;
@@ -583,23 +592,9 @@ footer {
     footer #cards .card .card-inner {
       padding: 23px 26px 0px; }
       footer #cards .card .card-inner #email-submission {
-        display: block; }
-      footer #cards .card .card-inner .email-field {
-        border-radius: 4px 4px 4px 4px;
-        width: 100%;
-        text-align: center;
-        padding: 6px 0px 8px;
-        max-width: 300px;
-        margin: auto;
-        margin-bottom: 11px;
-        display: block; }
-      footer #cards .card .card-inner .orange-button-form, footer #cards .card .card-inner .orange-button-form-fix {
-        position: static;
-        border-radius: 4px 4px 4px 4px;
-        width: 100%;
-        max-width: 300px;
-        margin: auto;
-        display: block; }
+        justify-content: center; }
+        footer #cards .card .card-inner #email-submission .email-field {
+          width: 225px; }
       footer #cards .card .card-inner .small {
         font-size: 12px;
         line-height: 15px;
@@ -649,7 +644,27 @@ footer {
     footer #work-with-us .buttons .white-button {
       max-width: 300px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 490px) {
+  footer #cards .card .card-inner #email-submission {
+    display: block; }
+    footer #cards .card .card-inner #email-submission .email-field {
+      border-radius: 4px 4px 4px 4px;
+      width: 100%;
+      text-align: center;
+      padding: 6px 0px 8px;
+      max-width: 300px;
+      margin: auto;
+      margin-bottom: 11px;
+      display: block; }
+    footer #cards .card .card-inner #email-submission .orange-button-form, footer #cards .card .card-inner #email-submission .orange-button-form-fix {
+      position: static;
+      border-radius: 4px 4px 4px 4px;
+      width: 100%;
+      max-width: 300px;
+      margin: auto;
+      display: block; } }
+
+@media (max-width: 340px) {
   footer #bottom-nav #bottom-nav-inner {
     flex-wrap: wrap;
     padding: 40px 0px; }
@@ -732,13 +747,13 @@ footer {
 @media (max-width: 880px) {
   #index header .page-description {
     display: block;
-    width: 88%;
+    width: 82%;
     margin: auto;
     font-size: 41px;
     line-height: 50px;
     margin-bottom: 30px; }
   #index header .body-writing, #index header .small, #index header .section-body, #index header footer #cards .card, footer #cards #index header .card, #index header footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #index header a, #index header #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #index header p, #index header #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #index header a, #index header #about #meet-the #collaborators p, #about #meet-the #collaborators #index header p, #index header #about #meet-the #job-opportunities, #about #meet-the #index header #job-opportunities, #index header #projects #examples .portfolio-image p, #projects #examples .portfolio-image #index header p, #index header #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #index header label, #index header #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #index header input, #index header #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #index header textarea, #index header #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #index header label, #index header #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #index header .label, #index header #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #index header input, #index header #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #index header textarea {
-    width: 88%;
+    width: 82%;
     margin: auto;
     font-size: 24px;
     line-height: 30px;
@@ -750,7 +765,7 @@ footer {
   #index header .page-description br {
     display: none; }
   #index header .button-container {
-    width: 88%;
+    width: 82%;
     margin: auto; }
     #index header .button-container .orange-button, #index header .button-container footer #cards .card .orange-button-form, footer #cards .card #index header .button-container .orange-button-form {
       animation: none;
@@ -781,7 +796,7 @@ footer {
     font-size: 18px;
     line-height: 24px; }
   #index header .button-container {
-    width: 88%;
+    width: 82%;
     margin: auto; }
     #index header .button-container .orange-button, #index header .button-container footer #cards .card .orange-button-form, footer #cards .card #index header .button-container .orange-button-form {
       animation: none;
@@ -928,9 +943,9 @@ footer {
             position: relative;
             text-align: right; }
       #about #meet-the #profile-pictures .profile-picture-container #brian-picture {
-        background-image: url(../assets/about/brian.jpg); }
+        background-image: url(../assets/about/brian-color.png); }
       #about #meet-the #profile-pictures .profile-picture-container #gerry-picture {
-        background-image: url(../assets/about/gerry.jpg); }
+        background-image: url(../assets/about/gerry-color.png); }
       #about #meet-the #profile-pictures .profile-picture-container #brian-color {
         background-color: #009cd7; }
       #about #meet-the #profile-pictures .profile-picture-container #gerry-color {
@@ -1031,7 +1046,7 @@ footer {
     margin-bottom: 22px;
     line-height: 28px; }
 
-@media (max-width: 900px) {
+@media (max-width: 970px) {
   #about #who-are-we {
     padding: 47px 0 9px; }
     #about #who-are-we .body-writing, #about #who-are-we .small, #about #who-are-we .section-body, #about #who-are-we footer #cards .card, footer #cards #about #who-are-we .card, #about #who-are-we footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #about #who-are-we a, #about #who-are-we #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #who-are-we p, #about #who-are-we #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #who-are-we a, #about #who-are-we #meet-the #collaborators p, #about #meet-the #collaborators #who-are-we p, #about #who-are-we #meet-the #job-opportunities, #about #meet-the #who-are-we #job-opportunities, #about #who-are-we #projects #examples .portfolio-image p, #projects #examples .portfolio-image #about #who-are-we p, #about #who-are-we #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #about #who-are-we label, #about #who-are-we #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #about #who-are-we input, #about #who-are-we #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #about #who-are-we textarea, #about #who-are-we #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #about #who-are-we label, #about #who-are-we #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #about #who-are-we .label, #about #who-are-we #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #about #who-are-we input, #about #who-are-we #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #about #who-are-we textarea {
