@@ -270,9 +270,10 @@ header {
     color: white;
     font-size: 24px; }
   #mobile-menu .active {
-    color: #333333; }
+    color: #333333;
+    font-weight: 700; }
   #mobile-menu .active:hover {
-    color: #086788; }
+    color: #333333; }
 
 .green-menu {
   background-color: rgba(0, 176, 112, 0.9); }

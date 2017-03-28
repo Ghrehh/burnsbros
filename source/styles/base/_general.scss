@@ -157,10 +157,11 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
 
   .active {
     color: $charcoal;
+    font-weight: 700;
   }
 
   .active:hover {
-    color: $dark-blue;
+    color: $charcoal;
   }
 }
 
