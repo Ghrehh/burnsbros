@@ -107,6 +107,83 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   max-width: 570px
 }
 
+#mobile-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  display: none;
+
+  #mobile-menu-inner {
+    width: 82%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  #mobile-menu-close {
+    color: white;
+    display: block;
+    text-align: right;
+    font-size: 19px;
+    cursor: pointer;
+
+  }
+
+  .logo-link {
+    display: block;
+    margin: 23px;
+
+    #mobile-menu-logo {
+      fill: white;
+    }
+  }
+
+
+  a {
+    @include transition(color, 100ms);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: inline-block;
+
+  }
+
+  a:hover {
+    color: white;
+    font-size: 24px;
+  }
+
+  .active {
+    color: $charcoal;
+  }
+
+  .active:hover {
+    color: $dark-blue;
+  }
+}
+
+.green-menu {
+  background-color: $trans-green;
+}
+
+.blue-menu {
+  background-color: $trans-blue;
+}
+
+.orange-menu {
+  background-color: $trans-orange;
+}
+
+.red-menu {
+  background-color: $trans-red;
+}
+
+.black-menu {
+  background-color: $trans-black;
+}
+
 //makes pages description below header 82% wide
 @media (max-width: 800px) {
   #page-info {

@@ -226,6 +226,15 @@ $(document).ready(function(){
     })
   }
 
+  //mobile menu open and close
+  $("#mobile-menu-open").click(function(){
+    $("#mobile-menu").show();
+  })
+
+  $("#mobile-menu-close").click(function(){
+    $("#mobile-menu").hide();
+  })
+
 
 
 });

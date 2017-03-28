@@ -234,6 +234,61 @@ header {
   margin: 0 auto 60px;
   max-width: 570px; }
 
+#mobile-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  display: none; }
+  #mobile-menu #mobile-menu-inner {
+    width: 82%;
+    margin: auto;
+    margin-top: 50px; }
+  #mobile-menu #mobile-menu-close {
+    color: white;
+    display: block;
+    text-align: right;
+    font-size: 19px;
+    cursor: pointer; }
+  #mobile-menu .logo-link {
+    display: block;
+    margin: 23px; }
+    #mobile-menu .logo-link #mobile-menu-logo {
+      fill: white; }
+  #mobile-menu a {
+    -webkit-transition: color 100ms ease;
+    -moz-transition: color 100ms ease;
+    -o-transition: color 100ms ease;
+    transition: color 100ms ease;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: inline-block; }
+  #mobile-menu a:hover {
+    color: white;
+    font-size: 24px; }
+  #mobile-menu .active {
+    color: #333333; }
+  #mobile-menu .active:hover {
+    color: #086788; }
+
+.green-menu {
+  background-color: rgba(0, 176, 112, 0.9); }
+
+.blue-menu {
+  background-color: rgba(0, 156, 215, 0.9); }
+
+.orange-menu {
+  background-color: rgba(252, 158, 51, 0.9); }
+
+.red-menu {
+  background-color: rgba(253, 69, 97, 0.9); }
+
+.black-menu {
+  background-color: RGBA(51, 51, 51, 0.9); }
+
 @media (max-width: 800px) {
   #page-info {
     width: 82%;
@@ -332,6 +387,11 @@ header {
     color: #009cd7; }
   #top-nav .active:hover {
     color: #086788; }
+  #top-nav #mobile-menu-open {
+    display: none;
+    margin-right: 23px; }
+    #top-nav #mobile-menu-open i {
+      margin-left: 2px; }
 
 #dark #top-nav a {
   color: white; }
@@ -352,6 +412,13 @@ header {
   animation: logo-bounce 0.3s forwards; }
   #dark #top-nav .logo-link:hover #nav-bar-logo-container #nav-bar-logo {
     animation: color-pulse-white 5s infinite; }
+
+@media (max-width: 560px) {
+  #top-nav ul {
+    display: none; }
+  #top-nav #mobile-menu-open {
+    display: block;
+    margin-left: auto; } }
 
 footer {
   overflow: hidden;

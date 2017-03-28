@@ -15,10 +15,11 @@
     </svg>
   </a>
 
-  <ul>
-    <li> <a class="{{ "active" if active_link === "about" }}" href="about.html">About</a> </li>
-    <li> <a class="{{ "active" if active_link === "projects" }}" href="projects.html">Projects</a> </li>
-    <li> <a class="{{ "active" if active_link === "contact" }}" href="contact.html">Get In Touch!</a> </li>
-  </ul>
+  <a id="mobile-menu-open" href="javascript:void(0)">
+      Menu
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </a>
+  
+  {% include "templates/partials/_links.html" %}
 
 </nav>
