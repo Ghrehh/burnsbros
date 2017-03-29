@@ -118,7 +118,9 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   #mobile-menu-inner {
     width: 82%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 43px;
+    padding-top: 100px;
+    position:relative;
   }
 
   #mobile-menu-close {
@@ -127,6 +129,10 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
     text-align: right;
     font-size: 19px;
     cursor: pointer;
+    padding: 40px;
+    right: -40px;
+    top: -40px;
+    position: absolute;
 
   }
 
@@ -144,15 +150,29 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
     @include transition(color, 100ms);
     color: white;
     text-decoration: none;
-    font-size: 24px;
-    margin-bottom: 15px;
-    display: inline-block;
+    font-size: 28px;
+    padding: 12px 0px;
+    display: block;
+    opacity: 0;
+
 
   }
 
   a:hover {
     color: white;
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .link-animate {
+    animation: mobile-link-fade-in 0.6s forwards;
+  }
+
+  .link-animate-slow {
+    animation: mobile-link-fade-in 0.7s forwards;
+  }
+
+  .link-animate-slower {
+    animation: mobile-link-fade-in 0.9s forwards;
   }
 
   .active {
@@ -165,25 +185,31 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   }
 }
 
-.green-menu {
-  background-color: $trans-green;
-}
+#mobile-menu-show {}
 
-.blue-menu {
-  background-color: $trans-blue;
-}
+//mobile menu colors
 
-.orange-menu {
-  background-color: $trans-orange;
-}
+  .green-menu {
+    background-color: $trans-green;
+  }
 
-.red-menu {
-  background-color: $trans-red;
-}
+  .blue-menu {
+    background-color: $trans-blue;
+  }
 
-.black-menu {
-  background-color: $trans-black;
-}
+  .orange-menu {
+    background-color: $trans-orange;
+  }
+
+  .red-menu {
+    background-color: $trans-red;
+  }
+
+  .black-menu {
+    background-color: $trans-black;
+  }
+//
+//
 
 //makes pages description below header 82% wide
 @media (max-width: 800px) {

@@ -8,28 +8,37 @@
   .logo-link {
     display: inline-block;
     margin: 23px;
+    z-index: 1000;
 
     svg {
       overflow: visible;
     }
+
+    #nav-bar-logo {
+      @include transition(fill, 300ms);
+      fill: $charcoal;
+    }
   }
 
-  #nav-bar-logo-container {
-
+  .logo-link-mobile-menu {
+    #nav-bar-logo {
+      fill: white;
+    }
   }
 
   .logo-link:hover {
 
     #nav-bar-logo-container {
       animation: logo-bounce 0.3s forwards;
-      #nav-bar-logo {
+    }
 
-        animation: color-pulse 5s infinite;
-      }
+    #nav-bar-logo {
 
+      animation: color-pulse 5s infinite;
     }
 
   }
+  
 
   ul {
       display: inline-block;

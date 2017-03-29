@@ -228,11 +228,19 @@ $(document).ready(function(){
 
   //mobile menu open and close
   $("#mobile-menu-open").click(function(){
-    $("#mobile-menu").show();
+    $("#mobile-menu").fadeIn(200);
+    //$("body").css({"overflow":"hidden"});
+    $(".logo-link").addClass("logo-link-mobile-menu");
+    $("#mobile-menu .about-link ").addClass("link-animate");
+    $("#mobile-menu .projects-link ").addClass("link-animate-slow");
+    $("#mobile-menu .contact-link ").addClass("link-animate-slower");
+    
   })
 
   $("#mobile-menu-close").click(function(){
-    $("#mobile-menu").hide();
+    $("#mobile-menu").fadeOut(200);
+    //$("body").css({"overflow":"initial"});
+    $(".logo-link").removeClass("logo-link-mobile-menu");
   })
 
 
