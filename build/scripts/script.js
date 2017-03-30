@@ -260,6 +260,7 @@ $(window).on('load', function(){
 
   //$("nav").css({"animation":"fall-fade-in 0.6s forwards"})
   $("header").css({"animation":"fall-fade-in 0.6s forwards"})
+  $("main").css({"animation":"fall-fade-in 1s forwards"})
 
   $("header .title-container").css({"animation":"rise-fade-in 1.2s forwards"})
   $("header .page-description").css({"animation":"rise-fade-in 1.5s forwards"})
