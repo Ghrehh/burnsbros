@@ -403,7 +403,8 @@ header {
     display: none;
     margin-right: 23px; }
     #top-nav #mobile-menu-open i {
-      margin-left: 2px; }
+      margin-left: 2px;
+      font-size: 19px; }
 
 #dark #top-nav a {
   color: white; }
