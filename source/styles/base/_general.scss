@@ -118,9 +118,11 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   #mobile-menu-inner {
     width: 82%;
     margin: auto;
-    margin-top: 43px;
-    padding-top: 100px;
     position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   #mobile-menu-close {
@@ -130,8 +132,8 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
     font-size: 19px;
     cursor: pointer;
     padding: 40px;
-    right: -40px;
-    top: -40px;
+    right: -60px;
+    top: 4px;
     position: absolute;
 
   }
@@ -154,6 +156,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
     padding: 12px 0px;
     display: block;
     opacity: 0;
+    font-weight: 700;
 
 
   }
@@ -185,7 +188,6 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   }
 }
 
-#mobile-menu-show {}
 
 //mobile menu colors
 
