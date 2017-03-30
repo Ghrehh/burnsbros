@@ -127,8 +127,12 @@ function resizeHeroItem(){
   }
 }
 
+
+
+
 $(document).ready(function(){
 
+  $("body").css({"opacity":0});
   checkForAppleDevices();
 
   //tracks mouse movement;
@@ -245,4 +249,21 @@ $(document).ready(function(){
 
 
 
+
+
 });
+
+
+$(window).on('load', function(){ 
+  
+  $("body").css({"display":"none", "opacity": 1}).fadeIn(150);
+
+  $("body").css({"animation":"fall-fade-in 0.6s forwards"})
+
+  $(".title-container").css({"animation":"rise-fade-in 1.2s forwards"})
+  $(".page-description").css({"animation":"rise-fade-in 1.5s forwards"})
+  $(".body-writing").css({"animation":"rise-fade-in 1.7s forwards"})
+  $(".orange-button").css({"animation":"rise-fade-in 2s forwards"})
+  $(".white-button").css({"animation":"rise-fade-in 2.2s forwards"})
+
+})

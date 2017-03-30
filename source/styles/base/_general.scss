@@ -167,15 +167,15 @@ h1,h2,h3,h4,h5,h6,p,li,a,input,form,textarea {
   }
 
   .link-animate {
-    animation: mobile-link-fade-in 0.6s forwards;
+    animation: fall-fade-in 0.6s forwards;
   }
 
   .link-animate-slow {
-    animation: mobile-link-fade-in 0.7s forwards;
+    animation: fall-fade-in 0.7s forwards;
   }
 
   .link-animate-slower {
-    animation: mobile-link-fade-in 0.9s forwards;
+    animation: fall-fade-in 0.9s forwards;
   }
 
   .active {
