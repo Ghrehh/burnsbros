@@ -254,9 +254,9 @@ $(document).ready(function(){
 
 $(window).on('load', function(){ 
   
-  $("body").css({"display":"none", "opacity": 1}).fadeIn(150);
+  $("body").css({"opacity": 1});
 
- 
+
 
 
 })
