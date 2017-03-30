@@ -259,12 +259,12 @@ $(window).on('load', function(){
   $("body").css({"display":"none", "opacity": 1}).fadeIn(150);
 
   //$("nav").css({"animation":"fall-fade-in 0.6s forwards"})
-  $("main").css({"animation":"fall-fade-in 0.6s forwards"})
+  $("header").css({"animation":"fall-fade-in 0.6s forwards"})
 
-  $(".title-container").css({"animation":"rise-fade-in 1.2s forwards"})
-  $(".page-description").css({"animation":"rise-fade-in 1.5s forwards"})
-  $(".body-writing").css({"animation":"rise-fade-in 1.7s forwards"})
-  $(".orange-button").css({"animation":"rise-fade-in 2s forwards"})
-  $(".white-button").css({"animation":"rise-fade-in 2.2s forwards"})
+  $("header .title-container").css({"animation":"rise-fade-in 1.2s forwards"})
+  $("header .page-description").css({"animation":"rise-fade-in 1.5s forwards"})
+  $("header .body-writing").css({"animation":"rise-fade-in 1.7s forwards"})
+  $("header .orange-button").css({"animation":"rise-fade-in 2s forwards"})
+  $("header .white-button").css({"animation":"rise-fade-in 2.2s forwards"})
 
 })
