@@ -254,7 +254,7 @@ $(document).ready(function(){
 
 $(window).on('load', function(){ 
   
-  $("body").css({"display":"none", "opacity": 1});
+  $("body").css({"display":"none", "opacity": 1}).fadeIn(150);
 
   //$("nav").css({"animation":"fall-fade-in 0.6s forwards"})
   $("header").css({"animation":"fall-fade-in 0.6s forwards"})
