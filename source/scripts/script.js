@@ -81,7 +81,7 @@ function moveArrows(mPos, arrowAngles){
   }
 
   setTimeout(function(){
-    //moveArrows(mPos, arrowAngles);
+    moveArrows(mPos, arrowAngles);
   }, 1000 / 120);
 
 
@@ -232,9 +232,8 @@ $(document).ready(function(){
 
   //mobile menu open and close
   $("#mobile-menu-open").click(function(){
-    $("#mobile-menu-inner").css({"height": $(window).height() + "px"})
+    $("#mobile-menu-inner").css({"height": $(window).height() + "px"}) //makes the inner part of the mobile menu the right height
     $("#mobile-menu").fadeIn(200);
-    //$("body").css({"overflow":"hidden"});
     $(".logo-link").addClass("logo-link-mobile-menu");
     $("#mobile-menu .about-link ").addClass("link-animate");
     $("#mobile-menu .projects-link ").addClass("link-animate-slow");
@@ -244,7 +243,6 @@ $(document).ready(function(){
 
   $("#mobile-menu-close").click(function(){
     $("#mobile-menu").fadeOut(200);
-    //$("body").css({"overflow":"initial"});
     $(".logo-link").removeClass("logo-link-mobile-menu");
   })
 
