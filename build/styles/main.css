@@ -146,7 +146,7 @@ html {
   background-color: #333333; }
 
 h1, h2, h3, h4, h5, h6, p, li, a, input, form, textarea {
-  font-family: "adelle-sans", "sans-serif"; }
+  font-family: "adelle-sans", sans-serif; }
 
 .small-header, footer #cards .card h3, footer #work-with-us .description {
   color: #333333;
