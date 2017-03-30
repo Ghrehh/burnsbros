@@ -150,6 +150,9 @@ html {
   -ms-touch-action: manipulation;
   touch-action: manipulation; }
 
+body {
+  opacity: 0; }
+
 #dark {
   background-color: #333333; }
 

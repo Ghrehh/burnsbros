@@ -5,6 +5,10 @@ html {
     touch-action: manipulation;
 }
 
+body {
+  opacity: 0;
+}
+
 #dark {
   background-color: $charcoal;
 }

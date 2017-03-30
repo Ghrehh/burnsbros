@@ -129,7 +129,7 @@ function resizeHeroItem(){
 
 
 
-$("body").css({"opacity":0});
+
 $(document).ready(function(){
 
   
