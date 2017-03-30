@@ -129,10 +129,10 @@ function resizeHeroItem(){
 
 
 
-
+$("body").css({"opacity":0});
 $(document).ready(function(){
 
-  $("body").css({"opacity":0});
+  
   checkForAppleDevices();
 
   //tracks mouse movement;
