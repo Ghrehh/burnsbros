@@ -233,7 +233,7 @@ $(document).ready(function(){
   //mobile menu open and close
   $("#mobile-menu-open").click(function(){
     $("#mobile-menu").fadeIn(200);
-    //$("body").css({"overflow":"hidden"});
+    $("body").css({"overflow":"hidden"});
     $(".logo-link").addClass("logo-link-mobile-menu");
     $("#mobile-menu .about-link ").addClass("link-animate");
     $("#mobile-menu .projects-link ").addClass("link-animate-slow");
@@ -243,10 +243,9 @@ $(document).ready(function(){
 
   $("#mobile-menu-close").click(function(){
     $("#mobile-menu").fadeOut(200);
-    //$("body").css({"overflow":"initial"});
+    $("body").css({"overflow":"initial"});
     $(".logo-link").removeClass("logo-link-mobile-menu");
   })
-
 
 
 
