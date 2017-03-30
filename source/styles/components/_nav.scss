@@ -9,6 +9,7 @@
     display: inline-block;
     margin: 23px;
     z-index: 1000;
+    min-height:60px;
 
     svg {
       overflow: visible;
@@ -21,8 +22,15 @@
   }
 
   .logo-link-mobile-menu {
+    
+    svg {
+      position: fixed;
+    }
+
     #nav-bar-logo {
       fill: white;
+      
+      
     }
   }
 

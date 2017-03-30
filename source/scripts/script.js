@@ -258,7 +258,8 @@ $(window).on('load', function(){
   
   $("body").css({"display":"none", "opacity": 1}).fadeIn(150);
 
-  $("body").css({"animation":"fall-fade-in 0.6s forwards"})
+  //$("nav").css({"animation":"fall-fade-in 0.6s forwards"})
+  $("main").css({"animation":"fall-fade-in 0.6s forwards"})
 
   $(".title-container").css({"animation":"rise-fade-in 1.2s forwards"})
   $(".page-description").css({"animation":"rise-fade-in 1.5s forwards"})
