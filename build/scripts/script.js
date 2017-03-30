@@ -264,7 +264,6 @@ $(window).on('load', function(){
   $("header .title-container").css({"animation":"rise-fade-in 1.2s forwards"})
   $("header .page-description").css({"animation":"rise-fade-in 1.5s forwards"})
   $("header .body-writing").css({"animation":"rise-fade-in 1.7s forwards"})
-  $("header .orange-button").css({"animation":"rise-fade-in 2s forwards"})
-  $("header .white-button").css({"animation":"rise-fade-in 2.2s forwards"})
+
 
 })
