@@ -81,7 +81,7 @@ function moveArrows(mPos, arrowAngles){
   }
 
   setTimeout(function(){
-    moveArrows(mPos, arrowAngles);
+    //moveArrows(mPos, arrowAngles);
   }, 1000 / 120);
 
 
@@ -256,13 +256,7 @@ $(window).on('load', function(){
   
   $("body").css({"display":"none", "opacity": 1}).fadeIn(150);
 
-  //$("nav").css({"animation":"fall-fade-in 0.6s forwards"})
-  $("header").css({"animation":"fall-fade-in 0.6s forwards"})
-  $("main").css({"animation":"fall-fade-in 1s forwards"})
-
-  $("header .title-container").css({"animation":"rise-fade-in 1.2s forwards"})
-  $("header .page-description").css({"animation":"rise-fade-in 1.5s forwards"})
-  $("header .body-writing").css({"animation":"rise-fade-in 1.7s forwards"})
+ 
 
 
 })
