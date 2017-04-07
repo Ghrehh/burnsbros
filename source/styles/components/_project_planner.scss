@@ -593,22 +593,52 @@
           flex: 0 0 100%;
         }
 
+
         .project-type-field {
-          flex: 0 0 100%;
+          overflow: hidden;
 
           label, .label {
             text-align: center;
           }
 
           .project-type {
-            width: 318px;
+            display: flex;
+            width: initial;
             margin: auto;
 
+            .option {
+              flex: 0 0 47%;
+              display: flex;
+              justify-content: center;
+              align-items:center;
+              padding: 10px 0px;
+              min-width: initial;
+              cursor: pointer;
+              box-sizing: border-box;
+
+              .image-container {
+                cursor: pointer;
+              }
+              
+              .body-writing {
+                display: inline-block;
+                margin: 0;
+                margin-left: 20px;
+                cursor: pointer;
+                flex: 0 0 50%;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+
+         
           }
 
           .error-message {
             text-align: center;
-            bottom: 16px;
+            margin-bottom: 25px;
           }
         }
 
@@ -764,9 +794,35 @@
   }
 }
 
+@media (max-width: 630px) {
+  #project-planner {
+    #form {
+      #project-planner-form {
+        .project-type-field {
+
+          .project-type {
+            display: block;
+          
+            .option {
+              width: 100%;
+              max-width: 300px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 600px) {
   #project-planner {
     #form {
+      .section-body {
+        margin-bottom: 63px;
+      }
+
       #project-planner-form {
         display: block;
         .form-field {
@@ -776,6 +832,8 @@
             padding-top: 10px;
           }
         }
+
+        
       }
     }
   }
@@ -785,53 +843,10 @@
   #project-planner {
     #form {
 
+
       #project-planner-form {
         justify-content: center;
 
-        .project-type-field {
-          overflow: hidden;
-
-          label, .label {
-            text-align: center;
-          }
-
-          .project-type {
-            display: block;
-            width: initial;
-            margin: auto;
-
-            .option {
-              display: flex;
-              justify-content: center;
-              align-items:center;
-              padding: 10px 40px;
-              min-width: initial;
-              cursor: pointer;
-
-              .image-container {
-                cursor: pointer;
-              }
-              
-              .body-writing {
-                display: inline-block;
-                margin: 0;
-                margin-left: 20px;
-                cursor: pointer;
-
-                br {
-                  display: none;
-                }
-              }
-            }
-
-         
-          }
-
-          .error-message {
-            text-align: center;
-            margin-bottom: 25px;
-          }
-        }
 
         .budget-field {
           margin-bottom: 39px;

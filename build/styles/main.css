@@ -1737,8 +1737,9 @@ footer {
   #contact #project-planner .text-container .orange-button, #contact #project-planner .text-container footer #cards .card .orange-button-form, footer #cards .card #contact #project-planner .text-container .orange-button-form {
     font-size: 15px; }
   #contact #other-contact .small-header, #contact #other-contact footer #cards .card h3, footer #cards .card #contact #other-contact h3, #contact #other-contact footer #work-with-us .description, footer #work-with-us #contact #other-contact .description {
-    font-size: 16px;
-    margin-bottom: 0px; }
+    font-size: 18px;
+    margin-bottom: 0px;
+    line-height: 23px; }
   #contact #other-contact .section-header {
     font-size: 21px;
     margin-bottom: 43px; }
@@ -2131,15 +2132,35 @@ footer {
       #project-planner #form #project-planner-form .large {
         flex: 0 0 100%; }
       #project-planner #form #project-planner-form .project-type-field {
-        flex: 0 0 100%; }
+        overflow: hidden; }
         #project-planner #form #project-planner-form .project-type-field label, #project-planner #form #project-planner-form .project-type-field .label {
           text-align: center; }
         #project-planner #form #project-planner-form .project-type-field .project-type {
-          width: 318px;
+          display: flex;
+          width: initial;
           margin: auto; }
+          #project-planner #form #project-planner-form .project-type-field .project-type .option {
+            flex: 0 0 47%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            min-width: initial;
+            cursor: pointer;
+            box-sizing: border-box; }
+            #project-planner #form #project-planner-form .project-type-field .project-type .option .image-container {
+              cursor: pointer; }
+            #project-planner #form #project-planner-form .project-type-field .project-type .option .body-writing, #project-planner #form #project-planner-form .project-type-field .project-type .option .small, #project-planner #form #project-planner-form .project-type-field .project-type .option .section-body, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #cards .card, footer #cards #project-planner #form #project-planner-form .project-type-field .project-type .option .card, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .project-type-field .project-type .option a, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option p, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option a, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form #project-planner-form .project-type-field .project-type .option p, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #job-opportunities, #about #meet-the #project-planner #form #project-planner-form .project-type-field .project-type .option #job-opportunities, #project-planner #form #project-planner-form .project-type-field .project-type .option #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form #project-planner-form .project-type-field .project-type .option p, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option label, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option input, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option textarea, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field label, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option label, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field .label, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option .label, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field input, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option input, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field textarea, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option textarea {
+              display: inline-block;
+              margin: 0;
+              margin-left: 20px;
+              cursor: pointer;
+              flex: 0 0 50%; }
+              #project-planner #form #project-planner-form .project-type-field .project-type .option .body-writing br, #project-planner #form #project-planner-form .project-type-field .project-type .option .small br, #project-planner #form #project-planner-form .project-type-field .project-type .option .section-body br, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #cards .card br, footer #cards #project-planner #form #project-planner-form .project-type-field .project-type .option .card br, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #bottom-nav #bottom-nav-inner ul li a br, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .project-type-field .project-type .option a br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description p br, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option p br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description a br, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option a br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #collaborators p br, #about #meet-the #collaborators #project-planner #form #project-planner-form .project-type-field .project-type .option p br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #job-opportunities br, #about #meet-the #project-planner #form #project-planner-form .project-type-field .project-type .option #job-opportunities br, #project-planner #form #project-planner-form .project-type-field .project-type .option #projects #examples .portfolio-image p br, #projects #examples .portfolio-image #project-planner #form #project-planner-form .project-type-field .project-type .option p br, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option label br, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option input br, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option textarea br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field label br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option label br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field .label br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option .label br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field input br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option input br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field textarea br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option textarea br {
+                display: none; }
         #project-planner #form #project-planner-form .project-type-field .error-message {
           text-align: center;
-          bottom: 16px; }
+          margin-bottom: 25px; }
       #project-planner #form #project-planner-form .start-date-field, #project-planner #form #project-planner-form .deadline-field {
         flex: 0 0 100%; }
         #project-planner #form #project-planner-form .start-date-field label, #project-planner #form #project-planner-form .start-date-field .label, #project-planner #form #project-planner-form .deadline-field label, #project-planner #form #project-planner-form .deadline-field .label {
@@ -2225,7 +2246,18 @@ footer {
     margin: auto;
     margin-bottom: 20px; } }
 
+@media (max-width: 630px) {
+  #project-planner #form #project-planner-form .project-type-field .project-type {
+    display: block; }
+    #project-planner #form #project-planner-form .project-type-field .project-type .option {
+      width: 100%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto; } }
+
 @media (max-width: 600px) {
+  #project-planner #form .section-body {
+    margin-bottom: 63px; }
   #project-planner #form #project-planner-form {
     display: block; }
     #project-planner #form #project-planner-form .form-field {
@@ -2236,33 +2268,6 @@ footer {
 @media (max-width: 430px) {
   #project-planner #form #project-planner-form {
     justify-content: center; }
-    #project-planner #form #project-planner-form .project-type-field {
-      overflow: hidden; }
-      #project-planner #form #project-planner-form .project-type-field label, #project-planner #form #project-planner-form .project-type-field .label {
-        text-align: center; }
-      #project-planner #form #project-planner-form .project-type-field .project-type {
-        display: block;
-        width: initial;
-        margin: auto; }
-        #project-planner #form #project-planner-form .project-type-field .project-type .option {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 10px 40px;
-          min-width: initial;
-          cursor: pointer; }
-          #project-planner #form #project-planner-form .project-type-field .project-type .option .image-container {
-            cursor: pointer; }
-          #project-planner #form #project-planner-form .project-type-field .project-type .option .body-writing, #project-planner #form #project-planner-form .project-type-field .project-type .option .small, #project-planner #form #project-planner-form .project-type-field .project-type .option .section-body, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #cards .card, footer #cards #project-planner #form #project-planner-form .project-type-field .project-type .option .card, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .project-type-field .project-type .option a, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option p, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option a, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #collaborators p, #about #meet-the #collaborators #project-planner #form #project-planner-form .project-type-field .project-type .option p, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #job-opportunities, #about #meet-the #project-planner #form #project-planner-form .project-type-field .project-type .option #job-opportunities, #project-planner #form #project-planner-form .project-type-field .project-type .option #projects #examples .portfolio-image p, #projects #examples .portfolio-image #project-planner #form #project-planner-form .project-type-field .project-type .option p, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option label, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option input, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option textarea, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field label, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option label, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field .label, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option .label, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field input, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option input, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field textarea, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option textarea {
-            display: inline-block;
-            margin: 0;
-            margin-left: 20px;
-            cursor: pointer; }
-            #project-planner #form #project-planner-form .project-type-field .project-type .option .body-writing br, #project-planner #form #project-planner-form .project-type-field .project-type .option .small br, #project-planner #form #project-planner-form .project-type-field .project-type .option .section-body br, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #cards .card br, footer #cards #project-planner #form #project-planner-form .project-type-field .project-type .option .card br, #project-planner #form #project-planner-form .project-type-field .project-type .option footer #bottom-nav #bottom-nav-inner ul li a br, footer #bottom-nav #bottom-nav-inner ul li #project-planner #form #project-planner-form .project-type-field .project-type .option a br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description p br, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option p br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #profile-pictures .profile-picture-container .description a br, #about #meet-the #profile-pictures .profile-picture-container .description #project-planner #form #project-planner-form .project-type-field .project-type .option a br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #collaborators p br, #about #meet-the #collaborators #project-planner #form #project-planner-form .project-type-field .project-type .option p br, #project-planner #form #project-planner-form .project-type-field .project-type .option #about #meet-the #job-opportunities br, #about #meet-the #project-planner #form #project-planner-form .project-type-field .project-type .option #job-opportunities br, #project-planner #form #project-planner-form .project-type-field .project-type .option #projects #examples .portfolio-image p br, #projects #examples .portfolio-image #project-planner #form #project-planner-form .project-type-field .project-type .option p br, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option label br, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option input br, #contact #say-hello #contact-form .form-field #project-planner #form #project-planner-form .project-type-field .project-type .option textarea br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field label br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option label br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field .label br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option .label br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field input br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option input br, #project-planner #form #project-planner-form .project-type-field .project-type .option .form-field textarea br, #project-planner #form #project-planner-form .form-field .project-type-field .project-type .option textarea br {
-              display: none; }
-      #project-planner #form #project-planner-form .project-type-field .error-message {
-        text-align: center;
-        margin-bottom: 25px; }
     #project-planner #form #project-planner-form .budget-field {
       margin-bottom: 39px; }
     #project-planner #form #project-planner-form .send-button-container {
