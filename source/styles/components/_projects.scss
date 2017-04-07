@@ -56,24 +56,60 @@
 
   }
 
-  #burns-unit {
+  #internal-projects {
     background-color: $charcoal;
-    padding: 79px 0 73px;
-    position:relative;
+    padding: 57px 0 15px;
 
-    .section-header {
-      color: white;
-      margin-bottom: 58px;
-    }
-
-    .body-writing {
-      color: white;
-      max-width: 619px;
+    .content {
+      max-width: 880px;
       margin: auto;
-      margin-bottom: 28px;
+      display: flex;
+      padding: 47px 0px 62px;
+
+      img {
+        width: 391px;
+        height: 257px;
+      }
+
+      .right {
+        position: relative;
+        bottom: 3px;
+        padding:0px 30px 0px 46px;
+
+        .section-header {
+          margin-bottom: 37px;
+          text-align: left;
+          color: white;
+        }
+
+        .body-writing {
+          color: white;
+          line-height: 28px;
+          margin-bottom: 32px;
+        }
+
+        .bold {
+          font-weight: 700;
+          font-family: adelle;
+        }
+
+        .white-button {
+          font-size: 18px;
+          font-weight: 700;
+          padding: 15px 30px 16px;
+          background-color: transparent;
+          color: white;
+          border: 1px solid white;
+          box-sizing:border-box;
+        }
+
+        .white-button:hover {
+          background-color: $orange;
+          border-color: $orange;
+          color: $charcoal;
+        }
+      }
     }
-
-
   }
 
   #companies {
@@ -159,18 +195,38 @@
       }
     }
 
-    #burns-unit {
-      padding-top: 55px;
 
-      .section-header {
-        margin-bottom: 50px;
-        width: 82%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    #internal-projects {
+      padding-top: 56px;
 
-      .body-writing {
-         width: 82%
+      .content {
+        display: block;
+        padding: 43px 0px 52px;
+
+
+        img {
+          width: 82%;
+          padding: 0 9%;
+          height: auto;
+          margin-bottom: 40px;
+        }
+
+        .right {
+          width: 82%;
+          padding: 0 9%;
+
+          .section-header {
+            text-align: center;
+          }
+
+          .section-body {
+            margin-bottom: 60px;
+          }
+
+          .button-container {
+            text-align:center;
+          }
+        }
       }
     }
 

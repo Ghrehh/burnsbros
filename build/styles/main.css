@@ -1336,18 +1336,44 @@ footer {
   #projects #examples .medium, #projects #examples .small {
     flex: 0 0 48%; }
 
-#projects #burns-unit {
+#projects #internal-projects {
   background-color: #333333;
-  padding: 79px 0 73px;
-  position: relative; }
-  #projects #burns-unit .section-header {
-    color: white;
-    margin-bottom: 58px; }
-  #projects #burns-unit .body-writing, #projects #burns-unit .small, #projects #burns-unit .section-body, #projects #burns-unit footer #cards .card, footer #cards #projects #burns-unit .card, #projects #burns-unit footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #projects #burns-unit a, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit p, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit a, #projects #burns-unit #about #meet-the #collaborators p, #about #meet-the #collaborators #projects #burns-unit p, #projects #burns-unit #about #meet-the #job-opportunities, #about #meet-the #projects #burns-unit #job-opportunities, #projects #burns-unit #examples .portfolio-image p, #projects #examples .portfolio-image #burns-unit p, #projects #burns-unit #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #projects #burns-unit label, #projects #burns-unit #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #projects #burns-unit input, #projects #burns-unit #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #projects #burns-unit textarea, #projects #burns-unit #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #projects #burns-unit label, #projects #burns-unit #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #projects #burns-unit .label, #projects #burns-unit #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #projects #burns-unit input, #projects #burns-unit #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #projects #burns-unit textarea {
-    color: white;
-    max-width: 619px;
+  padding: 57px 0 15px; }
+  #projects #internal-projects .content {
+    max-width: 880px;
     margin: auto;
-    margin-bottom: 28px; }
+    display: flex;
+    padding: 47px 0px 62px; }
+    #projects #internal-projects .content img {
+      width: 391px;
+      height: 257px; }
+    #projects #internal-projects .content .right {
+      position: relative;
+      bottom: 3px;
+      padding: 0px 30px 0px 46px; }
+      #projects #internal-projects .content .right .section-header {
+        margin-bottom: 37px;
+        text-align: left;
+        color: white; }
+      #projects #internal-projects .content .right .body-writing, #projects #internal-projects .content .right .small, #projects #internal-projects .content .right .section-body, #projects #internal-projects .content .right footer #cards .card, footer #cards #projects #internal-projects .content .right .card, #projects #internal-projects .content .right footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #projects #internal-projects .content .right a, #projects #internal-projects .content .right #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #projects #internal-projects .content .right p, #projects #internal-projects .content .right #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #projects #internal-projects .content .right a, #projects #internal-projects .content .right #about #meet-the #collaborators p, #about #meet-the #collaborators #projects #internal-projects .content .right p, #projects #internal-projects .content .right #about #meet-the #job-opportunities, #about #meet-the #projects #internal-projects .content .right #job-opportunities, #projects #internal-projects .content .right #examples .portfolio-image p, #projects #examples .portfolio-image #internal-projects .content .right p, #projects #internal-projects .content .right #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #projects #internal-projects .content .right label, #projects #internal-projects .content .right #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #projects #internal-projects .content .right input, #projects #internal-projects .content .right #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #projects #internal-projects .content .right textarea, #projects #internal-projects .content .right #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #projects #internal-projects .content .right label, #projects #internal-projects .content .right #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #projects #internal-projects .content .right .label, #projects #internal-projects .content .right #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #projects #internal-projects .content .right input, #projects #internal-projects .content .right #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #projects #internal-projects .content .right textarea {
+        color: white;
+        line-height: 28px;
+        margin-bottom: 32px; }
+      #projects #internal-projects .content .right .bold {
+        font-weight: 700;
+        font-family: adelle; }
+      #projects #internal-projects .content .right .white-button {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 15px 30px 16px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        box-sizing: border-box; }
+      #projects #internal-projects .content .right .white-button:hover {
+        background-color: #fc9e33;
+        border-color: #fc9e33;
+        color: #333333; }
 
 #projects #companies {
   padding-top: 79px;
@@ -1402,15 +1428,25 @@ footer {
       margin-bottom: 60px; }
       #projects #examples .large p, #projects #examples .medium p, #projects #examples .small p {
         width: 96%; }
-  #projects #burns-unit {
-    padding-top: 55px; }
-    #projects #burns-unit .section-header {
-      margin-bottom: 50px;
-      width: 82%;
-      margin-left: auto;
-      margin-right: auto; }
-    #projects #burns-unit .body-writing, #projects #burns-unit .small, #projects #burns-unit .section-body, #projects #burns-unit footer #cards .card, footer #cards #projects #burns-unit .card, #projects #burns-unit footer #bottom-nav #bottom-nav-inner ul li a, footer #bottom-nav #bottom-nav-inner ul li #projects #burns-unit a, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description p, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit p, #projects #burns-unit #about #meet-the #profile-pictures .profile-picture-container .description a, #about #meet-the #profile-pictures .profile-picture-container .description #projects #burns-unit a, #projects #burns-unit #about #meet-the #collaborators p, #about #meet-the #collaborators #projects #burns-unit p, #projects #burns-unit #about #meet-the #job-opportunities, #about #meet-the #projects #burns-unit #job-opportunities, #projects #burns-unit #examples .portfolio-image p, #projects #examples .portfolio-image #burns-unit p, #projects #burns-unit #contact #say-hello #contact-form .form-field label, #contact #say-hello #contact-form .form-field #projects #burns-unit label, #projects #burns-unit #contact #say-hello #contact-form .form-field input, #contact #say-hello #contact-form .form-field #projects #burns-unit input, #projects #burns-unit #contact #say-hello #contact-form .form-field textarea, #contact #say-hello #contact-form .form-field #projects #burns-unit textarea, #projects #burns-unit #project-planner #form #project-planner-form .form-field label, #project-planner #form #project-planner-form .form-field #projects #burns-unit label, #projects #burns-unit #project-planner #form #project-planner-form .form-field .label, #project-planner #form #project-planner-form .form-field #projects #burns-unit .label, #projects #burns-unit #project-planner #form #project-planner-form .form-field input, #project-planner #form #project-planner-form .form-field #projects #burns-unit input, #projects #burns-unit #project-planner #form #project-planner-form .form-field textarea, #project-planner #form #project-planner-form .form-field #projects #burns-unit textarea {
-      width: 82%; }
+  #projects #internal-projects {
+    padding-top: 56px; }
+    #projects #internal-projects .content {
+      display: block;
+      padding: 43px 0px 52px; }
+      #projects #internal-projects .content img {
+        width: 82%;
+        padding: 0 9%;
+        height: auto;
+        margin-bottom: 40px; }
+      #projects #internal-projects .content .right {
+        width: 82%;
+        padding: 0 9%; }
+        #projects #internal-projects .content .right .section-header {
+          text-align: center; }
+        #projects #internal-projects .content .right .section-body {
+          margin-bottom: 60px; }
+        #projects #internal-projects .content .right .button-container {
+          text-align: center; }
   #projects #companies {
     padding-top: 55px; }
     #projects #companies .section-header {
