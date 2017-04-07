@@ -1429,7 +1429,7 @@ footer {
     #projects #companies .company-container {
       flex: 50%; } }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   #projects #examples {
     width: 82%;
     margin: auto;
@@ -2282,3 +2282,13 @@ footer {
       #project-planner #form #project-planner-form .send-button-container .required-fields {
         display: block;
         margin: 0; } }
+
+#placeholder header {
+  padding: 62px 0 16px; }
+  #placeholder header .page-description {
+    animation: none !important; }
+
+#placeholder #page-info {
+  max-width: 82%;
+  margin: auto;
+  margin-bottom: 164px; }
